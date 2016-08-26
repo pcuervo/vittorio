@@ -5866,7 +5866,14 @@ button.btn-floating {
   font-size: 1.6rem;
 }
 
-/* line 209, ../sass/components/_buttons.scss */
+/* line 208, ../sass/components/_buttons.scss */
+.btn-fixed-width {
+  width: 155px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* line 215, ../sass/components/_buttons.scss */
 .btn-block {
   display: block;
 }
@@ -6984,7 +6991,7 @@ textarea.materialize-textarea {
 /* CUSTOM CSS CHECKBOXES */
 /* line 5, ../sass/components/forms/_checkboxes.scss */
 form p {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   text-align: left;
 }
 
@@ -9388,54 +9395,59 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   margin: 0px;
 }
 
-/* line 10, ../sass/components/_utilities.scss */
+/* line 9, ../sass/components/_utilities.scss */
+.margin-vertical {
+  margin: 20px 0;
+}
+
+/* line 11, ../sass/components/_utilities.scss */
 .padding--xsmall {
   padding: 5px;
 }
 
-/* line 11, ../sass/components/_utilities.scss */
+/* line 12, ../sass/components/_utilities.scss */
 .padding--small {
   padding: 10px;
 }
 
-/* line 12, ../sass/components/_utilities.scss */
+/* line 13, ../sass/components/_utilities.scss */
 .padding {
   padding: 20px;
 }
 
-/* line 13, ../sass/components/_utilities.scss */
+/* line 14, ../sass/components/_utilities.scss */
 .no-padding {
   padding: 0px;
 }
 
-/* line 17, ../sass/components/_utilities.scss */
+/* line 18, ../sass/components/_utilities.scss */
 .inline {
   display: inline;
 }
 
-/* line 18, ../sass/components/_utilities.scss */
+/* line 19, ../sass/components/_utilities.scss */
 .block {
   display: block !important;
 }
 
-/* line 19, ../sass/components/_utilities.scss */
+/* line 20, ../sass/components/_utilities.scss */
 .inline-block {
   display: inline-block;
 }
 
-/* line 20, ../sass/components/_utilities.scss */
+/* line 21, ../sass/components/_utilities.scss */
 .hidden {
   display: none;
 }
 
-/* line 22, ../sass/components/_utilities.scss */
+/* line 23, ../sass/components/_utilities.scss */
 .not-visible {
   max-height: 0;
   visibility: hidden;
   opacity: 0;
 }
 
-/* line 28, ../sass/components/_utilities.scss */
+/* line 29, ../sass/components/_utilities.scss */
 .visible {
   max-height: 300px;
   visibility: visible;
@@ -9443,148 +9455,48 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 @media (min-width: 993px) and (max-width: 1490px) {
-  /* line 35, ../sass/components/_utilities.scss */
+  /* line 36, ../sass/components/_utilities.scss */
   .hidden--large {
     display: none;
   }
 }
-/* line 39, ../sass/components/_utilities.scss */
+/* line 40, ../sass/components/_utilities.scss */
 .float-right {
   float: right;
 }
 
-/* line 40, ../sass/components/_utilities.scss */
+/* line 41, ../sass/components/_utilities.scss */
 .float-left {
   float: left;
 }
 
 @media (min-width: 601px) {
-  /* line 42, ../sass/components/_utilities.scss */
+  /* line 43, ../sass/components/_utilities.scss */
   .float-right--on-med-and-up {
     float: right !important;
   }
 }
-/* line 46, ../sass/components/_utilities.scss */
+/* line 47, ../sass/components/_utilities.scss */
 .absolute {
   position: absolute;
 }
 
-/* line 47, ../sass/components/_utilities.scss */
+/* line 48, ../sass/components/_utilities.scss */
 .relative {
   position: relative;
 }
 
-/* line 48, ../sass/components/_utilities.scss */
+/* line 49, ../sass/components/_utilities.scss */
 .fixed {
   position: fixed;
 }
 
-/* line 50, ../sass/components/_utilities.scss */
-.top--0 {
-  top: 0px;
-}
-
-/* line 51, ../sass/components/_utilities.scss */
-.top--15 {
-  top: 15px;
-}
-
-/* line 52, ../sass/components/_utilities.scss */
-.top--22 {
-  top: 22px;
-}
-
-/* line 53, ../sass/components/_utilities.scss */
-.top--45 {
-  top: 45px !important;
-}
-
-/* line 55, ../sass/components/_utilities.scss */
-.bottom-0 {
-  bottom: 0px;
-}
-
-/* line 56, ../sass/components/_utilities.scss */
-.bottom-2 {
-  bottom: 2px;
-}
-
-/* line 57, ../sass/components/_utilities.scss */
-.bottom-3 {
-  bottom: 3px;
-}
-
-/* line 58, ../sass/components/_utilities.scss */
-.bottom-5 {
-  bottom: 5px;
+/* line 54, ../sass/components/_utilities.scss */
+.height-100 {
+  height: 100vh;
 }
 
 /* line 59, ../sass/components/_utilities.scss */
-.bottom-10 {
-  bottom: 10px;
-}
-
-/* line 60, ../sass/components/_utilities.scss */
-.bottom--20 {
-  bottom: 20px;
-}
-
-/* line 61, ../sass/components/_utilities.scss */
-.bottom--30 {
-  bottom: 30px;
-}
-
-/* line 62, ../sass/components/_utilities.scss */
-.bottom--22 {
-  bottom: 22px;
-}
-
-/* line 64, ../sass/components/_utilities.scss */
-.right-0 {
-  right: 0px;
-}
-
-/* line 65, ../sass/components/_utilities.scss */
-.right-767 {
-  right: -767px;
-}
-
-/* line 66, ../sass/components/_utilities.scss */
-.right-1000 {
-  right: -1000px;
-}
-
-/* line 67, ../sass/components/_utilities.scss */
-.right-999999 {
-  right: -999999px;
-}
-
-/* line 69, ../sass/components/_utilities.scss */
-.left---20 {
-  left: -20px;
-}
-
-/* line 71, ../sass/components/_utilities.scss */
-.z-index--1 {
-  z-index: -1;
-}
-
-/* line 72, ../sass/components/_utilities.scss */
-.z-index-1 {
-  z-index: 1;
-}
-
-/* line 73, ../sass/components/_utilities.scss */
-.z-index-10 {
-  z-index: 10;
-}
-
-/* line 74, ../sass/components/_utilities.scss */
-.z-index-100 {
-  z-index: 100;
-}
-
-/* line 78, ../sass/components/_utilities.scss */
 .transition {
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -9593,18 +9505,41 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   -o-transition: all 0.5s ease;
 }
 
-/* line 88, ../sass/components/_utilities.scss */
+/* line 69, ../sass/components/_utilities.scss */
 .middle {
   vertical-align: middle;
 }
 
+/* line 71, ../sass/components/_utilities.scss */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 77, ../sass/components/_utilities.scss */
+.center-full {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 /* line 5, ../sass/components/_images.scss */
+.img-responsive {
+  max-width: 100%;
+}
+
+/* line 7, ../sass/components/_images.scss */
 .background-img {
   background-position: center;
   background-size: cover;
 }
 
-/* line 10, ../sass/components/_images.scss */
+/* line 12, ../sass/components/_images.scss */
 .background-img--main {
   background-image: url(../img/background.png);
 }
