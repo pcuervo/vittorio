@@ -20,6 +20,14 @@ $materialize-red: (
   "darken-4":   #8b1014,
 );
 
+$light: (
+  "base":       #ffffff,
+);
+
+$dark: (
+  "base":       #212121,
+);
+
 $red: (
   "base":       #F44336,
   "lighten-5":  #FFEBEE,
@@ -339,6 +347,8 @@ $shades: (
 
 $colors: (
   "materialize-red": $materialize-red,
+  "light": $light,
+  "dark": $dark,
   "red": $red,
   "pink": $pink,
   "purple": $purple,
