@@ -192,6 +192,12 @@ $switch-radius: 15px !default;
 /* 11. Global
    ========================================================================== */
 
+// Box Model Base Sizes
+
+$margin-size: 20px !default;
+$padding-size: 20px !default;
+
+
 // Media Query Ranges
 $small-screen-up: 601px !default;
 $medium-screen-up: 993px !default;

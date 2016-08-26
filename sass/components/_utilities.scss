@@ -2,6 +2,15 @@
 // Utilities
 // =
 
+//Box Model
+.margin-auto		{ margin: auto;}
+.margin				{ margin:$margin-size;}
+.no-margin			{ margin: 0px; }
+
+.padding--xsmall	{padding:($padding-size/4);}
+.padding--small		{padding:($padding-size/2);}
+.padding			{padding:$padding-size;}
+.no-padding			{padding:0px;}
 
 //Display
 

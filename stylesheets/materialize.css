@@ -99,7 +99,7 @@
 }
 
 /* line 381, ../sass/components/_color.scss */
-.light, footer.page-footer .footer-copyright {
+.light, .page-footer .footer-copyright {
   background-color: #ffffff !important;
 }
 
@@ -2825,11 +2825,16 @@ summary {
   display: block;
 }
 
+/* line 49, ../sass/components/_normalize.scss */
+header {
+  margin-bottom: 20px;
+}
+
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-/* line 54, ../sass/components/_normalize.scss */
+/* line 58, ../sass/components/_normalize.scss */
 audio,
 canvas,
 progress,
@@ -2844,7 +2849,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 67, ../sass/components/_normalize.scss */
+/* line 71, ../sass/components/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -2854,7 +2859,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
  */
-/* line 77, ../sass/components/_normalize.scss */
+/* line 81, ../sass/components/_normalize.scss */
 [hidden],
 template {
   display: none;
@@ -2865,7 +2870,7 @@ template {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-/* line 89, ../sass/components/_normalize.scss */
+/* line 93, ../sass/components/_normalize.scss */
 a {
   background-color: transparent;
 }
@@ -2874,7 +2879,7 @@ a {
  * Improve readability of focused elements when they are also in an
  * active/hover state.
  */
-/* line 98, ../sass/components/_normalize.scss */
+/* line 102, ../sass/components/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -2885,7 +2890,7 @@ a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
-/* line 110, ../sass/components/_normalize.scss */
+/* line 114, ../sass/components/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -2893,7 +2898,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-/* line 118, ../sass/components/_normalize.scss */
+/* line 122, ../sass/components/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -2902,7 +2907,7 @@ strong {
 /**
  * Address styling not present in Safari and Chrome.
  */
-/* line 127, ../sass/components/_normalize.scss */
+/* line 131, ../sass/components/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -2911,7 +2916,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-/* line 136, ../sass/components/_normalize.scss */
+/* line 140, ../sass/components/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -2920,7 +2925,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 145, ../sass/components/_normalize.scss */
+/* line 149, ../sass/components/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -2929,7 +2934,7 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 154, ../sass/components/_normalize.scss */
+/* line 158, ../sass/components/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -2937,7 +2942,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 162, ../sass/components/_normalize.scss */
+/* line 166, ../sass/components/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -2946,12 +2951,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 170, ../sass/components/_normalize.scss */
+/* line 174, ../sass/components/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 174, ../sass/components/_normalize.scss */
+/* line 178, ../sass/components/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -2961,7 +2966,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
-/* line 185, ../sass/components/_normalize.scss */
+/* line 189, ../sass/components/_normalize.scss */
 img {
   border: 0;
 }
@@ -2969,7 +2974,7 @@ img {
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
-/* line 193, ../sass/components/_normalize.scss */
+/* line 197, ../sass/components/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -2979,7 +2984,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari.
  */
-/* line 204, ../sass/components/_normalize.scss */
+/* line 208, ../sass/components/_normalize.scss */
 figure {
   margin: 1em 40px;
 }
@@ -2987,7 +2992,7 @@ figure {
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 212, ../sass/components/_normalize.scss */
+/* line 216, ../sass/components/_normalize.scss */
 hr {
   box-sizing: content-box;
   height: 0;
@@ -2996,7 +3001,7 @@ hr {
 /**
  * Contain overflow in all browsers.
  */
-/* line 221, ../sass/components/_normalize.scss */
+/* line 225, ../sass/components/_normalize.scss */
 pre {
   overflow: auto;
 }
@@ -3004,7 +3009,7 @@ pre {
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-/* line 229, ../sass/components/_normalize.scss */
+/* line 233, ../sass/components/_normalize.scss */
 code,
 kbd,
 pre,
@@ -3025,7 +3030,7 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-/* line 252, ../sass/components/_normalize.scss */
+/* line 256, ../sass/components/_normalize.scss */
 button,
 input,
 optgroup,
@@ -3042,7 +3047,7 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-/* line 266, ../sass/components/_normalize.scss */
+/* line 270, ../sass/components/_normalize.scss */
 button {
   overflow: visible;
 }
@@ -3053,7 +3058,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-/* line 277, ../sass/components/_normalize.scss */
+/* line 281, ../sass/components/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -3066,7 +3071,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 290, ../sass/components/_normalize.scss */
+/* line 294, ../sass/components/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -3080,7 +3085,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 302, ../sass/components/_normalize.scss */
+/* line 306, ../sass/components/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -3089,7 +3094,7 @@ html input[disabled] {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 311, ../sass/components/_normalize.scss */
+/* line 315, ../sass/components/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -3100,7 +3105,7 @@ input::-moz-focus-inner {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 322, ../sass/components/_normalize.scss */
+/* line 326, ../sass/components/_normalize.scss */
 input {
   line-height: normal;
 }
@@ -3112,7 +3117,7 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 334, ../sass/components/_normalize.scss */
+/* line 338, ../sass/components/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -3126,7 +3131,7 @@ input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-/* line 346, ../sass/components/_normalize.scss */
+/* line 350, ../sass/components/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -3136,7 +3141,7 @@ input[type="number"]::-webkit-outer-spin-button {
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
-/* line 356, ../sass/components/_normalize.scss */
+/* line 360, ../sass/components/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -3149,7 +3154,7 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-/* line 367, ../sass/components/_normalize.scss */
+/* line 371, ../sass/components/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -3158,7 +3163,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 376, ../sass/components/_normalize.scss */
+/* line 380, ../sass/components/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -3169,7 +3174,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 387, ../sass/components/_normalize.scss */
+/* line 391, ../sass/components/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -3180,7 +3185,7 @@ legend {
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
-/* line 396, ../sass/components/_normalize.scss */
+/* line 400, ../sass/components/_normalize.scss */
 textarea {
   overflow: auto;
 }
@@ -3189,7 +3194,7 @@ textarea {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
-/* line 405, ../sass/components/_normalize.scss */
+/* line 409, ../sass/components/_normalize.scss */
 optgroup {
   font-weight: bold;
 }
@@ -3199,13 +3204,13 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
-/* line 416, ../sass/components/_normalize.scss */
+/* line 420, ../sass/components/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 421, ../sass/components/_normalize.scss */
+/* line 425, ../sass/components/_normalize.scss */
 td,
 th {
   padding: 0;
@@ -3580,14 +3585,14 @@ ul.staggered-list li {
   }
 }
 
-/* line 350, ../sass/components/_global.scss */
-footer.page-footer {
+/* line 351, ../sass/components/_global.scss */
+.page-footer {
   margin-top: 20px;
   padding-top: 20px;
   background-color: #000000;
 }
-/* line 355, ../sass/components/_global.scss */
-footer.page-footer .footer-copyright {
+/* line 356, ../sass/components/_global.scss */
+.page-footer .footer-copyright {
   overflow: hidden;
   height: 50px;
   line-height: 50px;
@@ -3595,47 +3600,47 @@ footer.page-footer .footer-copyright {
   background-color: rgba(51, 51, 51, 0.08);
 }
 
-/* line 366, ../sass/components/_global.scss */
+/* line 367, ../sass/components/_global.scss */
 table, th, td {
   border: none;
 }
 
-/* line 370, ../sass/components/_global.scss */
+/* line 371, ../sass/components/_global.scss */
 table {
   width: 100%;
   display: table;
 }
-/* line 374, ../sass/components/_global.scss */
+/* line 375, ../sass/components/_global.scss */
 table.bordered > thead > tr, table.bordered > tbody > tr {
   border-bottom: 1px solid #d0d0d0;
 }
-/* line 380, ../sass/components/_global.scss */
+/* line 381, ../sass/components/_global.scss */
 table.striped > tbody > tr:nth-child(odd) {
   background-color: #f2f2f2;
 }
-/* line 384, ../sass/components/_global.scss */
+/* line 385, ../sass/components/_global.scss */
 table.striped > tbody > tr > td {
   border-radius: 0;
 }
-/* line 389, ../sass/components/_global.scss */
+/* line 390, ../sass/components/_global.scss */
 table.highlight > tbody > tr {
   transition: background-color .25s ease;
 }
-/* line 391, ../sass/components/_global.scss */
+/* line 392, ../sass/components/_global.scss */
 table.highlight > tbody > tr:hover {
   background-color: #f2f2f2;
 }
-/* line 397, ../sass/components/_global.scss */
+/* line 398, ../sass/components/_global.scss */
 table.centered thead tr th, table.centered tbody tr td {
   text-align: center;
 }
 
-/* line 404, ../sass/components/_global.scss */
+/* line 405, ../sass/components/_global.scss */
 thead {
   border-bottom: 1px solid #d0d0d0;
 }
 
-/* line 408, ../sass/components/_global.scss */
+/* line 409, ../sass/components/_global.scss */
 td, th {
   padding: 15px 5px;
   display: table-cell;
@@ -3645,7 +3650,7 @@ td, th {
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 419, ../sass/components/_global.scss */
+  /* line 420, ../sass/components/_global.scss */
   table.responsive-table {
     width: 100%;
     border-collapse: collapse;
@@ -3654,35 +3659,35 @@ td, th {
     position: relative;
     /* sort out borders */
   }
-  /* line 426, ../sass/components/_global.scss */
+  /* line 427, ../sass/components/_global.scss */
   table.responsive-table td:empty:before {
     content: '\00a0';
   }
-  /* line 430, ../sass/components/_global.scss */
+  /* line 431, ../sass/components/_global.scss */
   table.responsive-table th,
   table.responsive-table td {
     margin: 0;
     vertical-align: top;
   }
-  /* line 436, ../sass/components/_global.scss */
+  /* line 437, ../sass/components/_global.scss */
   table.responsive-table th {
     text-align: left;
   }
-  /* line 437, ../sass/components/_global.scss */
+  /* line 438, ../sass/components/_global.scss */
   table.responsive-table thead {
     display: block;
     float: left;
   }
-  /* line 441, ../sass/components/_global.scss */
+  /* line 442, ../sass/components/_global.scss */
   table.responsive-table thead tr {
     display: block;
     padding: 0 10px 0 0;
   }
-  /* line 445, ../sass/components/_global.scss */
+  /* line 446, ../sass/components/_global.scss */
   table.responsive-table thead tr th::before {
     content: "\00a0";
   }
-  /* line 450, ../sass/components/_global.scss */
+  /* line 451, ../sass/components/_global.scss */
   table.responsive-table tbody {
     display: block;
     width: auto;
@@ -3690,52 +3695,52 @@ td, th {
     overflow-x: auto;
     white-space: nowrap;
   }
-  /* line 457, ../sass/components/_global.scss */
+  /* line 458, ../sass/components/_global.scss */
   table.responsive-table tbody tr {
     display: inline-block;
     vertical-align: top;
   }
-  /* line 462, ../sass/components/_global.scss */
+  /* line 463, ../sass/components/_global.scss */
   table.responsive-table th {
     display: block;
     text-align: right;
   }
-  /* line 466, ../sass/components/_global.scss */
+  /* line 467, ../sass/components/_global.scss */
   table.responsive-table td {
     display: block;
     min-height: 1.25em;
     text-align: left;
   }
-  /* line 471, ../sass/components/_global.scss */
+  /* line 472, ../sass/components/_global.scss */
   table.responsive-table tr {
     padding: 0 10px;
   }
-  /* line 474, ../sass/components/_global.scss */
+  /* line 475, ../sass/components/_global.scss */
   table.responsive-table thead {
     border: 0;
     border-right: 1px solid #d0d0d0;
   }
-  /* line 480, ../sass/components/_global.scss */
+  /* line 481, ../sass/components/_global.scss */
   table.responsive-table.bordered th {
     border-bottom: 0;
     border-left: 0;
   }
-  /* line 481, ../sass/components/_global.scss */
+  /* line 482, ../sass/components/_global.scss */
   table.responsive-table.bordered td {
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
   }
-  /* line 482, ../sass/components/_global.scss */
+  /* line 483, ../sass/components/_global.scss */
   table.responsive-table.bordered tr {
     border: 0;
   }
-  /* line 483, ../sass/components/_global.scss */
+  /* line 484, ../sass/components/_global.scss */
   table.responsive-table.bordered tbody tr {
     border-right: 1px solid #d0d0d0;
   }
 }
-/* line 492, ../sass/components/_global.scss */
+/* line 493, ../sass/components/_global.scss */
 .collection {
   margin: 0.5rem 0 1rem 0;
   border: 1px solid #e0e0e0;
@@ -3743,7 +3748,7 @@ td, th {
   overflow: hidden;
   position: relative;
 }
-/* line 499, ../sass/components/_global.scss */
+/* line 500, ../sass/components/_global.scss */
 .collection .collection-item {
   background-color: #fff;
   line-height: 1.5rem;
@@ -3751,13 +3756,13 @@ td, th {
   margin: 0;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 507, ../sass/components/_global.scss */
+/* line 508, ../sass/components/_global.scss */
 .collection .collection-item.avatar {
   min-height: 84px;
   padding-left: 72px;
   position: relative;
 }
-/* line 512, ../sass/components/_global.scss */
+/* line 513, ../sass/components/_global.scss */
 .collection .collection-item.avatar .circle {
   position: absolute;
   width: 42px;
@@ -3767,7 +3772,7 @@ td, th {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 521, ../sass/components/_global.scss */
+/* line 522, ../sass/components/_global.scss */
 .collection .collection-item.avatar i.circle {
   font-size: 18px;
   line-height: 42px;
@@ -3775,71 +3780,71 @@ td, th {
   background-color: #999;
   text-align: center;
 }
-/* line 530, ../sass/components/_global.scss */
+/* line 531, ../sass/components/_global.scss */
 .collection .collection-item.avatar .title {
   font-size: 16px;
 }
-/* line 534, ../sass/components/_global.scss */
+/* line 535, ../sass/components/_global.scss */
 .collection .collection-item.avatar p {
   margin: 0;
 }
-/* line 538, ../sass/components/_global.scss */
+/* line 539, ../sass/components/_global.scss */
 .collection .collection-item.avatar .secondary-content {
   position: absolute;
   top: 16px;
   right: 16px;
 }
-/* line 547, ../sass/components/_global.scss */
+/* line 548, ../sass/components/_global.scss */
 .collection .collection-item:last-child {
   border-bottom: none;
 }
-/* line 551, ../sass/components/_global.scss */
+/* line 552, ../sass/components/_global.scss */
 .collection .collection-item.active {
   background-color: #26a69a;
   color: #eafaf9;
 }
-/* line 555, ../sass/components/_global.scss */
+/* line 556, ../sass/components/_global.scss */
 .collection .collection-item.active .secondary-content {
   color: #fff;
 }
-/* line 560, ../sass/components/_global.scss */
+/* line 561, ../sass/components/_global.scss */
 .collection a.collection-item {
   display: block;
   transition: .25s;
   color: #26a69a;
 }
-/* line 565, ../sass/components/_global.scss */
+/* line 566, ../sass/components/_global.scss */
 .collection a.collection-item:not(.active):hover {
   background-color: #ddd;
 }
-/* line 572, ../sass/components/_global.scss */
+/* line 573, ../sass/components/_global.scss */
 .collection.with-header .collection-header {
   background-color: #fff;
   border-bottom: 1px solid #e0e0e0;
   padding: 10px 20px;
 }
-/* line 577, ../sass/components/_global.scss */
+/* line 578, ../sass/components/_global.scss */
 .collection.with-header .collection-item {
   padding-left: 30px;
 }
-/* line 580, ../sass/components/_global.scss */
+/* line 581, ../sass/components/_global.scss */
 .collection.with-header .collection-item.avatar {
   padding-left: 72px;
 }
 
-/* line 587, ../sass/components/_global.scss */
+/* line 588, ../sass/components/_global.scss */
 .secondary-content {
   float: right;
   color: #26a69a;
 }
 
-/* line 591, ../sass/components/_global.scss */
+/* line 592, ../sass/components/_global.scss */
 .collapsible .collection {
   margin: 0;
   border: none;
 }
 
-/* line 599, ../sass/components/_global.scss */
+/* line 600, ../sass/components/_global.scss */
 span.badge {
   min-width: 3rem;
   padding: 0 6px;
@@ -3851,7 +3856,7 @@ span.badge {
   right: 15px;
   box-sizing: border-box;
 }
-/* line 610, ../sass/components/_global.scss */
+/* line 611, ../sass/components/_global.scss */
 span.badge.new {
   font-weight: 300;
   font-size: 0.8rem;
@@ -3859,30 +3864,30 @@ span.badge.new {
   background-color: #26a69a;
   border-radius: 2px;
 }
-/* line 617, ../sass/components/_global.scss */
+/* line 618, ../sass/components/_global.scss */
 span.badge.new:after {
   content: " new";
 }
-/* line 621, ../sass/components/_global.scss */
+/* line 622, ../sass/components/_global.scss */
 span.badge[data-badge-caption]::after {
   content: " " attr(data-badge-caption);
 }
 
-/* line 627, ../sass/components/_global.scss */
+/* line 628, ../sass/components/_global.scss */
 nav ul a span.badge {
   position: static;
   margin-left: 4px;
   line-height: 0;
 }
 
-/* line 634, ../sass/components/_global.scss */
+/* line 635, ../sass/components/_global.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
 }
-/* line 640, ../sass/components/_global.scss */
+/* line 641, ../sass/components/_global.scss */
 .video-container iframe, .video-container object, .video-container embed {
   position: absolute;
   top: 0;
@@ -3891,7 +3896,7 @@ nav ul a span.badge {
   height: 100%;
 }
 
-/* line 650, ../sass/components/_global.scss */
+/* line 651, ../sass/components/_global.scss */
 .progress {
   position: relative;
   height: 4px;
@@ -3902,7 +3907,7 @@ nav ul a span.badge {
   margin: 0.5rem 0 1rem 0;
   overflow: hidden;
 }
-/* line 659, ../sass/components/_global.scss */
+/* line 660, ../sass/components/_global.scss */
 .progress .determinate {
   position: absolute;
   top: 0;
@@ -3911,11 +3916,11 @@ nav ul a span.badge {
   background-color: #26a69a;
   transition: width .3s linear;
 }
-/* line 667, ../sass/components/_global.scss */
+/* line 668, ../sass/components/_global.scss */
 .progress .indeterminate {
   background-color: #26a69a;
 }
-/* line 669, ../sass/components/_global.scss */
+/* line 670, ../sass/components/_global.scss */
 .progress .indeterminate:before {
   content: '';
   position: absolute;
@@ -3926,7 +3931,7 @@ nav ul a span.badge {
   will-change: left, right;
   animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 }
-/* line 681, ../sass/components/_global.scss */
+/* line 682, ../sass/components/_global.scss */
 .progress .indeterminate:after {
   content: '';
   position: absolute;
@@ -3970,37 +3975,37 @@ nav ul a span.badge {
 /*******************
   Utility Classes
 *******************/
-/* line 730, ../sass/components/_global.scss */
+/* line 731, ../sass/components/_global.scss */
 .hide {
   display: none !important;
 }
 
-/* line 735, ../sass/components/_global.scss */
+/* line 736, ../sass/components/_global.scss */
 .left-align {
   text-align: left;
 }
 
-/* line 738, ../sass/components/_global.scss */
+/* line 739, ../sass/components/_global.scss */
 .right-align {
   text-align: right;
 }
 
-/* line 741, ../sass/components/_global.scss */
+/* line 742, ../sass/components/_global.scss */
 .center, .center-align {
   text-align: center;
 }
 
-/* line 745, ../sass/components/_global.scss */
+/* line 746, ../sass/components/_global.scss */
 .left {
   float: left !important;
 }
 
-/* line 748, ../sass/components/_global.scss */
+/* line 749, ../sass/components/_global.scss */
 .right {
   float: right !important;
 }
 
-/* line 753, ../sass/components/_global.scss */
+/* line 754, ../sass/components/_global.scss */
 .no-select, input[type=range],
 input[type=range] + .thumb {
   -webkit-touch-callout: none;
@@ -4011,19 +4016,19 @@ input[type=range] + .thumb {
   user-select: none;
 }
 
-/* line 762, ../sass/components/_global.scss */
+/* line 763, ../sass/components/_global.scss */
 .circle {
   border-radius: 50%;
 }
 
-/* line 766, ../sass/components/_global.scss */
+/* line 767, ../sass/components/_global.scss */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 772, ../sass/components/_global.scss */
+/* line 773, ../sass/components/_global.scss */
 .truncate {
   display: block;
   white-space: nowrap;
@@ -4031,7 +4036,7 @@ input[type=range] + .thumb {
   text-overflow: ellipsis;
 }
 
-/* line 779, ../sass/components/_global.scss */
+/* line 780, ../sass/components/_global.scss */
 .no-padding {
   padding: 0 !important;
 }
@@ -5120,7 +5125,7 @@ small {
 }
 
 /* line 43, ../sass/components/_typography.scss */
-.light, footer.page-footer .footer-copyright {
+.light, .page-footer .footer-copyright {
   font-weight: 300;
 }
 
@@ -7284,22 +7289,23 @@ select.browser-default {
 select {
   background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
+  margin-bottom: 20px;
   padding: 5px;
   border: 1px solid #f2f2f2;
   border-radius: 2px;
   height: 3rem;
 }
 
-/* line 16, ../sass/components/forms/_select.scss */
+/* line 17, ../sass/components/forms/_select.scss */
 .select-label {
   position: absolute;
 }
 
-/* line 20, ../sass/components/forms/_select.scss */
+/* line 21, ../sass/components/forms/_select.scss */
 .select-wrapper {
   position: relative;
 }
-/* line 23, ../sass/components/forms/_select.scss */
+/* line 24, ../sass/components/forms/_select.scss */
 .select-wrapper input.select-dropdown {
   position: relative;
   cursor: pointer;
@@ -7315,7 +7321,7 @@ select {
   padding: 0;
   display: block;
 }
-/* line 39, ../sass/components/forms/_select.scss */
+/* line 40, ../sass/components/forms/_select.scss */
 .select-wrapper span.caret {
   color: initial;
   position: absolute;
@@ -7323,23 +7329,23 @@ select {
   top: 16px;
   font-size: 10px;
 }
-/* line 45, ../sass/components/forms/_select.scss */
+/* line 46, ../sass/components/forms/_select.scss */
 .select-wrapper span.caret.disabled {
   color: rgba(0, 0, 0, 0.26);
 }
-/* line 50, ../sass/components/forms/_select.scss */
+/* line 51, ../sass/components/forms/_select.scss */
 .select-wrapper + label {
   position: absolute;
   top: -14px;
   font-size: 0.8rem;
 }
 
-/* line 58, ../sass/components/forms/_select.scss */
+/* line 59, ../sass/components/forms/_select.scss */
 select:disabled {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 62, ../sass/components/forms/_select.scss */
+/* line 63, ../sass/components/forms/_select.scss */
 .select-wrapper input.select-dropdown:disabled {
   color: rgba(0, 0, 0, 0.3);
   cursor: default;
@@ -7352,12 +7358,12 @@ select:disabled {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* line 71, ../sass/components/forms/_select.scss */
+/* line 72, ../sass/components/forms/_select.scss */
 .select-wrapper i {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 75, ../sass/components/forms/_select.scss */
+/* line 76, ../sass/components/forms/_select.scss */
 .select-dropdown li.disabled,
 .select-dropdown li.disabled > span,
 .select-dropdown li.optgroup {
@@ -7365,19 +7371,19 @@ select:disabled {
   background-color: transparent;
 }
 
-/* line 83, ../sass/components/forms/_select.scss */
+/* line 84, ../sass/components/forms/_select.scss */
 .prefix ~ .select-wrapper {
   margin-left: 3rem;
   width: 92%;
   width: calc(100% - 3rem);
 }
 
-/* line 89, ../sass/components/forms/_select.scss */
+/* line 90, ../sass/components/forms/_select.scss */
 .prefix ~ label {
   margin-left: 3rem;
 }
 
-/* line 93, ../sass/components/forms/_select.scss */
+/* line 94, ../sass/components/forms/_select.scss */
 .select-dropdown li img {
   height: 40px;
   width: 40px;
@@ -7385,19 +7391,19 @@ select:disabled {
   float: right;
 }
 
-/* line 102, ../sass/components/forms/_select.scss */
+/* line 103, ../sass/components/forms/_select.scss */
 .select-dropdown li.optgroup {
   border-top: 1px solid #eee;
 }
-/* line 105, ../sass/components/forms/_select.scss */
+/* line 106, ../sass/components/forms/_select.scss */
 .select-dropdown li.optgroup.selected > span {
   color: rgba(0, 0, 0, 0.7);
 }
-/* line 109, ../sass/components/forms/_select.scss */
+/* line 110, ../sass/components/forms/_select.scss */
 .select-dropdown li.optgroup > span {
   color: rgba(0, 0, 0, 0.4);
 }
-/* line 113, ../sass/components/forms/_select.scss */
+/* line 114, ../sass/components/forms/_select.scss */
 .select-dropdown li.optgroup ~ li.optgroup-option {
   padding-left: 1rem;
 }
@@ -9367,34 +9373,69 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-bottom: 5em;
   }
 }
+/* line 6, ../sass/components/_utilities.scss */
+.margin-auto {
+  margin: auto;
+}
+
+/* line 7, ../sass/components/_utilities.scss */
+.margin {
+  margin: 20px;
+}
+
 /* line 8, ../sass/components/_utilities.scss */
+.no-margin {
+  margin: 0px;
+}
+
+/* line 10, ../sass/components/_utilities.scss */
+.padding--xsmall {
+  padding: 5px;
+}
+
+/* line 11, ../sass/components/_utilities.scss */
+.padding--small {
+  padding: 10px;
+}
+
+/* line 12, ../sass/components/_utilities.scss */
+.padding {
+  padding: 20px;
+}
+
+/* line 13, ../sass/components/_utilities.scss */
+.no-padding {
+  padding: 0px;
+}
+
+/* line 17, ../sass/components/_utilities.scss */
 .inline {
   display: inline;
 }
 
-/* line 9, ../sass/components/_utilities.scss */
+/* line 18, ../sass/components/_utilities.scss */
 .block {
   display: block !important;
 }
 
-/* line 10, ../sass/components/_utilities.scss */
+/* line 19, ../sass/components/_utilities.scss */
 .inline-block {
   display: inline-block;
 }
 
-/* line 11, ../sass/components/_utilities.scss */
+/* line 20, ../sass/components/_utilities.scss */
 .hidden {
   display: none;
 }
 
-/* line 13, ../sass/components/_utilities.scss */
+/* line 22, ../sass/components/_utilities.scss */
 .not-visible {
   max-height: 0;
   visibility: hidden;
   opacity: 0;
 }
 
-/* line 19, ../sass/components/_utilities.scss */
+/* line 28, ../sass/components/_utilities.scss */
 .visible {
   max-height: 300px;
   visibility: visible;
@@ -9402,148 +9443,148 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 @media (min-width: 993px) and (max-width: 1490px) {
-  /* line 26, ../sass/components/_utilities.scss */
+  /* line 35, ../sass/components/_utilities.scss */
   .hidden--large {
     display: none;
   }
 }
-/* line 30, ../sass/components/_utilities.scss */
+/* line 39, ../sass/components/_utilities.scss */
 .float-right {
   float: right;
 }
 
-/* line 31, ../sass/components/_utilities.scss */
+/* line 40, ../sass/components/_utilities.scss */
 .float-left {
   float: left;
 }
 
 @media (min-width: 601px) {
-  /* line 33, ../sass/components/_utilities.scss */
+  /* line 42, ../sass/components/_utilities.scss */
   .float-right--on-med-and-up {
     float: right !important;
   }
 }
-/* line 37, ../sass/components/_utilities.scss */
+/* line 46, ../sass/components/_utilities.scss */
 .absolute {
   position: absolute;
 }
 
-/* line 38, ../sass/components/_utilities.scss */
+/* line 47, ../sass/components/_utilities.scss */
 .relative {
   position: relative;
 }
 
-/* line 39, ../sass/components/_utilities.scss */
+/* line 48, ../sass/components/_utilities.scss */
 .fixed {
   position: fixed;
 }
 
-/* line 41, ../sass/components/_utilities.scss */
+/* line 50, ../sass/components/_utilities.scss */
 .top--0 {
   top: 0px;
 }
 
-/* line 42, ../sass/components/_utilities.scss */
+/* line 51, ../sass/components/_utilities.scss */
 .top--15 {
   top: 15px;
 }
 
-/* line 43, ../sass/components/_utilities.scss */
+/* line 52, ../sass/components/_utilities.scss */
 .top--22 {
   top: 22px;
 }
 
-/* line 44, ../sass/components/_utilities.scss */
+/* line 53, ../sass/components/_utilities.scss */
 .top--45 {
   top: 45px !important;
 }
 
-/* line 46, ../sass/components/_utilities.scss */
+/* line 55, ../sass/components/_utilities.scss */
 .bottom-0 {
   bottom: 0px;
 }
 
-/* line 47, ../sass/components/_utilities.scss */
+/* line 56, ../sass/components/_utilities.scss */
 .bottom-2 {
   bottom: 2px;
 }
 
-/* line 48, ../sass/components/_utilities.scss */
+/* line 57, ../sass/components/_utilities.scss */
 .bottom-3 {
   bottom: 3px;
 }
 
-/* line 49, ../sass/components/_utilities.scss */
+/* line 58, ../sass/components/_utilities.scss */
 .bottom-5 {
   bottom: 5px;
 }
 
-/* line 50, ../sass/components/_utilities.scss */
+/* line 59, ../sass/components/_utilities.scss */
 .bottom-10 {
   bottom: 10px;
 }
 
-/* line 51, ../sass/components/_utilities.scss */
+/* line 60, ../sass/components/_utilities.scss */
 .bottom--20 {
   bottom: 20px;
 }
 
-/* line 52, ../sass/components/_utilities.scss */
+/* line 61, ../sass/components/_utilities.scss */
 .bottom--30 {
   bottom: 30px;
 }
 
-/* line 53, ../sass/components/_utilities.scss */
+/* line 62, ../sass/components/_utilities.scss */
 .bottom--22 {
   bottom: 22px;
 }
 
-/* line 55, ../sass/components/_utilities.scss */
+/* line 64, ../sass/components/_utilities.scss */
 .right-0 {
   right: 0px;
 }
 
-/* line 56, ../sass/components/_utilities.scss */
+/* line 65, ../sass/components/_utilities.scss */
 .right-767 {
   right: -767px;
 }
 
-/* line 57, ../sass/components/_utilities.scss */
+/* line 66, ../sass/components/_utilities.scss */
 .right-1000 {
   right: -1000px;
 }
 
-/* line 58, ../sass/components/_utilities.scss */
+/* line 67, ../sass/components/_utilities.scss */
 .right-999999 {
   right: -999999px;
 }
 
-/* line 60, ../sass/components/_utilities.scss */
+/* line 69, ../sass/components/_utilities.scss */
 .left---20 {
   left: -20px;
 }
 
-/* line 62, ../sass/components/_utilities.scss */
+/* line 71, ../sass/components/_utilities.scss */
 .z-index--1 {
   z-index: -1;
 }
 
-/* line 63, ../sass/components/_utilities.scss */
+/* line 72, ../sass/components/_utilities.scss */
 .z-index-1 {
   z-index: 1;
 }
 
-/* line 64, ../sass/components/_utilities.scss */
+/* line 73, ../sass/components/_utilities.scss */
 .z-index-10 {
   z-index: 10;
 }
 
-/* line 65, ../sass/components/_utilities.scss */
+/* line 74, ../sass/components/_utilities.scss */
 .z-index-100 {
   z-index: 100;
 }
 
-/* line 69, ../sass/components/_utilities.scss */
+/* line 78, ../sass/components/_utilities.scss */
 .transition {
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -9552,7 +9593,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   -o-transition: all 0.5s ease;
 }
 
-/* line 79, ../sass/components/_utilities.scss */
+/* line 88, ../sass/components/_utilities.scss */
 .middle {
   vertical-align: middle;
 }
