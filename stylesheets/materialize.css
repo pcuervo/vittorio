@@ -110,12 +110,12 @@
 
 /* line 381, ../sass/components/_color.scss */
 .dark {
-  background-color: #212121 !important;
+  background-color: #000000 !important;
 }
 
 /* line 384, ../sass/components/_color.scss */
 .dark-text {
-  color: #212121 !important;
+  color: #000000 !important;
 }
 
 /* line 381, ../sass/components/_color.scss */
@@ -3584,7 +3584,7 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #ee6e73;
+  background-color: #000000;
 }
 /* line 355, ../sass/components/_global.scss */
 footer.page-footer .footer-copyright {
@@ -4801,7 +4801,7 @@ input[type=range] + .thumb {
 /* line 1, ../sass/components/_navbar.scss */
 nav {
   color: #fff;
-  background-color: #212121;
+  background-color: #000000;
   width: 100%;
   height: 56px;
   line-height: 56px;
@@ -5028,7 +5028,7 @@ a {
 /* line 6, ../sass/components/_typography.scss */
 html {
   line-height: 1.5;
-  font-family: "Oxygen", sans-serif;
+  font-family: "proxima-nova",sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -5129,138 +5129,158 @@ small {
   font-weight: 200;
 }
 
-/* line 47, ../sass/components/_typography.scss */
+/* line 46, ../sass/components/_typography.scss */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* line 50, ../sass/components/_typography.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 51, ../sass/components/_typography.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 52, ../sass/components/_typography.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 54, ../sass/components/_typography.scss */
 .flow-text {
   font-weight: 300;
 }
 @media only screen and (min-width: 360px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 390px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.224rem;
   }
 }
 @media only screen and (min-width: 420px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.248rem;
   }
 }
 @media only screen and (min-width: 450px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.272rem;
   }
 }
 @media only screen and (min-width: 480px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.296rem;
   }
 }
 @media only screen and (min-width: 510px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.32rem;
   }
 }
 @media only screen and (min-width: 540px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.344rem;
   }
 }
 @media only screen and (min-width: 570px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.368rem;
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.392rem;
   }
 }
 @media only screen and (min-width: 630px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.416rem;
   }
 }
 @media only screen and (min-width: 660px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.44rem;
   }
 }
 @media only screen and (min-width: 690px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.464rem;
   }
 }
 @media only screen and (min-width: 720px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.488rem;
   }
 }
 @media only screen and (min-width: 750px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.512rem;
   }
 }
 @media only screen and (min-width: 780px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.536rem;
   }
 }
 @media only screen and (min-width: 810px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.56rem;
   }
 }
 @media only screen and (min-width: 840px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.584rem;
   }
 }
 @media only screen and (min-width: 870px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.608rem;
   }
 }
 @media only screen and (min-width: 900px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.632rem;
   }
 }
 @media only screen and (min-width: 930px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.656rem;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.68rem;
   }
 }
 @media only screen and (max-width: 360px) {
-  /* line 47, ../sass/components/_typography.scss */
+  /* line 54, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.2rem;
   }
@@ -6366,7 +6386,7 @@ label {
 
 /* line 16, ../sass/components/forms/_forms.scss */
 form {
-  background-color: #212121;
+  background-color: #000000;
 }
 
 /* Text Inputs + Textarea
@@ -9346,4 +9366,204 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em;
   }
+}
+/* line 8, ../sass/components/_utilities.scss */
+.inline {
+  display: inline;
+}
+
+/* line 9, ../sass/components/_utilities.scss */
+.block {
+  display: block !important;
+}
+
+/* line 10, ../sass/components/_utilities.scss */
+.inline-block {
+  display: inline-block;
+}
+
+/* line 11, ../sass/components/_utilities.scss */
+.hidden {
+  display: none;
+}
+
+/* line 13, ../sass/components/_utilities.scss */
+.not-visible {
+  max-height: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* line 19, ../sass/components/_utilities.scss */
+.visible {
+  max-height: 300px;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (min-width: 993px) and (max-width: 1490px) {
+  /* line 26, ../sass/components/_utilities.scss */
+  .hidden--large {
+    display: none;
+  }
+}
+/* line 30, ../sass/components/_utilities.scss */
+.float-right {
+  float: right;
+}
+
+/* line 31, ../sass/components/_utilities.scss */
+.float-left {
+  float: left;
+}
+
+@media (min-width: 601px) {
+  /* line 33, ../sass/components/_utilities.scss */
+  .float-right--on-med-and-up {
+    float: right !important;
+  }
+}
+/* line 37, ../sass/components/_utilities.scss */
+.absolute {
+  position: absolute;
+}
+
+/* line 38, ../sass/components/_utilities.scss */
+.relative {
+  position: relative;
+}
+
+/* line 39, ../sass/components/_utilities.scss */
+.fixed {
+  position: fixed;
+}
+
+/* line 41, ../sass/components/_utilities.scss */
+.top--0 {
+  top: 0px;
+}
+
+/* line 42, ../sass/components/_utilities.scss */
+.top--15 {
+  top: 15px;
+}
+
+/* line 43, ../sass/components/_utilities.scss */
+.top--22 {
+  top: 22px;
+}
+
+/* line 44, ../sass/components/_utilities.scss */
+.top--45 {
+  top: 45px !important;
+}
+
+/* line 46, ../sass/components/_utilities.scss */
+.bottom-0 {
+  bottom: 0px;
+}
+
+/* line 47, ../sass/components/_utilities.scss */
+.bottom-2 {
+  bottom: 2px;
+}
+
+/* line 48, ../sass/components/_utilities.scss */
+.bottom-3 {
+  bottom: 3px;
+}
+
+/* line 49, ../sass/components/_utilities.scss */
+.bottom-5 {
+  bottom: 5px;
+}
+
+/* line 50, ../sass/components/_utilities.scss */
+.bottom-10 {
+  bottom: 10px;
+}
+
+/* line 51, ../sass/components/_utilities.scss */
+.bottom--20 {
+  bottom: 20px;
+}
+
+/* line 52, ../sass/components/_utilities.scss */
+.bottom--30 {
+  bottom: 30px;
+}
+
+/* line 53, ../sass/components/_utilities.scss */
+.bottom--22 {
+  bottom: 22px;
+}
+
+/* line 55, ../sass/components/_utilities.scss */
+.right-0 {
+  right: 0px;
+}
+
+/* line 56, ../sass/components/_utilities.scss */
+.right-767 {
+  right: -767px;
+}
+
+/* line 57, ../sass/components/_utilities.scss */
+.right-1000 {
+  right: -1000px;
+}
+
+/* line 58, ../sass/components/_utilities.scss */
+.right-999999 {
+  right: -999999px;
+}
+
+/* line 60, ../sass/components/_utilities.scss */
+.left---20 {
+  left: -20px;
+}
+
+/* line 62, ../sass/components/_utilities.scss */
+.z-index--1 {
+  z-index: -1;
+}
+
+/* line 63, ../sass/components/_utilities.scss */
+.z-index-1 {
+  z-index: 1;
+}
+
+/* line 64, ../sass/components/_utilities.scss */
+.z-index-10 {
+  z-index: 10;
+}
+
+/* line 65, ../sass/components/_utilities.scss */
+.z-index-100 {
+  z-index: 100;
+}
+
+/* line 69, ../sass/components/_utilities.scss */
+.transition {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+/* line 79, ../sass/components/_utilities.scss */
+.middle {
+  vertical-align: middle;
+}
+
+/* line 5, ../sass/components/_images.scss */
+.background-img {
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 10, ../sass/components/_images.scss */
+.background-img--main {
+  background-image: url(../img/background.png);
 }
