@@ -4,19 +4,19 @@
 /* Style Placeholders */
 
 ::-webkit-input-placeholder {
-  color: $placeholder-text-color;
+  color: $grey-darken;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  color: $placeholder-text-color;
+  color: $grey-darken;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  color: $placeholder-text-color;
+  color: $grey-darken;
 }
 
 :-ms-input-placeholder {
-  color: $placeholder-text-color;
+  color: $grey-darken;
 }
 
 /* Text inputs */
@@ -36,9 +36,8 @@ input[type=search],
 textarea.materialize-textarea {
 
   // General Styles
-  background-color: transparent;
+  background-color: white;
   border: none;
-  border-bottom: $input-border;
   border-radius: 0;
   outline: none;
   height: $input-height;
