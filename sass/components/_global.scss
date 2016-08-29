@@ -37,6 +37,17 @@ a {
 
   // Gets rid of tap active state
   -webkit-tap-highlight-color: transparent;
+
+
+  &:hover{ 
+    opacity: .6;
+    transition:       all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:    all 0.5s ease;
+    -ms-transition:     all 0.5s ease;
+    -o-transition:      all 0.5s ease;
+  }
+
 }
 
 
@@ -348,9 +359,11 @@ ul.staggered-list li {
 
 // Footer
 
-  .page-footer {
+.page-footer {
   margin-top: 20px;
   padding-top: 20px;
+  position: absolute;
+  width: 100%;
   background-color: $dark-color;
 
   .footer-copyright {
