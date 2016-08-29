@@ -5879,13 +5879,12 @@ button.btn-floating {
 
 /* line 208, ../sass/components/_buttons.scss */
 .btn-fixed-width {
-  width: 155px;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin: 5px;
+  width: 47.5%;
+  margin: 5px 0px;
+  padding: inherit;
 }
 
-/* line 216, ../sass/components/_buttons.scss */
+/* line 215, ../sass/components/_buttons.scss */
 .btn-block {
   display: block;
 }
@@ -9471,54 +9470,49 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   opacity: 1;
 }
 
-@media (min-width: 993px) and (max-width: 1490px) {
-  /* line 38, ../sass/components/_utilities.scss */
-  .hidden--large {
-    display: none;
-  }
-}
-/* line 42, ../sass/components/_utilities.scss */
+/* line 40, ../sass/components/_utilities.scss */
 .float-right {
   float: right;
 }
 
-/* line 43, ../sass/components/_utilities.scss */
+/* line 41, ../sass/components/_utilities.scss */
 .float-left {
   float: left;
 }
 
-@media (min-width: 601px) {
-  /* line 45, ../sass/components/_utilities.scss */
-  .float-right--on-med-and-up {
-    float: right !important;
-  }
-}
-/* line 49, ../sass/components/_utilities.scss */
+/* line 46, ../sass/components/_utilities.scss */
 .absolute {
   position: absolute;
 }
 
-/* line 50, ../sass/components/_utilities.scss */
+/* line 47, ../sass/components/_utilities.scss */
 .relative {
   position: relative;
 }
 
-/* line 51, ../sass/components/_utilities.scss */
+/* line 48, ../sass/components/_utilities.scss */
 .fixed {
   position: fixed;
 }
 
-/* line 56, ../sass/components/_utilities.scss */
+/* line 53, ../sass/components/_utilities.scss */
 .width-100 {
   width: 100vw;
 }
 
-/* line 57, ../sass/components/_utilities.scss */
+/* line 54, ../sass/components/_utilities.scss */
 .height-100 {
   height: 100vh;
 }
 
-/* line 62, ../sass/components/_utilities.scss */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  /* line 57, ../sass/components/_utilities.scss */
+  .relative.height-100 {
+    height: 70vh;
+  }
+}
+
+/* line 64, ../sass/components/_utilities.scss */
 .transition {
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -9527,19 +9521,19 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   -o-transition: all 0.5s ease;
 }
 
-/* line 72, ../sass/components/_utilities.scss */
+/* line 74, ../sass/components/_utilities.scss */
 .middle {
   vertical-align: middle;
 }
 
-/* line 74, ../sass/components/_utilities.scss */
+/* line 76, ../sass/components/_utilities.scss */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 80, ../sass/components/_utilities.scss */
+/* line 82, ../sass/components/_utilities.scss */
 .center-full {
   position: absolute;
   top: 50%;
