@@ -1,7 +1,7 @@
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 90%;
+  width: 100vw;
 }
 @media #{$medium-and-up} {
   .container {
@@ -16,6 +16,10 @@
 .container .row {
   margin-left: (-1 * $gutter-width / 2);
   margin-right: (-1 * $gutter-width / 2);
+  @media #{$small-and-down} {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .section {
@@ -47,6 +51,11 @@
   }
 
   .col {
+
+    @media #{$small-and-down} {
+      padding: 0px;
+    }
+
     float: left;
     box-sizing: border-box;
     padding: 0 $gutter-width / 2;
@@ -55,6 +64,7 @@
     &[class*="push-"],
     &[class*="pull-"] {
       position: relative;
+
     }
 
     $i: 1;

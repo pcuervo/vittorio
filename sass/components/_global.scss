@@ -366,6 +366,14 @@ ul.staggered-list li {
   width: 100%;
   background-color: $dark-color;
 
+  .container {
+      @media #{$small-and-down} { 
+        margin-top: 0px;
+        padding-left: 15px; 
+        padding-right: 15px;
+    }
+  }
+
   .footer-copyright {
     overflow: hidden;
     height: 50px;
