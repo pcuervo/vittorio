@@ -1,0 +1,14 @@
+header {
+	background-color: $dark-color;
+
+	.nav-options{
+		color: $light-color;
+		margin: ($margin-size/2);
+		@media #{$medium-and-up}{ float: right}
+		@media #{$small-and-down}{ text-align: center;}
+		a{
+			text-transform: uppercase;
+			color: $light-color;
+		}
+	}
+}
