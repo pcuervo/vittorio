@@ -1,0 +1,20 @@
+// ==========================================================================
+// Images
+// =
+
+.img-responsive{ max-width: 100%; }
+
+.background-img {
+	background-position: center;
+	background-size: cover;
+}
+
+.background-img--main { background-image: url(img/background.png); }
+
+@media #{$medium-and-down} {
+	.background-img--main {
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: 200%
+	}
+}
