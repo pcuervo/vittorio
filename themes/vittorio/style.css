@@ -6896,6 +6896,17 @@ textarea.materialize-textarea {
   margin: 5px 15px;
 }
 
+/* line 274, sass/components/forms/_input-fields.scss */
+.parsley-errors-list .parsley-custom-error-message,
+.parsley-errors-list .parsley-required {
+  color: red;
+}
+
+/* line 276, sass/components/forms/_input-fields.scss */
+.parsley-errors-list .parsley-type {
+  color: #26a69a;
+}
+
 /* Radio Buttons
    ========================================================================== */
 /* line 5, sass/components/forms/_radio-buttons.scss */

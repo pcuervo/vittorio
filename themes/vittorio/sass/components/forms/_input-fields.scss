@@ -270,3 +270,7 @@ textarea {
     }
   }
 }
+
+.parsley-errors-list .parsley-custom-error-message,
+.parsley-errors-list .parsley-required { color: red; }
+.parsley-errors-list .parsley-type { color: $secondary-color; }

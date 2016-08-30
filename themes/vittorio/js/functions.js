@@ -6,6 +6,8 @@ var $=jQuery.noConflict();
 
         $('.modal-trigger').leanModal();
 
+		$('form').parsley();
+
     });
 })(jQuery);
 
