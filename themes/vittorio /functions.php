@@ -13,4 +13,22 @@ define( 'THEMEPATH', get_template_directory_uri() . '/' );
 define( 'SITEURL', site_url('/') );
 
 
+/*------------------------------------*\
+	#GENERAL FUNCTIONS
+\*------------------------------------*/
 
+/**
+* Enqueue frontend scripts and styles
+**/
+add_action( 'wp_enqueue_scripts', function(){
+	// scripts
+	wp_enqueue_script( 'plugins', JSPATH.'plugins.js', array('jquery'), '1.0', true );
+	
+	wp_enqueue_script( 'materialize_js', JSPATH.'bin/materialize.min.js', array('plugins'), '1.0', true );
+
+	// localize scripts
+	wp_localize_script( 'functions', 'siteUrl', SITEURL );
+	wp_localize_script( 'functions', 'theme_path', THEMEPATH );
+	wp_enqueue_script( 'functions', JSPATH.'functions.js', array('plugins'), '1.0', true );
+
+});

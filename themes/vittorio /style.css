@@ -6109,34 +6109,38 @@ button.btn-floating {
   position: fixed;
   left: 0;
   right: 0;
-  background-color: #fafafa;
+  background-image: url(img/background-modal.png);
   padding: 0;
   max-height: 70%;
-  width: 55%;
+  width: 100%;
   margin: auto;
   overflow-y: auto;
+  color: #ffffff;
   border-radius: 2px;
   will-change: top, opacity;
+  text-align: center;
 }
 @media only screen and (max-width: 992px) {
   /* line 1, sass/components/_modal.scss */
   .modal {
     width: 80%;
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
   }
 }
-/* line 22, sass/components/_modal.scss */
+/* line 29, sass/components/_modal.scss */
 .modal h1, .modal h2, .modal h3, .modal h4 {
   margin-top: 0;
 }
-/* line 26, sass/components/_modal.scss */
+/* line 33, sass/components/_modal.scss */
 .modal .modal-content {
   padding: 24px;
 }
-/* line 29, sass/components/_modal.scss */
+/* line 36, sass/components/_modal.scss */
 .modal .modal-close {
   cursor: pointer;
 }
-/* line 33, sass/components/_modal.scss */
+/* line 40, sass/components/_modal.scss */
 .modal .modal-footer {
   border-radius: 0 0 2px 2px;
   background-color: #fafafa;
@@ -6144,13 +6148,13 @@ button.btn-floating {
   height: 56px;
   width: 100%;
 }
-/* line 40, sass/components/_modal.scss */
+/* line 47, sass/components/_modal.scss */
 .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
   float: right;
   margin: 6px 0;
 }
 
-/* line 46, sass/components/_modal.scss */
+/* line 53, sass/components/_modal.scss */
 .lean-overlay {
   position: fixed;
   z-index: 999;
@@ -6165,12 +6169,12 @@ button.btn-floating {
   will-change: opacity;
 }
 
-/* line 62, sass/components/_modal.scss */
+/* line 69, sass/components/_modal.scss */
 .modal.modal-fixed-footer {
   padding: 0;
   height: 70%;
 }
-/* line 66, sass/components/_modal.scss */
+/* line 73, sass/components/_modal.scss */
 .modal.modal-fixed-footer .modal-content {
   position: absolute;
   height: calc(100% - 56px);
@@ -6178,14 +6182,14 @@ button.btn-floating {
   width: 100%;
   overflow-y: auto;
 }
-/* line 74, sass/components/_modal.scss */
+/* line 81, sass/components/_modal.scss */
 .modal.modal-fixed-footer .modal-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   bottom: 0;
 }
 
-/* line 82, sass/components/_modal.scss */
+/* line 89, sass/components/_modal.scss */
 .modal.bottom-sheet {
   top: auto;
   bottom: -100%;
