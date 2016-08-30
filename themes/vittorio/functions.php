@@ -23,6 +23,7 @@ define( 'SITEURL', site_url('/') );
 add_action( 'wp_enqueue_scripts', function(){
 	// scripts
 	wp_enqueue_script( 'materialize_js', JSPATH.'bin/materialize.min.js', array('jquery'), '1.0', true );
+	wp_enqueue_script( 'plugins', JSPATH.'plugins.js', array('jquery'), '1.0', true );	
 	//wp_enqueue_script( 'functions', JSPATH.'functions.js', array('jquery'), '1s.0', true );
 
 	// localize scripts

@@ -15,34 +15,34 @@
 						<p class="[ white-text ]">Compártenos los siguientes datos para hacer una cita con uno de nuestros Expertos en Trajes y te ayude a encontrar tu traje perfecto.</p>
 
 						<div class="[ input-field ]">
-							<input placeholder="Nombre" type="text" class="validate">
-							<input placeholder="Apellido" type="text" class="validate">	
-							<select class="[ block ]">
+							<input type="text" placeholder="Nombre" type="text" class="[ validate ]" name="apellido" data-parsley-error-message="Este campo es obligatorio" required>
+							<input type="text" placeholder="Apellido" type="text" class="[ validate ]" name="apellido" data-parsley-error-message="Este campo es obligatorio" required>	
+							<select class="[ block ]" name="ciudad" data-parsley-error-message="Seleccione una ciudad" required>
 								<option value="" disabled selected>Ciudad</option>
 								<option value="1">Option 1</option>
 								<option value="2">Option 2</option>
 								<option value="3">Option 3</option>
 							</select>	
-							<select class="[ block ]">
+							<select class="[ block ]" name="tienda" data-parsley-error-message="Seleccione una tienda" required>
 								<option value="" disabled selected>Tienda</option>
 								<option value="1">Option 1</option>
 								<option value="2">Option 2</option>
 								<option value="3">Option 3</option>
 							</select>	
 							<input class="[ block ]" type="date" class="datepicker">	
-							<select class="[ block ]">
+							<select class="[ block ]" name="horario" data-parsley-error-message="Por favor selecciona un horario" required>
 								<option value="" disabled selected>Horario</option>
 								<option value="1">Option 1</option>
 								<option value="2">Option 2</option>
 								<option value="3">Option 3</option>
 							</select>
 							<p>
-								<input type="checkbox" id="test5" />
+								<input type="checkbox" id="test5" data-parsley-error-message="Debe estar de acuerdo con el aviso de privacidad" required/>
 								<label for="test5">He leído y estoy de acuerdo con el Aviso de Privacidad</label>		
 							</p>		
 							<div class="[ block text-center margin-bottom ]">
 								<a class="[ waves-effect waves-light ][ btn-large btn-fixed-width ][  ][ col-6 ][ grey darken ]">Geolocalizarme</a>
-								<a class="[ waves-effect waves-light ][ btn-large btn-fixed-width ][  ][ col-6 ][ red ]">Hacer mi cita</a>							
+								<button type="submit" class="[ waves-effect waves-light ][ btn-large btn-fixed-width ][  ][ col-6 ][ red ]">Hacer mi cita</button>							
 							</div>		
 						</div>
 					</form>
