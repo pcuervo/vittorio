@@ -21,9 +21,7 @@
 					<a href="#" class="[ brand-logo ]"><img class="[ middle ]" src="<?php echo THEMEPATH; ?>img/logo.png" alt="Vittorio Forti Logo"></a>
 					<ul id="nav-mobile" class="[ right hide-on-med-and-down ][ text-uppercase ]">
 						<li><a href="http://www.tiendasvittorioforti.com">Ir al sitio</a></li>
-						<li><a href="#">Haz una cita</a></li>
-						<li><a href="whatsapp://send?abid=username&text=HeyThere!"><img class="[ middle	]" src="<?php echo THEMEPATH; ?>img/whatsapp-icon.png" alt="Whats app icon"></a></li>
-						<li><a href="tel:+55000000">55-00-00-00</a></li>
+						<li><a href="#"><img class="[ middle	]" src="<?php echo THEMEPATH; ?>img/whatsapp-icon.png" alt="Whats app icon">55-00-00-00</a></li>
 					</ul>
 				</div>
 			</nav>

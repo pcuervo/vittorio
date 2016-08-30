@@ -47,6 +47,21 @@
 						</div>
 					</form>
 				</div>
+				<!-- Modal Trigger -->
+				<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+				<!-- Modal Structure -->
+				<div class="[ col s12 ]">
+					<div id="modal1" class="[ modal background-img ]">
+						<div class="modal-content">
+							<h4>¡LISTO!</h4>
+							<p>NUESTRO EXPERTO EN TRAJES TE ESTARÁ ESPERANDO PARA ATENDERTE PERSONALMENTE</p>
+							<p>SÓLO CONFIRMA TU CORREO PARA QUE TU CITA QUEDE PROGRAMADA</p>
+							<a href="#!" class="[ red white-text modal-action modal-close waves-effect waves-green btn-flat ]">CERRAR</a>
+						</div>
+					</div>					
+				</div>
+
 				<div class="[ col offset-l1 l6 s6 ][ hide-on-small-only ]">
 					<div class="[ relative ][ height-100vh ]">
 						<img class="[ img-responsive ][ center-full ]" src="<?php echo THEMEPATH; ?>img/el_poder.png" alt="El poder de un traje">
