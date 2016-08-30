@@ -3,7 +3,7 @@
 // =
 
 //Box Model
-.margin                 { margin:$margin-size;}
+.margin                 { margin: $margin-size;}
 
 .margin-auto            { margin: auto;}
 .no-margin              { margin: $margin-size 0 ;}
@@ -12,6 +12,7 @@
 .margin-small			      { margin: ($margin-size/2)}
 
 .margin-vertical        { margin: $margin-size 0}
+.margin-horizontal      { margin: 0 $margin-size}
 
 .padding--xsmall        { padding:($padding-size/4);}
 .padding--small         { padding:($padding-size/2);}
@@ -23,7 +24,7 @@
 .inline				{ display: inline;}
 .block				{ display: block !important;}
 .inline-block	{ display: inline-block;}
-.inline-flex { display: inline-flex;}
+.inline-flex  { display: inline-flex;}
 .hidden 			{ display: none;}
 
 .not-visible{

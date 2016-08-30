@@ -16,15 +16,17 @@
 	<body>
 
 		<header>
-			<nav>
-				<div class="[ nav-wrapper ][ container ]">
-					<a href="#" class="[ brand-logo ]"><img class="[ middle ]" src="<?php echo THEMEPATH; ?>img/logo.png" alt="Vittorio Forti Logo"></a>
-					<ul id="nav-mobile" class="[ right hide-on-med-and-down ][ text-uppercase ]">
-						<li><a href="http://www.tiendasvittorioforti.com">Ir al sitio</a></li>
-						<li><a href="#">Haz una cita</a></li>
-						<li><a href="whatsapp://send?abid=username&text=HeyThere!"><img class="[ middle	]" src="<?php echo THEMEPATH; ?>img/whatsapp-icon.png" alt="Whats app icon"></a></li>
-						<li><a href="tel:+55000000">55-00-00-00</a></li>
-					</ul>
+			<div class="[ container ]">
+				<div class="[ row ]">
+					<div class="[ col s12 m3 ]">
+						<a href="#"><img class="[ middle ]" src="<?php echo THEMEPATH; ?>img/logo.png" alt="Vittorio Forti Logo"></a>
+					</div>
+					<div class="[ col s12 m9 ]">
+						<div class="[ right ][ nav-options ]">
+							<a href="http://www.tiendasvittorioforti.com">Ir al sitio</a>
+							<a href="tel:+55000000"><img class="[ middle ][ margin-horizontal ]" src="<?php echo THEMEPATH; ?>img/whatsapp-icon.png" alt="Whats app icon">55-00-00-00</a>
+						</div>
+					</div>
 				</div>
-			</nav>
+			</div>
 		</header>
