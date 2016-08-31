@@ -7,7 +7,6 @@ select.browser-default { display: block; }
 select {
   background-color: $select-background;
   width: 100%;
-  margin-bottom: $margin-size;
   padding: $select-padding;
   border: $select-border;
   border-radius: $select-radius;

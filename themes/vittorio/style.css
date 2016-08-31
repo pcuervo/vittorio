@@ -3829,8 +3829,8 @@ td, th {
 }
 /* line 573, sass/components/_global.scss */
 .collection .collection-item.active {
-  background-color: #26a69a;
-  color: #eafaf9;
+  background-color: #757575;
+  color: white;
 }
 /* line 577, sass/components/_global.scss */
 .collection .collection-item.active .secondary-content {
@@ -3840,7 +3840,7 @@ td, th {
 .collection a.collection-item {
   display: block;
   transition: .25s;
-  color: #26a69a;
+  color: #757575;
 }
 /* line 587, sass/components/_global.scss */
 .collection a.collection-item:not(.active):hover {
@@ -3864,7 +3864,7 @@ td, th {
 /* line 609, sass/components/_global.scss */
 .secondary-content {
   float: right;
-  color: #26a69a;
+  color: #757575;
 }
 
 /* line 613, sass/components/_global.scss */
@@ -3890,7 +3890,7 @@ span.badge.new {
   font-weight: 300;
   font-size: 0.8rem;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #757575;
   border-radius: 2px;
 }
 /* line 639, sass/components/_global.scss */
@@ -3931,7 +3931,7 @@ nav ul a span.badge {
   height: 4px;
   display: block;
   width: 100%;
-  background-color: #acece6;
+  background-color: #dbdbdb;
   border-radius: 2px;
   margin: 0.5rem 0 1rem 0;
   overflow: hidden;
@@ -3942,12 +3942,12 @@ nav ul a span.badge {
   top: 0;
   left: 0;
   bottom: 0;
-  background-color: #26a69a;
+  background-color: #757575;
   transition: width .3s linear;
 }
 /* line 689, sass/components/_global.scss */
 .progress .indeterminate {
-  background-color: #26a69a;
+  background-color: #757575;
 }
 /* line 691, sass/components/_global.scss */
 .progress .indeterminate:before {
@@ -5763,7 +5763,7 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #757575;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
@@ -5771,7 +5771,7 @@ small {
 }
 /* line 64, sass/components/_buttons.scss */
 .btn:hover, .btn-large:hover {
-  background-color: #2bbbad;
+  background-color: #828282;
 }
 
 /* line 71, sass/components/_buttons.scss */
@@ -5785,7 +5785,7 @@ small {
   height: 37px;
   line-height: 37px;
   padding: 0;
-  background-color: #26a69a;
+  background-color: #757575;
   border-radius: 50%;
   transition: .3s;
   cursor: pointer;
@@ -5802,7 +5802,7 @@ small {
 }
 /* line 97, sass/components/_buttons.scss */
 .btn-floating:hover {
-  background-color: #26a69a;
+  background-color: #757575;
 }
 /* line 102, sass/components/_buttons.scss */
 .btn-floating:before {
@@ -5960,7 +5960,7 @@ button.btn-floating {
 /* line 37, sass/components/_dropdown.scss */
 .dropdown-content li > a, .dropdown-content li > span {
   font-size: 16px;
-  color: #26a69a;
+  color: #757575;
   display: block;
   line-height: 22px;
   padding: 14px 16px;
@@ -6427,24 +6427,19 @@ button.btn-floating {
 
 /* line 2, sass/components/forms/_forms.scss */
 select:focus {
-  outline: 1px solid #c9f3ef;
+  outline: 1px solid #ededed;
 }
 
 /* line 6, sass/components/forms/_forms.scss */
 button:focus {
   outline: none;
-  background-color: #2ab7a9;
+  background-color: #7f7f7f;
 }
 
 /* line 11, sass/components/forms/_forms.scss */
 label {
   font-size: 0.8rem;
   color: #a2a2a2;
-}
-
-/* line 16, sass/components/forms/_forms.scss */
-form {
-  background-color: #000000;
 }
 
 /* Text Inputs + Textarea
@@ -6571,8 +6566,8 @@ input[type=tel]:focus:not([readonly]),
 input[type=number]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #26a69a;
-  box-shadow: 0 1px 0 0 #26a69a;
+  border-bottom: 1px solid #757575;
+  box-shadow: 0 1px 0 0 #757575;
 }
 /* line 72, sass/components/forms/_input-fields.scss */
 input:not([type]):focus:not([readonly]) + label,
@@ -6588,7 +6583,7 @@ input[type=tel]:focus:not([readonly]) + label,
 input[type=number]:focus:not([readonly]) + label,
 input[type=search]:focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #26a69a;
+  color: #757575;
 }
 /* line 77, sass/components/forms/_input-fields.scss */
 input:not([type]).valid, input:not([type]):focus.valid,
@@ -6723,9 +6718,10 @@ input[type=number].validate + label,
 input[type=search].validate + label,
 textarea.materialize-textarea.validate + label {
   width: 100%;
+  padding-left: 10px;
   pointer-events: none;
 }
-/* line 113, sass/components/forms/_input-fields.scss */
+/* line 114, sass/components/forms/_input-fields.scss */
 input:not([type]) + label:after,
 input[type=text] + label:after,
 input[type=password] + label:after,
@@ -6747,46 +6743,46 @@ textarea.materialize-textarea + label:after {
   transition: .2s opacity ease-out, .2s color ease-out;
 }
 
-/* line 124, sass/components/forms/_input-fields.scss */
+/* line 125, sass/components/forms/_input-fields.scss */
 .input-field {
   position: relative;
   margin-top: 1rem;
 }
-/* line 127, sass/components/forms/_input-fields.scss */
+/* line 128, sass/components/forms/_input-fields.scss */
 .input-field.col label {
   left: 0.75rem;
 }
-/* line 131, sass/components/forms/_input-fields.scss */
+/* line 132, sass/components/forms/_input-fields.scss */
 .input-field.col .prefix ~ label,
 .input-field.col .prefix ~ .validate ~ label {
   width: calc(100% - 3rem - 1.5rem);
 }
-/* line 140, sass/components/forms/_input-fields.scss */
+/* line 141, sass/components/forms/_input-fields.scss */
 .input-field label {
   color: #a2a2a2;
   position: absolute;
-  top: 0.8rem;
+  top: 0.5rem;
   font-size: 1rem;
   cursor: text;
   transition: .2s ease-out;
 }
-/* line 149, sass/components/forms/_input-fields.scss */
+/* line 150, sass/components/forms/_input-fields.scss */
 .input-field label.active {
   font-size: 0.8rem;
   transform: translateY(-140%);
 }
-/* line 155, sass/components/forms/_input-fields.scss */
+/* line 156, sass/components/forms/_input-fields.scss */
 .input-field .prefix {
   position: absolute;
   width: 2.5rem;
   font-size: 2rem;
   transition: color .2s;
 }
-/* line 161, sass/components/forms/_input-fields.scss */
+/* line 162, sass/components/forms/_input-fields.scss */
 .input-field .prefix.active {
-  color: #26a69a;
+  color: #757575;
 }
-/* line 164, sass/components/forms/_input-fields.scss */
+/* line 165, sass/components/forms/_input-fields.scss */
 .input-field .prefix ~ input,
 .input-field .prefix ~ textarea,
 .input-field .prefix ~ label,
@@ -6796,19 +6792,19 @@ textarea.materialize-textarea + label:after {
   width: 92%;
   width: calc(100% - 3rem);
 }
-/* line 174, sass/components/forms/_input-fields.scss */
+/* line 175, sass/components/forms/_input-fields.scss */
 .input-field .prefix ~ label {
   margin-left: 3rem;
 }
 @media only screen and (max-width: 992px) {
-  /* line 177, sass/components/forms/_input-fields.scss */
+  /* line 178, sass/components/forms/_input-fields.scss */
   .input-field .prefix ~ input {
     width: 86%;
     width: calc(100% - 3rem);
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 184, sass/components/forms/_input-fields.scss */
+  /* line 185, sass/components/forms/_input-fields.scss */
   .input-field .prefix ~ input {
     width: 80%;
     width: calc(100% - 3rem);
@@ -6816,29 +6812,29 @@ textarea.materialize-textarea + label:after {
 }
 
 /* Search Field */
-/* line 194, sass/components/forms/_input-fields.scss */
+/* line 195, sass/components/forms/_input-fields.scss */
 .input-field input[type=search] {
   display: block;
   line-height: inherit;
   padding-left: 4rem;
   width: calc(100% - 4rem);
 }
-/* line 200, sass/components/forms/_input-fields.scss */
+/* line 201, sass/components/forms/_input-fields.scss */
 .input-field input[type=search]:focus {
   background-color: #fff;
   border: 0;
   box-shadow: none;
   color: #444;
 }
-/* line 206, sass/components/forms/_input-fields.scss */
+/* line 207, sass/components/forms/_input-fields.scss */
 .input-field input[type=search]:focus + label i, .input-field input[type=search]:focus ~ .mdi-navigation-close, .input-field input[type=search]:focus ~ .material-icons {
   color: #444;
 }
-/* line 213, sass/components/forms/_input-fields.scss */
+/* line 214, sass/components/forms/_input-fields.scss */
 .input-field input[type=search] + label {
   left: 1rem;
 }
-/* line 217, sass/components/forms/_input-fields.scss */
+/* line 218, sass/components/forms/_input-fields.scss */
 .input-field input[type=search] ~ .mdi-navigation-close, .input-field input[type=search] ~ .material-icons {
   position: absolute;
   top: 0;
@@ -6850,13 +6846,13 @@ textarea.materialize-textarea + label:after {
 }
 
 /* Textarea */
-/* line 233, sass/components/forms/_input-fields.scss */
+/* line 234, sass/components/forms/_input-fields.scss */
 textarea {
   width: 100%;
   height: 2.5rem;
   background-color: transparent;
 }
-/* line 238, sass/components/forms/_input-fields.scss */
+/* line 239, sass/components/forms/_input-fields.scss */
 textarea.materialize-textarea {
   overflow-y: hidden;
   /* prevents scroll bar flash */
@@ -6866,7 +6862,7 @@ textarea.materialize-textarea {
   min-height: 2.5rem;
 }
 
-/* line 247, sass/components/forms/_input-fields.scss */
+/* line 248, sass/components/forms/_input-fields.scss */
 .hiddendiv {
   display: none;
   white-space: pre-wrap;
@@ -6878,33 +6874,33 @@ textarea.materialize-textarea {
 }
 
 /* Autocomplete */
-/* line 257, sass/components/forms/_input-fields.scss */
+/* line 258, sass/components/forms/_input-fields.scss */
 .autocomplete-content {
   margin-top: -15px;
   display: block;
   opacity: 1;
   position: static;
 }
-/* line 264, sass/components/forms/_input-fields.scss */
+/* line 265, sass/components/forms/_input-fields.scss */
 .autocomplete-content li .highlight {
   color: #444;
 }
-/* line 266, sass/components/forms/_input-fields.scss */
+/* line 267, sass/components/forms/_input-fields.scss */
 .autocomplete-content li img {
   height: 40px;
   width: 40px;
   margin: 5px 15px;
 }
 
-/* line 274, sass/components/forms/_input-fields.scss */
+/* line 275, sass/components/forms/_input-fields.scss */
 .parsley-errors-list .parsley-custom-error-message,
 .parsley-errors-list .parsley-required {
   color: red;
 }
 
-/* line 276, sass/components/forms/_input-fields.scss */
+/* line 277, sass/components/forms/_input-fields.scss */
 .parsley-errors-list .parsley-type {
-  color: #26a69a;
+  color: #757575;
 }
 
 /* Radio Buttons
@@ -7217,8 +7213,8 @@ form p:last-child {
   top: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid #26a69a;
-  background-color: #26a69a;
+  border: 2px solid #757575;
+  background-color: #757575;
   z-index: 0;
 }
 /* line 189, sass/components/forms/_checkboxes.scss */
@@ -7230,8 +7226,8 @@ form p:last-child {
 /* line 195, sass/components/forms/_checkboxes.scss */
 [type="checkbox"].filled-in.tabbed:checked:focus + label:after {
   border-radius: 2px;
-  background-color: #26a69a;
-  border-color: #26a69a;
+  background-color: #757575;
+  border-color: #757575;
 }
 /* line 202, sass/components/forms/_checkboxes.scss */
 [type="checkbox"].filled-in:disabled:not(:checked) + label:before {
@@ -7277,11 +7273,11 @@ form p:last-child {
 }
 /* line 21, sass/components/forms/_switches.scss */
 .switch label input[type=checkbox]:checked + .lever {
-  background-color: #84c7c1;
+  background-color: #b5b5b5;
 }
 /* line 24, sass/components/forms/_switches.scss */
 .switch label input[type=checkbox]:checked + .lever:after {
-  background-color: #26a69a;
+  background-color: #757575;
   left: 24px;
 }
 
@@ -7317,7 +7313,7 @@ form p:last-child {
 /* line 60, sass/components/forms/_switches.scss */
 input[type=checkbox]:checked:not(:disabled) ~ .lever:active::after,
 input[type=checkbox]:checked:not(:disabled).tabbed:focus ~ .lever::after {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1);
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(117, 117, 117, 0.1);
 }
 
 /* line 65, sass/components/forms/_switches.scss */
@@ -7353,23 +7349,22 @@ select.browser-default {
 select {
   background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
-  margin-bottom: 20px;
   padding: 5px;
   border: 1px solid #f2f2f2;
   border-radius: 2px;
   height: 2.5rem;
 }
 
-/* line 17, sass/components/forms/_select.scss */
+/* line 16, sass/components/forms/_select.scss */
 .select-label {
   position: absolute;
 }
 
-/* line 21, sass/components/forms/_select.scss */
+/* line 20, sass/components/forms/_select.scss */
 .select-wrapper {
   position: relative;
 }
-/* line 24, sass/components/forms/_select.scss */
+/* line 23, sass/components/forms/_select.scss */
 .select-wrapper input.select-dropdown {
   position: relative;
   cursor: pointer;
@@ -7385,7 +7380,7 @@ select {
   padding: 0;
   display: block;
 }
-/* line 40, sass/components/forms/_select.scss */
+/* line 39, sass/components/forms/_select.scss */
 .select-wrapper span.caret {
   color: initial;
   position: absolute;
@@ -7393,23 +7388,23 @@ select {
   top: 16px;
   font-size: 10px;
 }
-/* line 46, sass/components/forms/_select.scss */
+/* line 45, sass/components/forms/_select.scss */
 .select-wrapper span.caret.disabled {
   color: rgba(0, 0, 0, 0.26);
 }
-/* line 51, sass/components/forms/_select.scss */
+/* line 50, sass/components/forms/_select.scss */
 .select-wrapper + label {
   position: absolute;
   top: -14px;
   font-size: 0.8rem;
 }
 
-/* line 59, sass/components/forms/_select.scss */
+/* line 58, sass/components/forms/_select.scss */
 select:disabled {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 63, sass/components/forms/_select.scss */
+/* line 62, sass/components/forms/_select.scss */
 .select-wrapper input.select-dropdown:disabled {
   color: rgba(0, 0, 0, 0.3);
   cursor: default;
@@ -7422,12 +7417,12 @@ select:disabled {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* line 72, sass/components/forms/_select.scss */
+/* line 71, sass/components/forms/_select.scss */
 .select-wrapper i {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 76, sass/components/forms/_select.scss */
+/* line 75, sass/components/forms/_select.scss */
 .select-dropdown li.disabled,
 .select-dropdown li.disabled > span,
 .select-dropdown li.optgroup {
@@ -7435,19 +7430,19 @@ select:disabled {
   background-color: transparent;
 }
 
-/* line 84, sass/components/forms/_select.scss */
+/* line 83, sass/components/forms/_select.scss */
 .prefix ~ .select-wrapper {
   margin-left: 3rem;
   width: 92%;
   width: calc(100% - 3rem);
 }
 
-/* line 90, sass/components/forms/_select.scss */
+/* line 89, sass/components/forms/_select.scss */
 .prefix ~ label {
   margin-left: 3rem;
 }
 
-/* line 94, sass/components/forms/_select.scss */
+/* line 93, sass/components/forms/_select.scss */
 .select-dropdown li img {
   height: 40px;
   width: 40px;
@@ -7455,19 +7450,19 @@ select:disabled {
   float: right;
 }
 
-/* line 103, sass/components/forms/_select.scss */
+/* line 102, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup {
   border-top: 1px solid #eee;
 }
-/* line 106, sass/components/forms/_select.scss */
+/* line 105, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup.selected > span {
   color: rgba(0, 0, 0, 0.7);
 }
-/* line 110, sass/components/forms/_select.scss */
+/* line 109, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup > span {
   color: rgba(0, 0, 0, 0.4);
 }
-/* line 114, sass/components/forms/_select.scss */
+/* line 113, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup ~ li.optgroup-option {
   padding-left: 1rem;
 }
@@ -7782,11 +7777,11 @@ input[type=range]:focus::-ms-fill-upper {
 }
 /* line 62, sass/components/_sideNav.scss */
 .side-nav a.btn:hover, .side-nav a.btn-large:hover, .side-nav a.btn-large:hover {
-  background-color: #2bbbad;
+  background-color: #828282;
 }
 /* line 64, sass/components/_sideNav.scss */
 .side-nav a.btn-floating:hover {
-  background-color: #26a69a;
+  background-color: #757575;
 }
 /* line 67, sass/components/_sideNav.scss */
 .side-nav li > a > i,
@@ -8000,7 +7995,7 @@ input[type=range]:focus::-ms-fill-upper {
   width: 100%;
   height: 100%;
   opacity: 0;
-  border-color: #26a69a;
+  border-color: #757575;
 }
 
 /* line 69, sass/components/_preloader.scss */
@@ -9146,7 +9141,7 @@ input[type=range]:focus::-ms-fill-upper {
 /* line 314, sass/components/date_picker/_default.date.scss */
 .picker__date-display {
   text-align: center;
-  background-color: #26a69a;
+  background-color: #757575;
   color: #fff;
   padding-bottom: 15px;
   font-weight: 300;
@@ -9157,12 +9152,12 @@ input[type=range]:focus::-ms-fill-upper {
 .picker__nav--next:hover {
   cursor: pointer;
   color: #000000;
-  background: #a1ded8;
+  background: #cecece;
 }
 
 /* line 329, sass/components/date_picker/_default.date.scss */
 .picker__weekday-display {
-  background-color: #1f897f;
+  background-color: #636363;
   padding: 10px;
   font-weight: 200;
   letter-spacing: .5;
@@ -9219,7 +9214,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 /* line 378, sass/components/date_picker/_default.date.scss */
 .picker__day.picker__day--today {
-  color: #26a69a;
+  color: #757575;
 }
 
 /* line 382, sass/components/date_picker/_default.date.scss */
@@ -9238,14 +9233,14 @@ input[type=range]:focus::-ms-fill-upper {
 .picker--focused .picker__day--selected {
   border-radius: 50%;
   transform: scale(0.9);
-  background-color: #26a69a;
+  background-color: #757575;
   color: #ffffff;
 }
 /* line 399, sass/components/date_picker/_default.date.scss */
 .picker__day--selected.picker__day--outfocus,
 .picker__day--selected:hover.picker__day--outfocus,
 .picker--focused .picker__day--selected.picker__day--outfocus {
-  background-color: #a1ded8;
+  background-color: #cecece;
 }
 
 /* line 405, sass/components/date_picker/_default.date.scss */
@@ -9258,7 +9253,7 @@ input[type=range]:focus::-ms-fill-upper {
 .picker__close, .picker__today {
   font-size: 1.1rem;
   padding: 0 1rem;
-  color: #26a69a;
+  color: #757575;
 }
 
 /* line 418, sass/components/date_picker/_default.date.scss */
@@ -9282,7 +9277,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 /* line 433, sass/components/date_picker/_default.date.scss */
 button.picker__today:focus, button.picker__clear:focus, button.picker__close:focus {
-  background-color: #a1ded8;
+  background-color: #cecece;
 }
 
 /* ==========================================================================
@@ -9473,129 +9468,134 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 /* line 17, sass/components/_utilities.scss */
+.margin-top {
+  margin-top: 20px;
+}
+
+/* line 19, sass/components/_utilities.scss */
 .padding--xsmall {
   padding: 5px;
 }
 
-/* line 18, sass/components/_utilities.scss */
+/* line 20, sass/components/_utilities.scss */
 .padding--small {
   padding: 10px;
 }
 
-/* line 19, sass/components/_utilities.scss */
+/* line 21, sass/components/_utilities.scss */
 .padding {
   padding: 20px;
 }
 
-/* line 20, sass/components/_utilities.scss */
+/* line 22, sass/components/_utilities.scss */
 .no-padding {
   padding: 0px;
 }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
-  /* line 22, sass/components/_utilities.scss */
+  /* line 24, sass/components/_utilities.scss */
   .margin-vertical--large-md {
-    margin: 80px 0;
+    margin: 40px 0;
   }
 }
 
-/* line 28, sass/components/_utilities.scss */
+/* line 30, sass/components/_utilities.scss */
 .inline {
   display: inline;
 }
 
-/* line 29, sass/components/_utilities.scss */
+/* line 31, sass/components/_utilities.scss */
 .block {
   display: block !important;
 }
 
-/* line 30, sass/components/_utilities.scss */
+/* line 32, sass/components/_utilities.scss */
 .inline-block {
   display: inline-block;
 }
 
-/* line 31, sass/components/_utilities.scss */
+/* line 33, sass/components/_utilities.scss */
 .inline-flex {
   display: inline-flex;
 }
 
-/* line 32, sass/components/_utilities.scss */
+/* line 34, sass/components/_utilities.scss */
 .hidden {
   display: none;
 }
 
-/* line 34, sass/components/_utilities.scss */
+/* line 36, sass/components/_utilities.scss */
 .not-visible {
   max-height: 0;
   visibility: hidden;
   opacity: 0;
 }
 
-/* line 40, sass/components/_utilities.scss */
+/* line 42, sass/components/_utilities.scss */
 .visible {
   max-height: 300px;
   visibility: visible;
   opacity: 1;
 }
 
-/* line 49, sass/components/_utilities.scss */
+/* line 51, sass/components/_utilities.scss */
 .float-right {
   float: right;
 }
 
-/* line 50, sass/components/_utilities.scss */
+/* line 52, sass/components/_utilities.scss */
 .float-left {
   float: left;
 }
 
-/* line 55, sass/components/_utilities.scss */
+/* line 57, sass/components/_utilities.scss */
 .absolute {
   position: absolute;
 }
 
-/* line 56, sass/components/_utilities.scss */
+/* line 58, sass/components/_utilities.scss */
 .relative {
   position: relative;
 }
 
-/* line 57, sass/components/_utilities.scss */
+/* line 59, sass/components/_utilities.scss */
 .fixed {
   position: fixed;
 }
 
-/* line 62, sass/components/_utilities.scss */
+/* line 64, sass/components/_utilities.scss */
 .width-40 {
   width: 40%;
 }
 
-/* line 63, sass/components/_utilities.scss */
-.width-20 {
-  width: 20%;
-}
-
-/* line 64, sass/components/_utilities.scss */
+/* line 65, sass/components/_utilities.scss */
 .width-20 {
   width: 20%;
 }
 
 /* line 66, sass/components/_utilities.scss */
+.width-20 {
+  width: 20%;
+}
+
+/* line 68, sass/components/_utilities.scss */
 .width-100vh {
   width: 100vw;
 }
 
-/* line 67, sass/components/_utilities.scss */
+/* line 69, sass/components/_utilities.scss */
 .height-100vh {
   height: 100vh;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
-  /* line 70, sass/components/_utilities.scss */
+  /* line 72, sass/components/_utilities.scss */
   .relative.height-100vh {
     height: 70vh;
   }
 }
 
-/* line 77, sass/components/_utilities.scss */
+/* line 79, sass/components/_utilities.scss */
 .transition {
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -9604,19 +9604,19 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   -o-transition: all 0.5s ease;
 }
 
-/* line 87, sass/components/_utilities.scss */
+/* line 89, sass/components/_utilities.scss */
 .middle {
   vertical-align: middle;
 }
 
-/* line 89, sass/components/_utilities.scss */
+/* line 91, sass/components/_utilities.scss */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 95, sass/components/_utilities.scss */
+/* line 97, sass/components/_utilities.scss */
 .center-full {
   position: absolute;
   top: 50%;
@@ -9625,6 +9625,11 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+/* line 110, sass/components/_utilities.scss */
+.bg-dark {
+  background: #000;
 }
 
 /* line 5, sass/components/_images.scss */

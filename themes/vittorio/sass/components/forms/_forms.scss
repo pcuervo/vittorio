@@ -13,10 +13,6 @@ label {
   color: $input-border-color;
 }
 
-form {
-	background-color: $dark-color;
-}
-
 @import 'input-fields';
 @import 'radio-buttons';
 @import 'checkboxes';
