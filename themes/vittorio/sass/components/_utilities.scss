@@ -11,13 +11,17 @@
 .margin-xsmall          { margin: ($margin-size/4)}
 .margin-small			      { margin: ($margin-size/2)}
 
-.margin-vertical        { margin: $margin-size 0}
+.margin-vertical        { margin: $margin-size 0;}
 .margin-horizontal      { margin: 0 $margin-size}
 
 .padding--xsmall        { padding:($padding-size/4);}
 .padding--small         { padding:($padding-size/2);}
 .padding                { padding:$padding-size;}
 .no-padding             { padding:0px;}
+
+.margin-vertical--large-md { 
+  @media only screen and (min-width: $small-screen-up) and (max-width: $medium-screen) { margin: ($margin-size*4) 0;} 
+}
 
 //Display
 

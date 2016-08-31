@@ -11,7 +11,7 @@
 
 .background-img--main { background-image: url(img/background.png); }
 
-@media #{$medium-and-down} {
+@media #{$small-and-down} {
 	.background-img--main {
 		background-position: top;
 		background-repeat: no-repeat;
