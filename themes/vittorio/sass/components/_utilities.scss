@@ -65,6 +65,8 @@
 .width-20			{ width: 20%}
 .width-20			{ width: 20%}
 
+.height-35     { height:35px;}
+
 .width-100vh  { width: 100vw;}
 .height-100vh { height: 100vh;}
 
@@ -104,9 +106,19 @@
   transform: translate(-50%, -50%);
 }
 
-
 //Colors
 
 .bg-dark{
   background: #000;
+}
+
+
+//Textstyle
+
+.underlined{
+  text-decoration: underline;
+}
+
+.no-jumpline{
+  white-space:nowrap;
 }

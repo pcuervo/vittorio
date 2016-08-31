@@ -9,10 +9,13 @@ select {
   width: 100%;
   padding: $select-padding;
   border: $select-border;
-  border-radius: $select-radius;
   height: $input-height;
 }
 
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
 .select-label {
   position: absolute;
 }

@@ -6,9 +6,9 @@
   left: 0;
   right: 0;
   background-image: url(img/background-modal.png);
-  padding: 0;
+  padding: 4em 0em;
   max-height: 70%;
-  width: 100%;
+  width: 80%;
   margin: auto;
   overflow-y: auto;
   color:#ffffff;
@@ -16,16 +16,13 @@
   will-change: top, opacity;
   text-align: center;
   @media #{$medium-and-down} {
-   width: 80%;
-
-
-
--webkit-filter: brightness(50%);
-filter: brightness(50%);
+   width: 100%;
 
   }
 
-
+  div.modal-content a{
+    margin-top:5%;
+  }
   h1,h2,h3,h4 {
     margin-top: 0;
   }

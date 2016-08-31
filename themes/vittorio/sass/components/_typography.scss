@@ -51,6 +51,12 @@ small { font-size: 75%; }
 .text-right{ text-align: right}
 .text-left{ text-align: left}
 
+@media (max-width: 600px){
+  .text-center-mobile{
+    text-align:center;
+    }
+  }
+
 .flow-text{
   font-weight: 300;
   $i: 0;

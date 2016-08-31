@@ -272,6 +272,8 @@ textarea {
   }
 }
 
+/* Parsley */
 .parsley-errors-list .parsley-custom-error-message,
-.parsley-errors-list .parsley-required { color: red; }
+.parsley-errors-list .parsley-required { color: $error-color; }
 .parsley-errors-list .parsley-type { color: $secondary-color; }
+.parsley-errors-list {margin-top: -15px;}

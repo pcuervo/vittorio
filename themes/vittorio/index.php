@@ -64,8 +64,9 @@
 								</select>
 							</div>
 							<p>
-								<input type="checkbox" id="test5" data-parsley-error-message="Debe estar de acuerdo con el aviso de privacidad" required />
-								<label for="test5">He leído y estoy de acuerdo con el Aviso de Privacidad</label>
+								<input type="checkbox" id="test5" data-parsley-error-message="Debe estar de acuerdo con el aviso de privacidad" required/>
+								<label for="test5"></label>
+								<span class="[ white-text ]">He leído y estoy de acuerdo con el <a class="[ white-text underlined ]" href="#">Aviso de privacidad</a></span>
 							</p>
 							<div class="[ block text-center margin-bottom ]">
 								<button type="submit" class="[ waves-effect waves-light ][ btn-large ][ red ]">Hacer mi cita</button>
@@ -74,16 +75,32 @@
 					</div>
 				</div>
 
-				<!-- Modal 1 -->
-				<div id="modal1" class="[ modal background-img ]">
-					<div class="modal-content">
-						<h4>¡LISTO!</h4>
-						<p>NUESTRO EXPERTO EN TRAJES TE ESTARÁ ESPERANDO PARA ATENDERTE PERSONALMENTE</p>
-						<p>SÓLO CONFIRMA TU CORREO PARA QUE TU CITA QUEDE PROGRAMADA</p>
-						<a href="#!" class="[ red white-text modal-action modal-close waves-effect waves-green btn-flat ]">CERRAR</a>
-					</div>
-				</div>
+				<!-- Modal Trigger/ Listo!-->
+				<a class="[ waves-effect waves-light btn modal-trigger ]" href="#modal1">Listo</a>
 
+				<!-- Modal Structure -->
+
+					<div id="modal1" class="[ modal background-img ]">
+						<div class="[ modal-content ]">
+							<h4>¡LISTO!</h4>
+							<p>NUESTRO EXPERTO EN TRAJES TE ESTARÁ ESPERANDO PARA ATENDERTE PERSONALMENTE</p>
+							<p>SÓLO CONFIRMA TU CORREO PARA QUE TU CITA QUEDE PROGRAMADA</p>
+							<a href="#!" class="[ red white-text modal-action modal-close waves-effect waves-green btn-flat ]">CERRAR</a>
+						</div>
+					</div>
+				<!-- Modal Trigger/ Gracias!-->
+				<a class="[ waves-effect waves-light btn modal-trigger ]" href="#modal2">Gracias</a>
+
+				<!-- Modal Structure -->
+
+					<div id="modal2" class="[ modal background-img ]">
+						<div class="[ modal-content ]">
+							<h4>GRACIAS</h4>
+							<p>TU CITA ESTÁ CONFIRMADA</p>
+							<p>TE ESPERAMOS</p>
+							<a href="#!" class="[ red white-text modal-action modal-close waves-effect waves-green btn-flat ]">CERRAR</a>
+						</div>
+					</div>
 
 				<div class="[ col s6 m5 offset-l1 l6 ][ hide-on-small-only ]">
 					<div class="[ relative ][ height-100vh ]">

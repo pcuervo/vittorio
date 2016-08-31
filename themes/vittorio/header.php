@@ -26,7 +26,7 @@
 					<div class="[ col s12 m9 ]">
 						<div class="[ nav-options ]">
 							<a href="http://www.tiendasvittorioforti.com">Ir al sitio</a>
-							<a href="tel:+55000000"><img class="[ middle ][ margin-horizontal ]" src="<?php echo THEMEPATH; ?>img/whatsapp-icon.png" alt="Whats app icon">55-00-00-00</a>
+							<a href="tel:+55000000"><img class="[ middle ][ margin-horizontal ][ height-35 ]" src="<?php echo THEMEPATH; ?>img/whatsapp-icon.png" alt="Whats app icon">55-00-00-00</a>
 						</div>
 					</div>
 				</div>
