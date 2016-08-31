@@ -13,6 +13,10 @@ select {
   height: $input-height;
 }
 
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
 .select-label {
   position: absolute;
 }

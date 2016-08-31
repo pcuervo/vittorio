@@ -38,7 +38,8 @@
 							</select>
 							<p>
 								<input type="checkbox" id="test5" data-parsley-error-message="Debe estar de acuerdo con el aviso de privacidad" required/>
-								<label for="test5">He leído y estoy de acuerdo con el Aviso de Privacidad</label>		
+								<label for="test5"></label>
+								<span class="[ white-text ]">He leído y estoy de acuerdo con el <a class="[ white-text underlined ]" href="#">Aviso de privacidad</a></span>
 							</p>		
 							<div class="[ block text-center margin-bottom ]">
 								<a class="[ waves-effect waves-light ][ btn-large btn-fixed-width ][  ][ col-6 ][ grey darken ]">Geolocalizarme</a>
