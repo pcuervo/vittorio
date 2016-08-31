@@ -106,6 +106,7 @@ textarea.materialize-textarea {
   // Full width label when using validate for error messages
   &.validate + label {
     width: 100%;
+    padding-left: 10px;
     pointer-events: none;
   }
 
@@ -140,7 +141,7 @@ textarea.materialize-textarea {
   label {
     color: $input-border-color;
     position: absolute;
-    top: 0.8rem;
+    top: 0.5rem;
     font-size: 1rem;
     cursor: text;
     transition: .2s ease-out;
