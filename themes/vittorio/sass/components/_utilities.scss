@@ -101,8 +101,12 @@
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-//Text style
+//Textstyle
 
 .underlined{
   text-decoration: underline;
+}
+
+.no-jumpline{
+  white-space:nowrap;
 }

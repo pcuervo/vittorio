@@ -8,8 +8,6 @@ var $=jQuery.noConflict();
 
 		$('form').parsley();
 
-        $('.datepicker').datepicker({showAnim: "blind"});
-
 
 
     });

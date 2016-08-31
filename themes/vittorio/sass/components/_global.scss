@@ -361,7 +361,7 @@ ul.staggered-list li {
 
 .page-footer {
   margin-top: 20px;
-  padding-top: 20px;
+  padding: 60px 0px 20px;
   position: absolute;
   width: 100%;
   background-color: $dark-color;
@@ -381,6 +381,11 @@ ul.staggered-list li {
     color: rgba(255,255,255,.8);
     background-color: rgba(51,51,51,.08);
     @extend .light;
+  }
+}
+@media (max-width: 600px){
+  .page-footer {
+    padding:20px 0;
   }
 }
 
