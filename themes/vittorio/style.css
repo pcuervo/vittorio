@@ -7063,7 +7063,7 @@ textarea.materialize-textarea {
 /* CUSTOM CSS CHECKBOXES */
 /* line 5, sass/components/forms/_checkboxes.scss */
 form p {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   text-align: left;
 }
 

@@ -16,7 +16,7 @@
 						<form class="[ margin-top ]" method="post">
 							<div class="[ input-field ]">
 								<input id="nombre" type="text" class="[ validate ]" data-parsley-error-message="Este campo es obligatorio" required>
-	          					<label for="nombre">Nombre y apellido</label>
+								<label for="nombre">Nombre y apellido</label>
 							</div>
 							<div class="[ input-field ]">
 								<input id="correo" type="email" class="[ validate ]" data-parsley-error-message="Este campo es obligatorio" required>
@@ -27,36 +27,27 @@
 								<label for="telefono">Teléfono</label>
 							</div>
 							<div class="[ input-field ]">
-								<select>
-							      <option value="" disabled selected>Choose your option</option>
-							      <option value="1">Option 1</option>
-							      <option value="2">Option 2</option>
-							      <option value="3">Option 3</option>
-							    </select>
-							    <label>Materialize Select</label>
-							</div>
-							<!-- <div class="[ input-field ]">
-								<select class="[ block ]" name="ciudad" data-parsley-error-message="Seleccione una ciudad" required>
-									<option value="" selected>Ciudad</option>
+								<select name="ciudad" data-parsley-error-message="Seleccione una ciudad" required>
+									<option value="" disabled selected>Ciudad</option>
 									<option value="1">Option 1</option>
 									<option value="2">Option 2</option>
 									<option value="3">Option 3</option>
 								</select>
-							</div> -->
-							<!-- <div class="[ input-field ]">
-								<select class="[ block ]" name="tienda" data-parsley-error-message="Seleccione una tienda" required>
+							</div>
+							<div class="[ input-field ]">
+								<select name="tienda" data-parsley-error-message="Seleccione una tienda" required>
 									<option value="" disabled selected>Tienda</option>
 									<option value="1">Option 1</option>
 									<option value="2">Option 2</option>
 									<option value="3">Option 3</option>
 								</select>
-							</div> -->
+							</div>
 							<div class="[ input-field ]">
 								<input id="fecha" type="date" class="datepicker">
 								<label for="fecha">Fecha</label>
 							</div>
 							<div class="[ input-field ]">
-								<select class="[ block ]" name="horario" data-parsley-error-message="Por favor selecciona un horario" required>
+								<select name="horario" data-parsley-error-message="Por favor selecciona un horario" required>
 									<option value="" selected>Horario</option>
 									<option value="1">Option 1</option>
 									<option value="2">Option 2</option>
@@ -64,9 +55,8 @@
 								</select>
 							</div>
 							<p>
-								<input type="checkbox" id="test5" data-parsley-error-message="Debe estar de acuerdo con el aviso de privacidad" required/>
-								<label for="test5"></label>
-								<span class="[ white-text ]">He leído y estoy de acuerdo con el <a class="[ white-text underlined ]" href="#">Aviso de privacidad</a></span>
+								<input type="checkbox" id="aviso" data-parsley-error-message="Debe estar de acuerdo con el aviso de privacidad" required/>
+								<label class="[ white-text ]" for="aviso">He leído y estoy de acuerdo con el <a class="[ white-text underlined ]" href="#">Aviso de privacidad</a></label>
 							</p>
 							<div class="[ block text-center margin-bottom ]">
 								<button type="submit" class="[ waves-effect waves-light ][ btn-large ][ red ]">Hacer mi cita</button>
