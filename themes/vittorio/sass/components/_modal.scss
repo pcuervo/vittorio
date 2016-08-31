@@ -5,9 +5,8 @@
   position: fixed;
   left: 0;
   right: 0;
-  background-image: url(img/background-modal.png);
-  padding: 4em 0em;
-  max-height: 70%;
+  background-image: url(img/background-modal-black.png);
+  height: 80vh;
   width: 80%;
   margin: auto;
   overflow-y: auto;
@@ -29,6 +28,14 @@
 
   .modal-content {
     padding: 24px;
+    width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
   }
   .modal-close {
     cursor: pointer;

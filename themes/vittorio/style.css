@@ -6120,9 +6120,8 @@ button.btn-floating {
   position: fixed;
   left: 0;
   right: 0;
-  background-image: url(img/background-modal.png);
-  padding: 4em 0em;
-  max-height: 70%;
+  background-image: url(img/background-modal-black.png);
+  height: 80vh;
   width: 80%;
   margin: auto;
   overflow-y: auto;
@@ -6137,23 +6136,31 @@ button.btn-floating {
     width: 100%;
   }
 }
-/* line 23, sass/components/_modal.scss */
+/* line 22, sass/components/_modal.scss */
 .modal div.modal-content a {
   margin-top: 5%;
 }
-/* line 26, sass/components/_modal.scss */
+/* line 25, sass/components/_modal.scss */
 .modal h1, .modal h2, .modal h3, .modal h4 {
   margin-top: 0;
 }
-/* line 30, sass/components/_modal.scss */
+/* line 29, sass/components/_modal.scss */
 .modal .modal-content {
   padding: 24px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-/* line 33, sass/components/_modal.scss */
+/* line 40, sass/components/_modal.scss */
 .modal .modal-close {
   cursor: pointer;
 }
-/* line 37, sass/components/_modal.scss */
+/* line 44, sass/components/_modal.scss */
 .modal .modal-footer {
   border-radius: 0 0 2px 2px;
   background-color: #fafafa;
@@ -6161,13 +6168,13 @@ button.btn-floating {
   height: 56px;
   width: 100%;
 }
-/* line 44, sass/components/_modal.scss */
+/* line 51, sass/components/_modal.scss */
 .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
   float: right;
   margin: 6px 0;
 }
 
-/* line 50, sass/components/_modal.scss */
+/* line 57, sass/components/_modal.scss */
 .lean-overlay {
   position: fixed;
   z-index: 999;
@@ -6182,12 +6189,12 @@ button.btn-floating {
   will-change: opacity;
 }
 
-/* line 66, sass/components/_modal.scss */
+/* line 73, sass/components/_modal.scss */
 .modal.modal-fixed-footer {
   padding: 0;
   height: 70%;
 }
-/* line 70, sass/components/_modal.scss */
+/* line 77, sass/components/_modal.scss */
 .modal.modal-fixed-footer .modal-content {
   position: absolute;
   height: calc(100% - 56px);
@@ -6195,14 +6202,14 @@ button.btn-floating {
   width: 100%;
   overflow-y: auto;
 }
-/* line 78, sass/components/_modal.scss */
+/* line 85, sass/components/_modal.scss */
 .modal.modal-fixed-footer .modal-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   bottom: 0;
 }
 
-/* line 86, sass/components/_modal.scss */
+/* line 93, sass/components/_modal.scss */
 .modal.bottom-sheet {
   top: auto;
   bottom: -100%;
@@ -9602,29 +9609,29 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   width: 20%;
 }
 
-/* line 65, sass/components/_utilities.scss */
+/* line 66, sass/components/_utilities.scss */
 .height-35 {
   height: 35px;
 }
 
-/* line 67, sass/components/_utilities.scss */
+/* line 68, sass/components/_utilities.scss */
 .width-100vh {
   width: 100vw;
 }
 
-/* line 68, sass/components/_utilities.scss */
+/* line 69, sass/components/_utilities.scss */
 .height-100vh {
   height: 100vh;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
-  /* line 71, sass/components/_utilities.scss */
+  /* line 72, sass/components/_utilities.scss */
   .relative.height-100vh {
     height: 70vh;
   }
 }
 
-/* line 78, sass/components/_utilities.scss */
+/* line 79, sass/components/_utilities.scss */
 .transition {
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -9633,19 +9640,19 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   -o-transition: all 0.5s ease;
 }
 
-/* line 88, sass/components/_utilities.scss */
+/* line 89, sass/components/_utilities.scss */
 .middle {
   vertical-align: middle;
 }
 
-/* line 90, sass/components/_utilities.scss */
+/* line 91, sass/components/_utilities.scss */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 96, sass/components/_utilities.scss */
+/* line 97, sass/components/_utilities.scss */
 .center-full {
   position: absolute;
   top: 50%;
@@ -9656,12 +9663,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   transform: translate(-50%, -50%);
 }
 
-/* line 107, sass/components/_utilities.scss */
+/* line 108, sass/components/_utilities.scss */
 .underlined {
   text-decoration: underline;
 }
 
-/* line 111, sass/components/_utilities.scss */
+/* line 112, sass/components/_utilities.scss */
 .no-jumpline {
   white-space: nowrap;
 }
