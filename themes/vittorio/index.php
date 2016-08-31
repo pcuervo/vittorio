@@ -70,7 +70,7 @@
 
 				<!-- Modal Structure -->
 
-					<div id="modal1" class="[ modal background-img ]">
+					<div id="modal1" class="[ modal background-img ][ ]">
 						<div class="[ modal-content ]">
 							<h4>¡LISTO!</h4>
 							<p>NUESTRO EXPERTO EN TRAJES TE ESTARÁ ESPERANDO PARA ATENDERTE PERSONALMENTE</p>
