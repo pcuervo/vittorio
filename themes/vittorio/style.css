@@ -6509,7 +6509,7 @@ textarea.materialize-textarea {
   height: 2.5rem;
   width: 95%;
   font-size: 1rem;
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0 2.5%;
   box-shadow: none;
   box-sizing: content-box;
@@ -7400,7 +7400,7 @@ select {
   line-height: 2.5rem;
   width: 95%;
   font-size: 1rem;
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0 2.5%;
   display: block;
   color: #a2a2a2;
