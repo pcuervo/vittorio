@@ -6502,7 +6502,7 @@ textarea.materialize-textarea {
   height: 2.5rem;
   width: 95%;
   font-size: 1rem;
-  margin: 0 0 20px 0;
+  margin: 0;
   padding: 0 2.5%;
   box-shadow: none;
   box-sizing: content-box;
@@ -7374,25 +7374,18 @@ select {
 }
 
 /* line 15, sass/components/forms/_select.scss */
-select {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0px;
-}
-
-/* line 19, sass/components/forms/_select.scss */
 .select-label {
   position: absolute;
 }
 
-/* line 23, sass/components/forms/_select.scss */
+/* line 19, sass/components/forms/_select.scss */
 .select-wrapper {
   position: relative;
 }
-/* line 26, sass/components/forms/_select.scss */
+/* line 22, sass/components/forms/_select.scss */
 .select-wrapper input.select-dropdown {
   position: relative;
   cursor: pointer;
-  background-color: transparent;
   border: none;
   border-bottom: 1px solid #a2a2a2;
   outline: none;
@@ -7400,11 +7393,11 @@ select {
   line-height: 2.5rem;
   width: 100%;
   font-size: 1rem;
-  margin: 0 0 20px 0;
+  margin: 0;
   padding: 0;
   display: block;
 }
-/* line 42, sass/components/forms/_select.scss */
+/* line 37, sass/components/forms/_select.scss */
 .select-wrapper span.caret {
   color: initial;
   position: absolute;
@@ -7412,23 +7405,23 @@ select {
   top: 16px;
   font-size: 10px;
 }
-/* line 48, sass/components/forms/_select.scss */
+/* line 43, sass/components/forms/_select.scss */
 .select-wrapper span.caret.disabled {
   color: rgba(0, 0, 0, 0.26);
 }
-/* line 53, sass/components/forms/_select.scss */
+/* line 48, sass/components/forms/_select.scss */
 .select-wrapper + label {
   position: absolute;
   top: -14px;
   font-size: 0.8rem;
 }
 
-/* line 61, sass/components/forms/_select.scss */
+/* line 56, sass/components/forms/_select.scss */
 select:disabled {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 65, sass/components/forms/_select.scss */
+/* line 60, sass/components/forms/_select.scss */
 .select-wrapper input.select-dropdown:disabled {
   color: rgba(0, 0, 0, 0.3);
   cursor: default;
@@ -7441,12 +7434,12 @@ select:disabled {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* line 74, sass/components/forms/_select.scss */
+/* line 69, sass/components/forms/_select.scss */
 .select-wrapper i {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 78, sass/components/forms/_select.scss */
+/* line 73, sass/components/forms/_select.scss */
 .select-dropdown li.disabled,
 .select-dropdown li.disabled > span,
 .select-dropdown li.optgroup {
@@ -7454,19 +7447,19 @@ select:disabled {
   background-color: transparent;
 }
 
-/* line 86, sass/components/forms/_select.scss */
+/* line 81, sass/components/forms/_select.scss */
 .prefix ~ .select-wrapper {
   margin-left: 3rem;
   width: 92%;
   width: calc(100% - 3rem);
 }
 
-/* line 92, sass/components/forms/_select.scss */
+/* line 87, sass/components/forms/_select.scss */
 .prefix ~ label {
   margin-left: 3rem;
 }
 
-/* line 96, sass/components/forms/_select.scss */
+/* line 91, sass/components/forms/_select.scss */
 .select-dropdown li img {
   height: 40px;
   width: 40px;
@@ -7474,19 +7467,19 @@ select:disabled {
   float: right;
 }
 
-/* line 105, sass/components/forms/_select.scss */
+/* line 100, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup {
   border-top: 1px solid #eee;
 }
-/* line 108, sass/components/forms/_select.scss */
+/* line 103, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup.selected > span {
   color: rgba(0, 0, 0, 0.7);
 }
-/* line 112, sass/components/forms/_select.scss */
+/* line 107, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup > span {
   color: rgba(0, 0, 0, 0.4);
 }
-/* line 116, sass/components/forms/_select.scss */
+/* line 111, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup ~ li.optgroup-option {
   padding-left: 1rem;
 }
