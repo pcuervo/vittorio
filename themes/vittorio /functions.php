@@ -14,3 +14,9 @@ define( 'SITEURL', site_url('/') );
 
 
 
+/*------------------------------------*\
+	#INCLUDES
+\*------------------------------------*/
+
+require_once('inc/post-types.php');
+require_once('inc/metaboxes.php');
