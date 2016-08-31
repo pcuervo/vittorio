@@ -29,7 +29,7 @@
 								<option value="2">Option 2</option>
 								<option value="3">Option 3</option>
 							</select>	
-							<input class="[ block ]" type="date" class="datepicker">	
+							<input class="[ block datepicker ]" type="date" id="all-datepicker" data-parsley-error-message="Por favor selecciona una fecha" data-parsley-type="digits" required>	
 							<select class="[ block ]" name="horario" data-parsley-error-message="Por favor selecciona un horario" required>
 								<option value="" disabled selected>Horario</option>
 								<option value="1">Option 1</option>
@@ -47,20 +47,32 @@
 						</div>
 					</form>
 				</div>
-				<!-- Modal Trigger -->
-				<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+				<!-- Modal Trigger/ Listo!-->
+				<a class="[ waves-effect waves-light btn modal-trigger ]" href="#modal1">Listo</a>
 
 				<!-- Modal Structure -->
 
 					<div id="modal1" class="[ modal background-img ]">
-						<div class="modal-content">
+						<div class="[ modal-content ]">
 							<h4>¡LISTO!</h4>
 							<p>NUESTRO EXPERTO EN TRAJES TE ESTARÁ ESPERANDO PARA ATENDERTE PERSONALMENTE</p>
 							<p>SÓLO CONFIRMA TU CORREO PARA QUE TU CITA QUEDE PROGRAMADA</p>
 							<a href="#!" class="[ red white-text modal-action modal-close waves-effect waves-green btn-flat ]">CERRAR</a>
 						</div>
 					</div>					
+				<!-- Modal Trigger/ Gracias!-->
+				<a class="[ waves-effect waves-light btn modal-trigger ]" href="#modal2">Gracias</a>
 
+				<!-- Modal Structure -->
+
+					<div id="modal2" class="[ modal background-img ]">
+						<div class="[ modal-content ]">
+							<h4>GRACIAS</h4>
+							<p>TU CITA ESTÁ CONFIRMADA</p>
+							<p>TE ESPERAMOS</p>
+							<a href="#!" class="[ red white-text modal-action modal-close waves-effect waves-green btn-flat ]">CERRAR</a>
+						</div>
+					</div>
 
 				<div class="[ col s6 m5 offset-l1 l6 ][ hide-on-small-only ]">
 					<div class="[ relative ][ height-100vh ]">

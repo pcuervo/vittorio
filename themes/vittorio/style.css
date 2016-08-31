@@ -6110,9 +6110,9 @@ button.btn-floating {
   left: 0;
   right: 0;
   background-image: url(img/background-modal.png);
-  padding: 0;
+  padding: 4em 0em;
   max-height: 70%;
-  width: 100%;
+  width: 80%;
   margin: auto;
   overflow-y: auto;
   color: #ffffff;
@@ -6123,24 +6123,26 @@ button.btn-floating {
 @media only screen and (max-width: 992px) {
   /* line 1, sass/components/_modal.scss */
   .modal {
-    width: 80%;
-    -webkit-filter: brightness(50%);
-    filter: brightness(50%);
+    width: 100%;
   }
 }
-/* line 29, sass/components/_modal.scss */
+/* line 23, sass/components/_modal.scss */
+.modal div.modal-content a {
+  margin-top: 5%;
+}
+/* line 26, sass/components/_modal.scss */
 .modal h1, .modal h2, .modal h3, .modal h4 {
   margin-top: 0;
 }
-/* line 33, sass/components/_modal.scss */
+/* line 30, sass/components/_modal.scss */
 .modal .modal-content {
   padding: 24px;
 }
-/* line 36, sass/components/_modal.scss */
+/* line 33, sass/components/_modal.scss */
 .modal .modal-close {
   cursor: pointer;
 }
-/* line 40, sass/components/_modal.scss */
+/* line 37, sass/components/_modal.scss */
 .modal .modal-footer {
   border-radius: 0 0 2px 2px;
   background-color: #fafafa;
@@ -6148,13 +6150,13 @@ button.btn-floating {
   height: 56px;
   width: 100%;
 }
-/* line 47, sass/components/_modal.scss */
+/* line 44, sass/components/_modal.scss */
 .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
   float: right;
   margin: 6px 0;
 }
 
-/* line 53, sass/components/_modal.scss */
+/* line 50, sass/components/_modal.scss */
 .lean-overlay {
   position: fixed;
   z-index: 999;
@@ -6169,12 +6171,12 @@ button.btn-floating {
   will-change: opacity;
 }
 
-/* line 69, sass/components/_modal.scss */
+/* line 66, sass/components/_modal.scss */
 .modal.modal-fixed-footer {
   padding: 0;
   height: 70%;
 }
-/* line 73, sass/components/_modal.scss */
+/* line 70, sass/components/_modal.scss */
 .modal.modal-fixed-footer .modal-content {
   position: absolute;
   height: calc(100% - 56px);
@@ -6182,14 +6184,14 @@ button.btn-floating {
   width: 100%;
   overflow-y: auto;
 }
-/* line 81, sass/components/_modal.scss */
+/* line 78, sass/components/_modal.scss */
 .modal.modal-fixed-footer .modal-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   bottom: 0;
 }
 
-/* line 89, sass/components/_modal.scss */
+/* line 86, sass/components/_modal.scss */
 .modal.bottom-sheet {
   top: auto;
   bottom: -100%;
@@ -7356,20 +7358,19 @@ select {
   margin-bottom: 20px;
   padding: 5px;
   border: 1px solid #f2f2f2;
-  border-radius: 2px;
   height: 2.5rem;
 }
 
-/* line 17, sass/components/forms/_select.scss */
+/* line 16, sass/components/forms/_select.scss */
 .select-label {
   position: absolute;
 }
 
-/* line 21, sass/components/forms/_select.scss */
+/* line 20, sass/components/forms/_select.scss */
 .select-wrapper {
   position: relative;
 }
-/* line 24, sass/components/forms/_select.scss */
+/* line 23, sass/components/forms/_select.scss */
 .select-wrapper input.select-dropdown {
   position: relative;
   cursor: pointer;
@@ -7385,7 +7386,7 @@ select {
   padding: 0;
   display: block;
 }
-/* line 40, sass/components/forms/_select.scss */
+/* line 39, sass/components/forms/_select.scss */
 .select-wrapper span.caret {
   color: initial;
   position: absolute;
@@ -7393,23 +7394,23 @@ select {
   top: 16px;
   font-size: 10px;
 }
-/* line 46, sass/components/forms/_select.scss */
+/* line 45, sass/components/forms/_select.scss */
 .select-wrapper span.caret.disabled {
   color: rgba(0, 0, 0, 0.26);
 }
-/* line 51, sass/components/forms/_select.scss */
+/* line 50, sass/components/forms/_select.scss */
 .select-wrapper + label {
   position: absolute;
   top: -14px;
   font-size: 0.8rem;
 }
 
-/* line 59, sass/components/forms/_select.scss */
+/* line 58, sass/components/forms/_select.scss */
 select:disabled {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 63, sass/components/forms/_select.scss */
+/* line 62, sass/components/forms/_select.scss */
 .select-wrapper input.select-dropdown:disabled {
   color: rgba(0, 0, 0, 0.3);
   cursor: default;
@@ -7422,12 +7423,12 @@ select:disabled {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* line 72, sass/components/forms/_select.scss */
+/* line 71, sass/components/forms/_select.scss */
 .select-wrapper i {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 76, sass/components/forms/_select.scss */
+/* line 75, sass/components/forms/_select.scss */
 .select-dropdown li.disabled,
 .select-dropdown li.disabled > span,
 .select-dropdown li.optgroup {
@@ -7435,19 +7436,19 @@ select:disabled {
   background-color: transparent;
 }
 
-/* line 84, sass/components/forms/_select.scss */
+/* line 83, sass/components/forms/_select.scss */
 .prefix ~ .select-wrapper {
   margin-left: 3rem;
   width: 92%;
   width: calc(100% - 3rem);
 }
 
-/* line 90, sass/components/forms/_select.scss */
+/* line 89, sass/components/forms/_select.scss */
 .prefix ~ label {
   margin-left: 3rem;
 }
 
-/* line 94, sass/components/forms/_select.scss */
+/* line 93, sass/components/forms/_select.scss */
 .select-dropdown li img {
   height: 40px;
   width: 40px;
@@ -7455,19 +7456,19 @@ select:disabled {
   float: right;
 }
 
-/* line 103, sass/components/forms/_select.scss */
+/* line 102, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup {
   border-top: 1px solid #eee;
 }
-/* line 106, sass/components/forms/_select.scss */
+/* line 105, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup.selected > span {
   color: rgba(0, 0, 0, 0.7);
 }
-/* line 110, sass/components/forms/_select.scss */
+/* line 109, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup > span {
   color: rgba(0, 0, 0, 0.4);
 }
-/* line 114, sass/components/forms/_select.scss */
+/* line 113, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup ~ li.optgroup-option {
   padding-left: 1rem;
 }
