@@ -77,7 +77,7 @@
 
 									<?php
 										foreach ($ciudades as $key => $value) {
-											echo '<option class="optCiudad" data-lat="19.3209311" data-long="-99.432815" value="1">Ciudad de Mexico</option>'
+											echo '<option class="optCiudad" data-lat="19.3209311" data-long="-99.432815" value="1">Ciudad de Mexico</option>';
 										}
 									?>
 
