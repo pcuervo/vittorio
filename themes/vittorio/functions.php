@@ -31,6 +31,11 @@ add_action( 'wp_enqueue_scripts', function(){
 	wp_enqueue_script( 'plugins', JSPATH.'plugins.js', array('jquery'), '1.0', true );
 	wp_enqueue_script( 'functions', JSPATH.'functions.js', array('jquery'), '1s.0', true );
 
+	//SCRIPT TO GEOLOCATE
+	wp_enqueue_script( 'geo-map-api', 'https://maps.googleapis.com/maps/api/js?&key=AIzaSyABZ4eSBYBsLi5WQ7WdXZpivNq6n4wQZPA');
+	wp_enqueue_script( 'geo-map-gmaps', JSPATH . 'gmaps/gmaps.js', array('geo-map-api' ));	
+	wp_enqueue_script( 'geo-location', JSPATH . 'geolocation.js', array('geo-map-api', 'geo-map-gmaps'));	
+
 	// localize scripts
 	// wp_localize_script( 'functions', 'siteUrl', SITEURL );
 	// wp_localize_script( 'functions', 'theme_path', THEMEPATH );
