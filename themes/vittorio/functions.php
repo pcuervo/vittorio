@@ -47,3 +47,4 @@ add_action( 'wp_enqueue_scripts', function(){
 
 require_once('inc/post-types.php');
 require_once('inc/metaboxes.php');
+require_once('inc/pages.php');
