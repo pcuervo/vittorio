@@ -52,28 +52,29 @@
 				<div class="[ col l6 ][ hide-on-med-and-up ]">
 					<img class="[ img-responsive ][ middle ]" src="<?php echo THEMEPATH; ?>img/el_poder.png" alt="El poder de un traje">
 				</div>
-				<div class="[ col s12 m7 l5 ]">
 
-					<div class="[ bg-dark ][ padding ][ margin-vertical--large margin-vertical--large-md ]">
+				<div class="[ col s12 m7 l5 ][ no-float ][ inline-block ][ middle ]">
+					<div class="[ bg-dark ][ padding ][ margin-vertical ]">
 						<p class="[ text-uppercase white-text ]">¡hombre, muy bien! </p>
 						<p class="[ white-text ]">Compártenos los siguientes datos para hacer una cita con uno de nuestros Expertos en Trajes y te ayude a encontrar tu traje perfecto.</p>
 
-						<form class="[ margin-top ]" method="post">
+						<form class="[ margin-top ]" method="post" name="front_end" action="citas">
 							<div class="[ input-field ]">
-								<input id="nombre" type="text" class="[ validate ]" data-parsley-error-message="Este campo es obligatorio" required>
+								<input id="nombre" name="nombre" type="text" class="[ validate ]" data-parsley-error-message="Este campo es obligatorio" required>
 								<label for="nombre">Nombre y apellido</label>
 							</div>
 							<div class="[ input-field ]">
-								<input id="correo" type="email" class="[ validate ]" data-parsley-error-message="Este campo es obligatorio" required>
+								<input id="correo" name="correo" type="email" class="[ validate ]" data-parsley-error-message="Este campo es obligatorio" required>
 								<label for="correo">Correo</label>
 							</div>
 							<div class="[ input-field ]">
-								<input id="telefono" type="text" class="[ validate ]" data-parsley-type="digits" data-parsley-error-message="Este campo sólo acepta números" required>
+								<input id="telefono" name="telefono" type="text" class="[ validate ]" data-parsley-type="digits" data-parsley-error-message="Este campo sólo acepta números" required>
 								<label for="telefono">Teléfono</label>
 							</div>
 							<div class="[ input-field ][ bg-white ]">
 								<select id="ciudad" name="ciudad" data-parsley-error-message="Seleccione una ciudad" required>
 									<option class="" value="" disabled selected>Ciudad</option>
+
 									<?php
 										foreach ($ciudades as $key => $value) {
 											echo '<option class="optCiudad" data-lat="19.3209311" data-long="-99.432815" value="1">Ciudad de Mexico</option>'
@@ -88,21 +89,21 @@
 							<div class="[ input-field ][ bg-white ]">
 								<select id="tienda" name="tienda" data-parsley-error-message="Seleccione una tienda" required>
 									<option class="" value="" disabled selected>Tienda</option>
-									<option class="optTienda" value="1">Option 1</option>
-									<option class="optTienda" value="2">Option 2</option>
-									<option class="optTienda" value="3">Option 3</option>
+									<option class="optTienda" value="GALERÍAS GUADALAJARA">GALERÍAS GUADALAJARA</option>
+									<option class="optTienda" value="GALERIAS MONTERREY">GALERIAS MONTERREY</option>
+									<option class="optTienda" value="CENTRAL DE TRAJES">CENTRAL DE TRAJES</option>
 								</select>
 							</div>
 							<div class="[ input-field ]">
-								<input id="fecha" type="date" class="datepicker">
+								<input id="fecha" name="fecha" type="date" class="datepicker">
 								<label for="fecha">Fecha</label>
 							</div>
 							<div class="[ input-field ][ bg-white ]">
-								<select name="horario" data-parsley-error-message="Por favor selecciona un horario" required>
+								<select id="horario" name="horario" data-parsley-error-message="Por favor selecciona un horario" required>
 									<option value="" selected>Horario</option>
-									<option value="1">Option 1</option>
-									<option value="2">Option 2</option>
-									<option value="3">Option 3</option>
+									<option value="Option 1">Option 1</option>
+									<option value="Option 2">Option 2</option>
+									<option value="Option 3">Option 3</option>
 								</select>
 							</div>
 							<p>
@@ -114,35 +115,29 @@
 							</div>
 						</form>
 					</div>
-
-
 				</div>
 
+				<div class="[ col s6 m4 l6 ][ hide-on-small-only ][ no-float ][ inline-block ][ middle ]">
+					<img class="[ img-responsive ]" src="<?php echo THEMEPATH; ?>img/el_poder.png" alt="El poder de un traje">
+				</div>
+
+
 				<!-- Modal Structure/Listo! -->
-
-					<div id="modal1" class="[ modal background-img ][ ]">
-						<div class="[ modal-content ]">
-							<h4>¡LISTO!</h4>
-							<p>NUESTRO EXPERTO EN TRAJES TE ESTARÁ ESPERANDO PARA ATENDERTE PERSONALMENTE</p>
-							<p>SÓLO CONFIRMA TU CORREO PARA QUE TU CITA QUEDE PROGRAMADA</p>
-							<a href="#!" class="[ red white-text modal-action modal-close waves-effect waves-green btn-flat ]">CERRAR</a>
-						</div>
+				<div id="modal1" class="[ modal background-img ]">
+					<div class="[ modal-content ]">
+						<h4>¡LISTO!</h4>
+						<p>NUESTRO EXPERTO EN TRAJES TE ESTARÁ ESPERANDO PARA ATENDERTE PERSONALMENTE</p>
+						<p>SÓLO CONFIRMA TU CORREO PARA QUE TU CITA QUEDE PROGRAMADA</p>
+						<a href="#!" class="[ red white-text modal-action modal-close waves-effect waves-green btn-flat ]">CERRAR</a>
 					</div>
-
+				</div>
 				<!-- Modal Structure/Gracias! -->
-
-					<div id="modal2" class="[ modal background-img ]">
-						<div class="[ modal-content ]">
-							<h4>GRACIAS</h4>
-							<p>TU CITA ESTÁ CONFIRMADA</p>
-							<p>TE ESPERAMOS</p>
-							<a href="#!" class="[ red white-text modal-action modal-close waves-effect waves-green btn-flat ]">CERRAR</a>
-						</div>
-					</div>
-
-				<div class="[ col s6 m5 offset-l1 l6 ][ hide-on-small-only ]">
-					<div class="[ relative ][ height-herovh ]">
-						<img class="[ img-responsive ][ center-full ]" src="<?php echo THEMEPATH; ?>img/el_poder.png" alt="El poder de un traje">
+				<div id="modal2" class="[ modal background-img ]">
+					<div class="[ modal-content ]">
+						<h4>GRACIAS</h4>
+						<p>TU CITA ESTÁ CONFIRMADA</p>
+						<p>TE ESPERAMOS</p>
+						<a href="#!" class="[ red white-text modal-action modal-close waves-effect waves-green btn-flat ]">CERRAR</a>
 					</div>
 				</div>
 

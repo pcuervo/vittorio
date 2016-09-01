@@ -30,7 +30,7 @@ var setCiudad = function () {
     //setear la ciudad
     //cargar tiendas de la ciudad
     $(".optCiudad").removeAttr('selected', false);
-    $(".optCiudad").first().attr('selected', true);
+    $(".optCiudad:eq(1)").attr('selected', true);
     $(".select-dropdown:eq(0)").val($(".optCiudad:eq(1)").html());
     console.log($(".optCiudad ").first().html());
 }
@@ -39,16 +39,21 @@ var setTienda = function () {
     //Agregar funcionalidad para calcular la tienda mas cercana
     //setear la tienda
     $(".optTienda").removeAttr('selected', false);
-    $(".optTienda").first().attr('selected', true);
+    $(".optTienda:eq(1)").attr('selected', true);
     $(".select-dropdown:eq(2)").val($(".optTienda:eq(1)").html());
     console.log($(".optTienda ").first().html());
     
 }
 
 $(document).ready(function() {
-
+    $("#tienda").change(function() {
+        console.log($(this));
+        $("#nombreTienda").html('GALERIAS MONTERREY');
+        $("#direccionTienda").html('Av. Huachipato 756, centro comercial Santa Fe, local 123');
+    });
     mapGeolocation();
 });
+ 
 
 
 
