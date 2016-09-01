@@ -1,15 +1,16 @@
 <?php
 	get_header();
 ?>
+	<div style="display:none;" id="gmap_geo" class="gmaps"></div>
 
-	<div class="[ background-img background-img--main ]">
+	<div  class="[ background-img background-img--main ]">
 		<div class="[ container ]">
 			<div class="[ row ]">
 				<div class="[ col l6 ][ hide-on-med-and-up ]">
 					<img class="[ img-responsive ][ middle ]" src="<?php echo THEMEPATH; ?>img/el_poder.png" alt="El poder de un traje">
 				</div>
-				<div class="[ col s12 m7 l5 ][ padding ]">
-					<div class="[ bg-dark ][ padding margin-top margin-vertical--large-md ]">
+				<div class="[ col s12 m7 l5 ][ relative ][ padding ][ height-100vh--l ]">
+					<div class="[ bg-dark ][ width-100p ][ padding center-full--l ]">
 						<p class="[ text-uppercase white-text ]">¡hombre, muy bien! </p>
 						<p class="[ white-text ]">Compártenos los siguientes datos para hacer una cita con uno de nuestros Expertos en Trajes y te ayude a encontrar tu traje perfecto.</p>
 
@@ -27,19 +28,19 @@
 								<label for="telefono">Teléfono</label>
 							</div>
 							<div class="[ input-field ][ bg-white ]">
-								<select name="ciudad" data-parsley-error-message="Seleccione una ciudad" required>
-									<option value="" disabled selected>Ciudad</option>
-									<option value="1">Option 1</option>
-									<option value="2">Option 2</option>
-									<option value="3">Option 3</option>
+								<select id="ciudad" name="ciudad" data-parsley-error-message="Seleccione una ciudad" required>
+									<option class="" value="" disabled selected>Ciudad</option>
+									<option class="optCiudad" data-lat="19.3209311" data-long="-99.432815" value="1">Ciudad de Mexico</option>
+									<option class="optCiudad" data-lat="20.6489394" data-long="-98.4368711" value="2">Monterrey</option>
+									<option class="optCiudad" data-lat="19.2942611" data-long="-99.7012545" value="3">Toluca</option>
 								</select>
 							</div>
 							<div class="[ input-field ][ bg-white ]">
-								<select name="tienda" data-parsley-error-message="Seleccione una tienda" required>
-									<option value="" disabled selected>Tienda</option>
-									<option value="1">Option 1</option>
-									<option value="2">Option 2</option>
-									<option value="3">Option 3</option>
+								<select id="tienda" name="tienda" data-parsley-error-message="Seleccione una tienda" required>
+									<option class="" value="" disabled selected>Tienda</option>
+									<option class="optTienda" value="1">Option 1</option>
+									<option class="optTienda" value="2">Option 2</option>
+									<option class="optTienda" value="3">Option 3</option>
 								</select>
 							</div>
 							<div class="[ input-field ]">
