@@ -9,9 +9,9 @@
 				<div class="[ col l6 ][ hide-on-med-and-up ]">
 					<img class="[ img-responsive ][ middle ]" src="<?php echo THEMEPATH; ?>img/el_poder.png" alt="El poder de un traje">
 				</div>
-				<div class="[ col s12 m7 l5 ]">
 
-					<div class="[ bg-dark ][ padding ][ margin-vertical--large margin-vertical--large-md ]">
+				<div class="[ col s12 m7 l5 ][ no-float ][ inline-block ][ middle ]">
+					<div class="[ bg-dark ][ padding ][ margin-vertical ]">
 						<p class="[ text-uppercase white-text ]">¡hombre, muy bien! </p>
 						<p class="[ white-text ]">Compártenos los siguientes datos para hacer una cita con uno de nuestros Expertos en Trajes y te ayude a encontrar tu traje perfecto.</p>
 
@@ -65,36 +65,29 @@
 							</div>
 						</form>
 					</div>
+				</div>	
 
-
+				<div class="[ col s6 m4 l6 ][ hide-on-small-only ][ no-float ][ inline-block ][ middle ]">
+					<img class="[ img-responsive ]" src="<?php echo THEMEPATH; ?>img/el_poder.png" alt="El poder de un traje">
 				</div>
 
 
 				<!-- Modal Structure/Listo! -->
-
-					<div id="modal1" class="[ modal background-img ][ ]">
-						<div class="[ modal-content ]">
-							<h4>¡LISTO!</h4>
-							<p>NUESTRO EXPERTO EN TRAJES TE ESTARÁ ESPERANDO PARA ATENDERTE PERSONALMENTE</p>
-							<p>SÓLO CONFIRMA TU CORREO PARA QUE TU CITA QUEDE PROGRAMADA</p>
-							<a href="#!" class="[ red white-text modal-action modal-close waves-effect waves-green btn-flat ]">CERRAR</a>
-						</div>
+				<div id="modal1" class="[ modal background-img ]">
+					<div class="[ modal-content ]">
+						<h4>¡LISTO!</h4>
+						<p>NUESTRO EXPERTO EN TRAJES TE ESTARÁ ESPERANDO PARA ATENDERTE PERSONALMENTE</p>
+						<p>SÓLO CONFIRMA TU CORREO PARA QUE TU CITA QUEDE PROGRAMADA</p>
+						<a href="#!" class="[ red white-text modal-action modal-close waves-effect waves-green btn-flat ]">CERRAR</a>
 					</div>
-
+				</div>
 				<!-- Modal Structure/Gracias! -->
-
-					<div id="modal2" class="[ modal background-img ]">
-						<div class="[ modal-content ]">
-							<h4>GRACIAS</h4>
-							<p>TU CITA ESTÁ CONFIRMADA</p>
-							<p>TE ESPERAMOS</p>
-							<a href="#!" class="[ red white-text modal-action modal-close waves-effect waves-green btn-flat ]">CERRAR</a>
-						</div>
-					</div>
-
-				<div class="[ col s6 m5 offset-l1 l6 ][ hide-on-small-only ]">
-					<div class="[ relative ][ height-herovh ]">
-						<img class="[ img-responsive ][ center-full ]" src="<?php echo THEMEPATH; ?>img/el_poder.png" alt="El poder de un traje">
+				<div id="modal2" class="[ modal background-img ]">
+					<div class="[ modal-content ]">
+						<h4>GRACIAS</h4>
+						<p>TU CITA ESTÁ CONFIRMADA</p>
+						<p>TE ESPERAMOS</p>
+						<a href="#!" class="[ red white-text modal-action modal-close waves-effect waves-green btn-flat ]">CERRAR</a>
 					</div>
 				</div>
 
