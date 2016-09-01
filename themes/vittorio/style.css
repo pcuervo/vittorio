@@ -6929,6 +6929,11 @@ textarea.materialize-textarea {
   margin-top: -15px;
 }
 
+/* line 280, sass/components/forms/_input-fields.scss */
+.parsley-custom-error-message {
+  background-color: #000000;
+}
+
 /* Radio Buttons
    ========================================================================== */
 /* line 5, sass/components/forms/_radio-buttons.scss */
