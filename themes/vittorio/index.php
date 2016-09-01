@@ -57,7 +57,7 @@
 							</div>
 							<p>
 								<input type="checkbox" id="aviso" data-parsley-error-message="Debe estar de acuerdo con el aviso de privacidad" required/>
-								<label class="[ white-text ]" for="aviso">He leído y estoy de acuerdo con el <a class="[ white-text underlined ]" href="#">Aviso de privacidad</a></label>
+								<label class="[ white-text ]" for="aviso">He leído y estoy de acuerdo con el <a class="[ white-text underlined ]" href="<?php echo site_url('aviso-de-privacidad'); ?>">Aviso de privacidad</a></label>
 							</p>
 							<div class="[ block text-center margin-bottom ]">
 								<button type="submit" class="[ waves-effect waves-light ][ btn-large ][ red ]">Hacer mi cita</button>

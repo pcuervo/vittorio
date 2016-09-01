@@ -21,7 +21,7 @@
 			<div class="[ container ]">
 				<div class="[ row ]">
 					<div class="[ col s12 m3 ]">
-						<a href="#"><img class="[ middle ][ center-block ]" src="<?php echo THEMEPATH; ?>img/logo.png" alt="Vittorio Forti Logo"></a>
+						<a href="<?php echo site_url(); ?>"><img class="[ middle ][ center-block ]" src="<?php echo THEMEPATH; ?>img/logo.png" alt="Vittorio Forti Logo"></a>
 					</div>
 					<div class="[ col s12 m9 ]">
 						<div class="[ nav-options ]">
