@@ -10,7 +10,7 @@
 					<img class="[ img-responsive ][ middle ]" src="<?php echo THEMEPATH; ?>img/el_poder.png" alt="El poder de un traje">
 				</div>
 				<div class="[ col s12 m7 l5 ][ padding ]">
-					<div class="[ bg-dark ][ padding margin-vertical margin-vertical--large-md ]">
+					<div class="[ bg-dark ][ padding margin-vertical--large-md ]">
 						<p class="[ text-uppercase white-text ]">¡hombre, muy bien! </p>
 						<p class="[ white-text ]">Compártenos los siguientes datos para hacer una cita con uno de nuestros Expertos en Trajes y te ayude a encontrar tu traje perfecto.</p>
 
@@ -27,7 +27,7 @@
 								<input id="telefono" type="text" class="[ validate ]" data-parsley-type="digits" data-parsley-error-message="Este campo sólo acepta números" required>
 								<label for="telefono">Teléfono</label>
 							</div>
-							<div class="[ input-field ]">
+							<div class="[ input-field ][ bg-white ]">
 								<select id="ciudad" name="ciudad" data-parsley-error-message="Seleccione una ciudad" required>
 									<option class="" value="" disabled selected>Ciudad</option>
 									<option class="optCiudad" data-lat="19.3209311" data-long="-99.432815" value="1">Ciudad de Mexico</option>
@@ -35,7 +35,7 @@
 									<option class="optCiudad" data-lat="19.2942611" data-long="-99.7012545" value="3">Toluca</option>
 								</select>
 							</div>
-							<div class="[ input-field ]">
+							<div class="[ input-field ][ bg-white ]">
 								<select id="tienda" name="tienda" data-parsley-error-message="Seleccione una tienda" required>
 									<option class="" value="" disabled selected>Tienda</option>
 									<option class="optTienda" value="1">Option 1</option>
@@ -47,7 +47,7 @@
 								<input id="fecha" type="date" class="datepicker">
 								<label for="fecha">Fecha</label>
 							</div>
-							<div class="[ input-field ]">
+							<div class="[ input-field ][ bg-white ]">
 								<select name="horario" data-parsley-error-message="Por favor selecciona un horario" required>
 									<option value="" selected>Horario</option>
 									<option value="1">Option 1</option>
@@ -66,10 +66,7 @@
 					</div>
 				</div>
 
-				<!-- Modal Trigger/ Listo!-->
-				<a class="[ waves-effect waves-light btn modal-trigger ]" href="#modal1">Listo</a>
-
-				<!-- Modal Structure -->
+				<!-- Modal Structure/Listo! -->
 
 					<div id="modal1" class="[ modal background-img ][ ]">
 						<div class="[ modal-content ]">
@@ -79,10 +76,8 @@
 							<a href="#!" class="[ red white-text modal-action modal-close waves-effect waves-green btn-flat ]">CERRAR</a>
 						</div>
 					</div>
-				<!-- Modal Trigger/ Gracias!-->
-				<a class="[ waves-effect waves-light btn modal-trigger ]" href="#modal2">Gracias</a>
 
-				<!-- Modal Structure -->
+				<!-- Modal Structure/Gracias! -->
 
 					<div id="modal2" class="[ modal background-img ]">
 						<div class="[ modal-content ]">

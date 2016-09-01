@@ -12,10 +12,7 @@ select {
   height: $input-height;
 }
 
-select {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0px;
-}
+
 .select-label {
   position: absolute;
 }
@@ -26,20 +23,21 @@ select {
   input.select-dropdown {
     position: relative;
     cursor: pointer;
-    background-color: transparent;
     border: none;
     border-bottom: $input-border;
     outline: none;
     height: $input-height;
     line-height: $input-height;
-    width: 100%;
+    width: 95%;
     font-size: $input-font-size;
     margin: $input-margin;
-    padding: 0;
+    padding: 0 2.5%;
     display: block;
+    color:$input-border-color;
   }
 
   span.caret {
+    margin-right:3%;
     color: initial;
     position: absolute;
     right: 0;
