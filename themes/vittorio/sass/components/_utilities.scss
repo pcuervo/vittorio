@@ -6,7 +6,7 @@
 .margin                 { margin: $margin-size;}
 
 .margin-auto            { margin: auto;}
-.no-margin              { margin: $margin-size 0 ;}
+.no-margin              { margin: 0 !important;}
 
 .margin-xsmall          { margin: ($margin-size/4)}
 .margin-small			      { margin: ($margin-size/2)}
@@ -53,6 +53,8 @@
 
 .float-right 	{ float: right; }
 .float-left 	{ float: left; }
+
+.no-float     { float: none !important; }
 
 
 //Position
