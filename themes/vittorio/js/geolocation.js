@@ -10,8 +10,8 @@ var mapGeolocation = function () {
         success: function (position) {
             map.setCenter(position.coords.latitude, position.coords.longitude);
             console.log('Coordenadas: '+position.coords.latitude+', '+position.coords.longitude);
-            setCiudad();
-            setTienda();
+            setTimeout('setCiudad()', 1000);
+            setTimeout('setTienda()', 2000);
         },
         error: function (error) {
             alert('Geolocation failed: ' + error.message);
@@ -31,6 +31,7 @@ var setCiudad = function () {
     //cargar tiendas de la ciudad
     $(".optCiudad").removeAttr('selected', false);
     $(".optCiudad").first().attr('selected', true);
+    $(".select-dropdown:eq(0)").val($(".optCiudad:eq(1)").html());
     console.log($(".optCiudad ").first().html());
 }
 
@@ -39,7 +40,9 @@ var setTienda = function () {
     //setear la tienda
     $(".optTienda").removeAttr('selected', false);
     $(".optTienda").first().attr('selected', true);
+    $(".select-dropdown:eq(2)").val($(".optTienda:eq(1)").html());
     console.log($(".optTienda ").first().html());
+    
 }
 
 $(document).ready(function() {
