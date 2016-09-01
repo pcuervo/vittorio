@@ -10,7 +10,7 @@
 					<img class="[ img-responsive ][ middle ]" src="<?php echo THEMEPATH; ?>img/el_poder.png" alt="El poder de un traje">
 				</div>
 				<div class="[ col s12 m7 l5 ][ padding ]">
-					<div class="[ bg-dark ][ padding margin-vertical--large-md ]">
+					<div class="[ bg-dark ][ padding margin-top margin-vertical--large-md ]">
 						<p class="[ text-uppercase white-text ]">¡hombre, muy bien! </p>
 						<p class="[ white-text ]">Compártenos los siguientes datos para hacer una cita con uno de nuestros Expertos en Trajes y te ayude a encontrar tu traje perfecto.</p>
 

@@ -37,12 +37,13 @@ select {
   }
 
   span.caret {
-    margin-right:3%;
     color: initial;
     position: absolute;
     right: 0;
     top: 16px;
     font-size: 10px;
+    margin-right:3%;
+    z-index:1;
     &.disabled {
       color: $input-disabled-color;
     }
