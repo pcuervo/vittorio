@@ -23,7 +23,8 @@
 
 .padding-vertical       { padding:$padding-size 0;}
 
-.margin-vertical--large-md {
+.margin-vertical--large {
+  @media #{$medium-and-up}{margin: ($margin-size*2) 0;}
   @media only screen and (min-width: $small-screen-up) and (max-width: $medium-screen) { margin: ($margin-size*2) 0;}
 }
 
@@ -75,7 +76,8 @@
 
 .width-100p {width:100%;}
 
-.relative.height-100vh{
+.height-herovh{
+  height: 90vh;
   @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) { height: 70vh;}
 }
 
@@ -109,23 +111,27 @@
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-@media(min-width: 601px){
+
+
 .center-full--l {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  @media#{$medium-and-up}{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
 
-@media(min-width:601px){
-  .height-100vh--l{
+
+.height-100vh--l{
+  @media#{$medium-and-up}{
     height: 100vh;
   }
 }
+
 
 //Colors
 

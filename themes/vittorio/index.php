@@ -10,8 +10,8 @@
 					<img class="[ img-responsive ][ middle ]" src="<?php echo THEMEPATH; ?>img/el_poder.png" alt="El poder de un traje">
 				</div>
 				<div class="[ col s12 m7 l5 ]">
-						<div class="[ relative ][ height-100vh ]">
-							<div class="[ bg-dark ][ width-100p ][ padding center-full--l ]">
+
+							<div class="[ bg-dark ][ padding ][ margin-vertical--large margin-vertical--large-md ]">
 		                       <p class="[ text-uppercase white-text ]">¡hombre, muy bien! </p>
 		                       <p class="[ white-text ]">Compártenos los siguientes datos para hacer una cita con uno de nuestros Expertos en Trajes y te ayude a encontrar tu traje perfecto.</p>
 
@@ -65,7 +65,7 @@
 									</div>
 								</form>
 							</div>
-						</div>
+
 
 				</div>
 
@@ -92,7 +92,7 @@
 					</div>
 
 				<div class="[ col s6 m5 offset-l1 l6 ][ hide-on-small-only ]">
-					<div class="[ relative ][ height-100vh ]">
+					<div class="[ relative ][ height-herovh ]">
 						<img class="[ img-responsive ][ center-full ]" src="<?php echo THEMEPATH; ?>img/el_poder.png" alt="El poder de un traje">
 					</div>
 				</div>
