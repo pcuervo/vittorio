@@ -14,8 +14,6 @@ var $=jQuery.noConflict();
 
 		$('form').parsley();
 
-
-
     });
 })(jQuery);
 

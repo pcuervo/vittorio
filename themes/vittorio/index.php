@@ -1,5 +1,48 @@
 <?php
 	get_header();
+	$ciudades = array(
+		'Ciudad de México' => array(
+			'lat' => '19.3209311',
+			'long' => '99.432815',
+			'tiendas' => array(
+				'Pabellón Polanco' => array(
+					'lat' => '21.3209311',
+					'long' => '98.432815',
+					'info' => 'lorem ipsum 123, Col. Dolor, C.P. 123456, Tel: 555-555-555'
+				),
+				'Pabellón Estrellas' => array(
+					'lat' => '20.3209311',
+					'long' => '95.432815',
+					'info' => 'lorem ipsum 456, Col. Ipsum, C.P. 123456, Tel: 555-555-555'
+				),
+			)
+		),
+		'Monterrey' => array(
+			'lat' => '59.3209311',
+			'long' => '49.432815',
+			'tiendas' => array(
+				'Pabellón Monterrey' => array(
+					'lat' => '21.3209311',
+					'long' => '98.432815',
+					'info' => 'lorem ipsum 123, Col. Dolor, C.P. 123456, Tel: 555-555-555'
+				),
+				'Pabellón Monterrey 2' => array(
+					'lat' => '20.3209311',
+					'long' => '95.432815',
+					'info' => 'lorem ipsum 456, Col. Ipsum, C.P. 123456, Tel: 555-555-555'
+				),
+			)
+		)
+	);
+
+	// foreach ($ciudades as $key => $value) {
+	// 	echo $key;
+	// 	echo '<pre>';
+	// 		print_r($value);
+	// 	echo '</pre>';
+	// }
+
+
 ?>
 	<div style="display:none;" id="gmap_geo" class="gmaps"></div>
 
@@ -31,6 +74,12 @@
 							<div class="[ input-field ][ bg-white ]">
 								<select id="ciudad" name="ciudad" data-parsley-error-message="Seleccione una ciudad" required>
 									<option class="" value="" disabled selected>Ciudad</option>
+									<?php
+										foreach ($ciudades as $key => $value) {
+											echo '<option class="optCiudad" data-lat="19.3209311" data-long="-99.432815" value="1">Ciudad de Mexico</option>'
+										}
+									?>
+
 									<option class="optCiudad" data-lat="19.3209311" data-long="-99.432815" value="1">Ciudad de Mexico</option>
 									<option class="optCiudad" data-lat="20.6489394" data-long="-98.4368711" value="2">Monterrey</option>
 									<option class="optCiudad" data-lat="19.2942611" data-long="-99.7012545" value="3">Toluca</option>
