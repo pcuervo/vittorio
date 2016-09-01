@@ -106,12 +106,12 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 
 	//SEND EMAIL CONFIRMATION 
 	$resp = wp_mail( $correo, $subject, $message, $headers );
-	var_dump($resp);
+	//var_dump($resp);
 }
 
 if ( isset($_GET['citaid']) && !empty($_GET['citaid']) ) {
 	update_post_meta($_GET['citaid'], '_status_meta', 'CONFIRMADA');
-	echo '<input type="text" id="confirmada" value="'.$_GET['citaid'].'" />';
+	echo '<input type="hidden" id="confirmada" value="'.$_GET['citaid'].'" />';
 }
 
 
