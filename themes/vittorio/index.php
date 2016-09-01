@@ -15,45 +15,45 @@
 						<p class="[ text-uppercase white-text ]">¡hombre, muy bien! </p>
 						<p class="[ white-text ]">Compártenos los siguientes datos para hacer una cita con uno de nuestros Expertos en Trajes y te ayude a encontrar tu traje perfecto.</p>
 
-						<form class="[ margin-top ]" method="post">
+						<form class="[ margin-top ]" method="post" name="front_end" action="citas">
 							<div class="[ input-field ]">
-								<input id="nombre" type="text" class="[ validate ]" data-parsley-error-message="Este campo es obligatorio" required>
+								<input id="nombre" name="nombre" type="text" class="[ validate ]" data-parsley-error-message="Este campo es obligatorio" required>
 								<label for="nombre">Nombre y apellido</label>
 							</div>
 							<div class="[ input-field ]">
-								<input id="correo" type="email" class="[ validate ]" data-parsley-error-message="Este campo es obligatorio" required>
+								<input id="correo" name="correo" type="email" class="[ validate ]" data-parsley-error-message="Este campo es obligatorio" required>
 								<label for="correo">Correo</label>
 							</div>
 							<div class="[ input-field ]">
-								<input id="telefono" type="text" class="[ validate ]" data-parsley-type="digits" data-parsley-error-message="Este campo sólo acepta números" required>
+								<input id="telefono" name="telefono" type="text" class="[ validate ]" data-parsley-type="digits" data-parsley-error-message="Este campo sólo acepta números" required>
 								<label for="telefono">Teléfono</label>
 							</div>
 							<div class="[ input-field ][ bg-white ]">
 								<select id="ciudad" name="ciudad" data-parsley-error-message="Seleccione una ciudad" required>
 									<option class="" value="" disabled selected>Ciudad</option>
-									<option class="optCiudad" data-lat="19.3209311" data-long="-99.432815" value="1">Ciudad de Mexico</option>
-									<option class="optCiudad" data-lat="20.6489394" data-long="-98.4368711" value="2">Monterrey</option>
-									<option class="optCiudad" data-lat="19.2942611" data-long="-99.7012545" value="3">Toluca</option>
+									<option class="optCiudad" data-lat="19.3209311" data-long="-99.432815" value="Ciudad de Mexico">Ciudad de Mexico</option>
+									<option class="optCiudad" data-lat="20.6489394" data-long="-98.4368711" value="Monterrey">Monterrey</option>
+									<option class="optCiudad" data-lat="19.2942611" data-long="-99.7012545" value="Toluca">Toluca</option>
 								</select>
 							</div>
 							<div class="[ input-field ][ bg-white ]">
 								<select id="tienda" name="tienda" data-parsley-error-message="Seleccione una tienda" required>
 									<option class="" value="" disabled selected>Tienda</option>
-									<option class="optTienda" value="1">Option 1</option>
-									<option class="optTienda" value="2">Option 2</option>
-									<option class="optTienda" value="3">Option 3</option>
+									<option class="optTienda" value="GALERÍAS GUADALAJARA">GALERÍAS GUADALAJARA</option>
+									<option class="optTienda" value="GALERIAS MONTERREY">GALERIAS MONTERREY</option>
+									<option class="optTienda" value="CENTRAL DE TRAJES">CENTRAL DE TRAJES</option>
 								</select>
 							</div>
 							<div class="[ input-field ]">
-								<input id="fecha" type="date" class="datepicker">
+								<input id="fecha" name="fecha" type="date" class="datepicker">
 								<label for="fecha">Fecha</label>
 							</div>
 							<div class="[ input-field ][ bg-white ]">
-								<select name="horario" data-parsley-error-message="Por favor selecciona un horario" required>
+								<select id="horario" name="horario" data-parsley-error-message="Por favor selecciona un horario" required>
 									<option value="" selected>Horario</option>
-									<option value="1">Option 1</option>
-									<option value="2">Option 2</option>
-									<option value="3">Option 3</option>
+									<option value="Option 1">Option 1</option>
+									<option value="Option 2">Option 2</option>
+									<option value="Option 3">Option 3</option>
 								</select>
 							</div>
 							<p>
@@ -68,6 +68,7 @@
 
 
 				</div>
+
 
 				<!-- Modal Structure/Listo! -->
 

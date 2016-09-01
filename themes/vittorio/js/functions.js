@@ -19,4 +19,13 @@ var $=jQuery.noConflict();
     });
 })(jQuery);
 
+if( $("#citaid").length && $("#citaid").val() != '' ) {
+    console.log($("#citaid").val());
+    $("#modal1").openModal();
+}
+
+if( $("#confirmada").length && $("#confirmada").val() != '' ) {
+    $("#modal2").openModal();
+}
+
 
