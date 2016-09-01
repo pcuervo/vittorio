@@ -3607,7 +3607,7 @@ ul.staggered-list li {
 /* line 362, sass/components/_global.scss */
 .page-footer {
   margin-top: 20px;
-  padding: 60px 0px 20px;
+  padding: 0px;
   position: absolute;
   width: 100%;
   background-color: #000000;
