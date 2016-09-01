@@ -9529,16 +9529,16 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   padding: 20px 0;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 601px) and (max-width: 992px) {
   /* line 26, sass/components/_utilities.scss */
   .margin-vertical--large {
     margin: 40px 0;
   }
 }
-@media only screen and (min-width: 601px) and (max-width: 992px) {
+@media only screen and (min-width: 601px) {
   /* line 26, sass/components/_utilities.scss */
   .margin-vertical--large {
-    margin: 40px 0;
+    margin: 80px 0;
   }
 }
 
