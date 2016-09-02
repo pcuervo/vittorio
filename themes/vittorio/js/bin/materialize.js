@@ -3142,7 +3142,7 @@ $(document).ready(function(){
         if (type === 'multiple') {
           options.append($('<li class="' + disabledClass + '"><span><input type="checkbox"' + disabledClass + '/><label></label>' + option.html() + '</span></li>'));
         } else {
-          options.append($('<li class="' + disabledClass + optgroupClass + '"><span>' + option.html() + '</span></li>'));
+          options.append($('<li class=" opciones'+select.attr('id')+' '+option.data('claseciudad')+' ' + disabledClass + optgroupClass + '"><span>' + option.html() + '</span></li>'));
         }
       };
 

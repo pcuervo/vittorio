@@ -74,7 +74,7 @@
 											$posts->the_post();
 											$meta = get_post_meta($posts->post->ID);
 											$claseciudad = str_replace(' ', '', $meta['_ciudad_meta'][0]);
-											echo '<option value="'.get_the_title().'" class="opttienda '.$claseciudad.'" id="tienda_'.$posts->post->ID.'" data-id="'.$posts->post->ID.'" data-lat="'.$meta['_latitud_meta'][0].'" data-long="'.$meta['_longitud_meta'][0].'" data-direccion="'.$meta['_ubicacion_meta'][0].'" data-telefono="'.$meta['_telefono_meta'][0].'">'.get_the_title().'</option>';
+											echo '<option value="'.get_the_title().'" class="opttienda '.$claseciudad.'" id="tienda_'.$posts->post->ID.'" data-claseciudad="'.$claseciudad.'" data-lat="'.$meta['_latitud_meta'][0].'" data-long="'.$meta['_longitud_meta'][0].'" data-direccion="'.$meta['_ubicacion_meta'][0].'" data-telefono="'.$meta['_telefono_meta'][0].'">'.get_the_title().'</option>';
 										}
 									}
 									echo '</select>';
