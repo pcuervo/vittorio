@@ -6,8 +6,8 @@ var $=jQuery.noConflict();
 
     	$('select').material_select();
     	$('.datepicker').pickadate({
-			selectMonths: true, // Creates a dropdown to control month
-			selectYears: 2 // Creates a dropdown of 15 years to control year
+			selectMonths: true, //
+			selectYears: 8 //
 		});
 
         $('.modal-trigger').leanModal();
@@ -25,5 +25,3 @@ if( $("#citaid").length && $("#citaid").val() != '' ) {
 if( $("#confirmada").length && $("#confirmada").val() != '' ) {
     $("#modal2").openModal();
 }
-
-

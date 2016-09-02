@@ -33,8 +33,8 @@ add_action( 'wp_enqueue_scripts', function(){
 
 	//SCRIPT TO GEOLOCATE
 	wp_enqueue_script( 'geo-map-api', 'https://maps.googleapis.com/maps/api/js?&key=AIzaSyABZ4eSBYBsLi5WQ7WdXZpivNq6n4wQZPA');
-	wp_enqueue_script( 'geo-map-gmaps', JSPATH . 'gmaps/gmaps.js', array('geo-map-api' ));	
-	wp_enqueue_script( 'geo-location', JSPATH . 'geolocation.js', array('geo-map-api', 'geo-map-gmaps'));	
+	wp_enqueue_script( 'geo-map-gmaps', JSPATH . 'gmaps/gmaps.js', array('geo-map-api' ));
+	wp_enqueue_script( 'geo-location', JSPATH . 'geolocation.js', array('geo-map-api', 'geo-map-gmaps'));
 
 	// localize scripts
 	// wp_localize_script( 'functions', 'siteUrl', SITEURL );
@@ -54,7 +54,7 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 	$title     = 'Cita: '.$_POST['nombre'];
 	$post_type = 'citas';
 	$nombre = $_POST['nombre'];
-	$correo = $_POST['correo'];    
+	$correo = $_POST['correo'];
 	$telefono = $_POST['telefono'];
 	$ciudad = $_POST['ciudad'];
 	$tienda = $_POST['tienda'];
@@ -64,8 +64,8 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 	//the array of arguements to be inserted with wp_insert_post
 	$new_post = array(
 	'post_title'    => $title,
-	'post_status'   => 'publish',          
-	'post_type'     => $post_type 
+	'post_status'   => 'publish',
+	'post_type'     => $post_type
 	);
 
 	//insert the the post into database by passing $new_post to wp_insert_post
@@ -89,7 +89,7 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 	echo '<input type="hidden" id="citaid" value="'.$pid.'" />';
 
 	$subject = 'Vittorio - Confirma tu Cita';
-	$body = 'Hemos registrado tu cita, para confirmarla haz click en el siguiente link: <br>'.$emailurl;
+	$body = 'Hemos registrado tu cita, para confirmarla haz click en el siguiente link: <br />'.$emailurl;
 	$headers = array('Content-Type: text/html; charset=UTF-8');
 	//$headers = 'From: My Name <' . $correo . '>' . "\r\n";
 	$message = '<html><body>';
@@ -104,7 +104,7 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 
 	add_filter('wp_mail_content_type',create_function('', 'return "text/html"; '));
 
-	//SEND EMAIL CONFIRMATION 
+	//SEND EMAIL CONFIRMATION
 	$resp = wp_mail( $correo, $subject, $message, $headers );
 	//var_dump($resp);
 }
