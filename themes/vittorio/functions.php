@@ -91,15 +91,88 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 	$subject = 'Vittorio - Confirma tu Cita';
 	$body = 'Hemos registrado tu cita, para confirmarla haz click en el siguiente link: <br />'.$emailurl;
 	$headers = array('Content-Type: text/html; charset=UTF-8');
-	//$headers = 'From: My Name <' . $correo . '>' . "\r\n";
+	$headers = 'From: Vittorio Forti <' . $correo . '>' . "\r\n";
 	$message = '<html><body>';
-	$message .= '<h3>Contacto a través de www.sunland.mx</h3>';
-	$message .= '<p>Nombre: '.$nombre.'</p>';
-	$message .= '<p>Email: '. $correo . '</p>';
-	$message .= '<p>Tienda: '. $tienda . '</p>';
-	$message .= '<p>Fecha: '. $fecha . '</p>';
-	$message .= '<p>Horario: '. $horario . '</p>';
-	$message .= '<p>Hemos registrado tu cita, para confirmarla haz click en el siguiente link: <br>'.$emailurl.'</p>';
+	$message .= '
+			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+				<tbody>
+					<tr>
+						<td align="center" valign="top">
+							<div>
+								<p style="margin-top:2em"></p>
+							</div>
+							<table border="0" cellpadding="0" cellspacing="0" width="600" style="background-color:#000000;border:1px solid #dcdcdc;border-radius:3px!important">
+								<tbody>
+									<tr>
+										<td align="center" valign="top">
+											<table border="0" cellpadding="0" cellspacing="0" width="600" style="background-color:#252525;border-radius:3px 3px 0 0!important;color:#ffffff;border-bottom:0;font-weight:bold;line-height:100%;vertical-align:middle;font-family:&quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif">
+												<tbody>
+													<tr>
+														<td style="padding:36px 48px;display:block; text-align:center; ">
+															<img src="http://pcuervo.com/vittorio/wp-content/themes/vittorio/img/logo.png" alt="Logo Vitorio Forti" style="border:none;display:inline;font-size:14px;font-weight:bold;min-height:auto;line-height:100%;outline:none;text-decoration:none;text-transform:capitalize" class="CToWUd">
+															<h1 style="color:#ffffff;font-family:&quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif;font-size:30px;font-weight:300;line-height:150%;margin:0;text-align:center">Hemos registrado tu cita</h1>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top">
+											<table border="0" cellpadding="0" cellspacing="0" width="600">
+												<tbody>
+													<tr>
+														<td valign="top" style="background-color:#fdfdfd">
+															<table border="0" cellpadding="20" cellspacing="0" width="100%">
+																<tbody>
+																	<tr>
+																		<td valign="top" style="padding:48px">
+																			<div style="color:#737373;font-family:&quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif;font-size:14px;line-height:150%;text-align:left">
+																				<p class="">Nombre: '.$nombre.'</p>
+																				<p>Email: '. $correo . '</p>
+																				<p>Tienda: '. $tienda . '</p>
+																				<p>Fecha: '. $fecha . '</p>
+																				<p>Horario: '. $horario . '</p>
+																				<p style="margin:0 0 16px">Para confirmarla haz click en el siguiente link:</p>
+																				<p style="margin:0 0 16px">'.$emailurl.'</p>
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top">
+											<table border="0" cellpadding="10" cellspacing="0" width="600">
+												<tbody>
+													<tr>
+														<td valign="top" style="padding:0">
+															<table border="0" cellpadding="10" cellspacing="0" width="100%">
+																<tbody>
+																	<tr>
+																		<td colspan="2" valign="middle" style="padding:2em;border:0;color:#fff;font-family:Arial;font-size:12px;line-height:125%;text-align:center">
+																			<p>Vittorio Forti – El poder de un traje.</p>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>';
 	$message .= '</body></html>';
 
 	add_filter('wp_mail_content_type',create_function('', 'return "text/html"; '));
