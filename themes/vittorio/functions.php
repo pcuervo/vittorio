@@ -15,8 +15,17 @@ define( 'CSSPATH', get_template_directory_uri() . '/css/' );
 define( 'THEMEPATH', get_template_directory_uri() . '/' );
 define( 'SITEURL', site_url('/') );
 
+add_action( 'admin_enqueue_scripts', 'load_maps_js');
+function load_maps_js(){
 
+	if(get_post_type() == 'ciudades' || get_post_type() == 'tiendas')
+	{
+		// scripts
+		wp_enqueue_script( 'api-google', 'https://maps.google.com/maps/api/js?libraries=places&key=AIzaSyABZ4eSBYBsLi5WQ7WdXZpivNq6n4wQZPA&language=es-ES', array('jquery'), '1.0', true );
+		wp_enqueue_script( 'google-function-autocomplete', THEMEPATH. 'js/google-autocomplete.js', array('api-google'), '1.0', true );
+	}
 
+}
 
 /*------------------------------------*\
 	#GENERAL FUNCTIONS
@@ -64,7 +73,7 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 	//the array of arguements to be inserted with wp_insert_post
 	$new_post = array(
 	'post_title'    => $title,
-	'post_status'   => 'publish',          
+	'post_status'   => 'draft',          
 	'post_type'     => $post_type 
 	);
 
@@ -84,7 +93,7 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 	add_post_meta($pid, '_tienda_meta', $tienda, true);
 	add_post_meta($pid, '_fecha_meta', $fecha, true);
 	add_post_meta($pid, '_horario_meta', $horario, true);
-	add_post_meta($pid, '_status_meta', 'PENDIENTE', true);
+	//add_post_meta($pid, '_status_meta', 'PENDIENTE', true);
 
 	echo '<input type="hidden" id="citaid" value="'.$pid.'" />';
 
@@ -93,7 +102,6 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 	$headers = array('Content-Type: text/html; charset=UTF-8');
 	//$headers = 'From: My Name <' . $correo . '>' . "\r\n";
 	$message = '<html><body>';
-	$message .= '<h3>Contacto a través de www.sunland.mx</h3>';
 	$message .= '<p>Nombre: '.$nombre.'</p>';
 	$message .= '<p>Email: '. $correo . '</p>';
 	$message .= '<p>Tienda: '. $tienda . '</p>';
@@ -110,7 +118,15 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 }
 
 if ( isset($_GET['citaid']) && !empty($_GET['citaid']) ) {
-	update_post_meta($_GET['citaid'], '_status_meta', 'CONFIRMADA');
+	//update_post_meta($_GET['citaid'], '_status_meta', 'CONFIRMADA');
+	// Update post 37
+	  $my_post = array(
+	      'ID'           => $_GET['citaid'],
+	      'post_status'   => 'publish'
+	  );
+
+	// Update the post into the database
+	  wp_update_post( $my_post );
 	echo '<input type="hidden" id="confirmada" value="'.$_GET['citaid'].'" />';
 }
 

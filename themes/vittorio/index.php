@@ -1,48 +1,5 @@
 <?php
 	get_header();
-	$ciudades = array(
-		'Ciudad de México' => array(
-			'lat' => '19.3209311',
-			'long' => '99.432815',
-			'tiendas' => array(
-				'Pabellón Polanco' => array(
-					'lat' => '21.3209311',
-					'long' => '98.432815',
-					'info' => 'lorem ipsum 123, Col. Dolor, C.P. 123456, Tel: 555-555-555'
-				),
-				'Pabellón Estrellas' => array(
-					'lat' => '20.3209311',
-					'long' => '95.432815',
-					'info' => 'lorem ipsum 456, Col. Ipsum, C.P. 123456, Tel: 555-555-555'
-				),
-			)
-		),
-		'Monterrey' => array(
-			'lat' => '59.3209311',
-			'long' => '49.432815',
-			'tiendas' => array(
-				'Pabellón Monterrey' => array(
-					'lat' => '21.3209311',
-					'long' => '98.432815',
-					'info' => 'lorem ipsum 123, Col. Dolor, C.P. 123456, Tel: 555-555-555'
-				),
-				'Pabellón Monterrey 2' => array(
-					'lat' => '20.3209311',
-					'long' => '95.432815',
-					'info' => 'lorem ipsum 456, Col. Ipsum, C.P. 123456, Tel: 555-555-555'
-				),
-			)
-		)
-	);
-
-	// foreach ($ciudades as $key => $value) {
-	// 	echo $key;
-	// 	echo '<pre>';
-	// 		print_r($value);
-	// 	echo '</pre>';
-	// }
-
-
 ?>
 	<div style="display:none;" id="gmap_geo" class="gmaps"></div>
 
@@ -72,27 +29,56 @@
 								<label for="telefono">Teléfono</label>
 							</div>
 							<div class="[ input-field ][ bg-white ]">
-								<select id="ciudad" name="ciudad" data-parsley-error-message="Seleccione una ciudad" required>
-									<option class="" value="" disabled selected>Ciudad</option>
+								<?php
+									$query_args = array(
+										'post_type'      => 'ciudades',
+										'order' 		 => 'ASC', 
+										'orderby'        => 'title',
+										'no_found_rows'  => true,
+										'cache_results'  => false,
+									);
 
-									<?php
-										foreach ($ciudades as $key => $value) {
-											echo '<option class="optCiudad" data-lat="19.3209311" data-long="-99.432815" value="1">Ciudad de Mexico</option>';
+								    $posts = new WP_Query( $query_args );
+
+								    echo '<select id="ciudad" name="ciudad" data-parsley-error-message="Seleccione una ciudad" required>';
+								 	echo '<option class="" value="" disabled selected>Selecciona una Ciudad</option>';
+									if ( $posts->have_posts() ) {
+										while ( $posts->have_posts() ) {
+											$posts->the_post();
+											$meta = get_post_meta($posts->post->ID);
+											$lat = $meta['_latitud_meta'][0];
+											$long = $meta['_longitud_meta'][0];
+
+											echo '<option value="'.get_the_title().'" class="optciudad" id="ciudad_'.$posts->post->ID.'" data-lat="'.$meta['_latitud_meta'][0].'" data-long="'.$meta['_longitud_meta'][0].'" >'.get_the_title().'</option>';
 										}
-									?>
-
-									<option class="optCiudad" data-lat="19.3209311" data-long="-99.432815" value="1">Ciudad de Mexico</option>
-									<option class="optCiudad" data-lat="20.6489394" data-long="-98.4368711" value="2">Monterrey</option>
-									<option class="optCiudad" data-lat="19.2942611" data-long="-99.7012545" value="3">Toluca</option>
-								</select>
+									}
+									echo '</select>';
+								?>
 							</div>
 							<div class="[ input-field ][ bg-white ]">
-								<select id="tienda" name="tienda" data-parsley-error-message="Seleccione una tienda" required>
-									<option class="" value="" disabled selected>Tienda</option>
-									<option class="optTienda" value="GALERÍAS GUADALAJARA">GALERÍAS GUADALAJARA</option>
-									<option class="optTienda" value="GALERIAS MONTERREY">GALERIAS MONTERREY</option>
-									<option class="optTienda" value="CENTRAL DE TRAJES">CENTRAL DE TRAJES</option>
-								</select>
+								<?php
+									$query_args = array(
+										'post_type'      => 'tiendas',
+										'orderby'        => 'title',
+										'order' 		=> 'ASC',
+										'no_found_rows'  => true,
+										'cache_results'  => false,
+									);
+
+								    $posts = new WP_Query( $query_args );
+
+								    echo '<select id="tienda" name="tienda" data-parsley-error-message="Seleccione una tienda" required>';
+								 	echo '<option class="" value="" disabled selected>Selecciona una Tienda</option>';
+									if ( $posts->have_posts() ) {
+										while ( $posts->have_posts() ) {
+											$posts->the_post();
+											$meta = get_post_meta($posts->post->ID);
+											$claseciudad = str_replace(' ', '', $meta['_ciudad_meta'][0]);
+											echo '<option value="'.get_the_title().'" class="opttienda '.$claseciudad.'" id="tienda_'.$posts->post->ID.'" data-id="'.$posts->post->ID.'" data-lat="'.$meta['_latitud_meta'][0].'" data-long="'.$meta['_longitud_meta'][0].'" data-direccion="'.$meta['_ubicacion_meta'][0].'" data-telefono="'.$meta['_telefono_meta'][0].'">'.get_the_title().'</option>';
+										}
+									}
+									echo '</select>';
+								?>
 							</div>
 							<div class="[ input-field ]">
 								<input id="fecha" name="fecha" type="date" class="datepicker">
