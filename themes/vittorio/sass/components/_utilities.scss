@@ -84,11 +84,8 @@
   @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) { height: 70vh;}
 }
 
-.width-80--l{
-  @media#{$large-and-up}{
-    width:90%;
-  }
-}
+
+
 //Transition
 
 .transition {

@@ -5042,36 +5042,6 @@ nav .input-field label.active {
     height: 64px;
   }
 }
-@font-face {
-  font-family: "Roboto";
-  src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.eot");
-  src: url("../fonts/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
-  font-weight: 200;
-}
-@font-face {
-  font-family: "Roboto";
-  src: local(Roboto Light), url("../fonts/roboto/Roboto-Light.eot");
-  src: url("../fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Roboto";
-  src: local(Roboto Regular), url("../fonts/roboto/Roboto-Regular.eot");
-  src: url("../fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/roboto/Roboto-Medium.eot");
-  src: url("../fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/roboto/Roboto-Bold.eot");
-  src: url("../fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
-  font-weight: 700;
-}
 /* line 2, sass/components/_typography.scss */
 a {
   text-decoration: none;
@@ -9662,14 +9632,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   }
 }
 
-@media only screen and (min-width: 993px) {
-  /* line 87, sass/components/_utilities.scss */
-  .width-80--l {
-    width: 90%;
-  }
-}
-
-/* line 94, sass/components/_utilities.scss */
+/* line 91, sass/components/_utilities.scss */
 .transition {
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -9678,24 +9641,24 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   -o-transition: all 0.5s ease;
 }
 
-/* line 104, sass/components/_utilities.scss */
+/* line 101, sass/components/_utilities.scss */
 .vertical-aling--50 {
   vertical-align: 50%;
 }
 
-/* line 106, sass/components/_utilities.scss */
+/* line 103, sass/components/_utilities.scss */
 .middle {
   vertical-align: middle;
 }
 
-/* line 108, sass/components/_utilities.scss */
+/* line 105, sass/components/_utilities.scss */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 114, sass/components/_utilities.scss */
+/* line 111, sass/components/_utilities.scss */
 .center-full {
   position: absolute;
   top: 50%;
@@ -9707,7 +9670,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 @media only screen and (min-width: 601px) {
-  /* line 125, sass/components/_utilities.scss */
+  /* line 122, sass/components/_utilities.scss */
   .center-full--l {
     position: absolute;
     top: 50%;
@@ -9720,33 +9683,33 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 @media only screen and (min-width: 601px) {
-  /* line 137, sass/components/_utilities.scss */
+  /* line 134, sass/components/_utilities.scss */
   .height-100vh--l {
     height: 100vh;
   }
 }
 
-/* line 146, sass/components/_utilities.scss */
+/* line 143, sass/components/_utilities.scss */
 .bg-dark {
   background: #000;
 }
 
-/* line 149, sass/components/_utilities.scss */
+/* line 146, sass/components/_utilities.scss */
 .bg-white {
   background-color: #FFF;
 }
 
-/* line 155, sass/components/_utilities.scss */
+/* line 152, sass/components/_utilities.scss */
 .underlined {
   text-decoration: underline;
 }
 
-/* line 159, sass/components/_utilities.scss */
+/* line 156, sass/components/_utilities.scss */
 .no-jumpline {
   white-space: nowrap;
 }
 
-/* line 162, sass/components/_utilities.scss */
+/* line 159, sass/components/_utilities.scss */
 .divider-small {
   width: 50px;
   border-top: solid;
