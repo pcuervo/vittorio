@@ -9665,7 +9665,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media only screen and (min-width: 993px) {
   /* line 87, sass/components/_utilities.scss */
   .width-80--l {
-    width: 100%;
+    width: 90%;
   }
 }
 
