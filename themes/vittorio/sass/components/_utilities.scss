@@ -15,6 +15,7 @@
 .margin-horizontal      { margin: 0 $margin-size}
 
 .margin-top             { margin-top: $margin-size}
+.margin-top--l          { margin-top: ($margin-size*2)}
 
 .padding--xsmall        { padding:($padding-size/4);}
 .padding--small         { padding:($padding-size/2);}
@@ -83,7 +84,11 @@
   @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) { height: 70vh;}
 }
 
-
+.width-80--l{
+  @media#{$large-and-up}{
+    width:100%;
+  }
+}
 //Transition
 
 .transition {
@@ -95,6 +100,8 @@
 }
 
 //Alingment
+
+.vertical-aling--50 { vertical-align: 50% }
 
 .middle		{ vertical-align: middle;}
 
@@ -126,7 +133,6 @@
     transform: translate(-50%, -50%);
   }
 }
-
 
 .height-100vh--l{
   @media#{$medium-and-up}{

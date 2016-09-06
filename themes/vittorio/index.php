@@ -6,16 +6,16 @@
 	<div  class="[ background-img background-img--main ]">
 		<div class="[ container ]">
 			<div class="[ row ]">
-				<div class="[ col l6 ][ hide-on-med-and-up ]">
+				<div class="[ col l7 ][ hide-on-med-and-up ]">
 					<img class="[ img-responsive ][ middle ]" src="<?php echo THEMEPATH; ?>img/el_poder.png" alt="El poder de un traje">
 				</div>
 
 				<div class="[ col s12 m7 l5 ][ no-float ][ inline-block ][ middle ]">
-					<div class="[ bg-dark ][ padding ][ margin-vertical ]">
+					<div class="[ bg-dark ][ padding ][ margin-vertical ][ width-80--l ]">
 						<p class="[ text-uppercase white-text ]">¡hombre, muy bien! </p>
 						<p class="[ white-text ]">Compártenos los siguientes datos para hacer una cita con uno de nuestros Expertos en Trajes y te ayude a encontrar tu traje perfecto.</p>
 
-						<form class="[ margin-top ]" method="post" name="front_end" action="citas">
+						<form class="[ margin-top--l ]" method="post" name="front_end" action="citas">
 							<div class="[ input-field ]">
 								<input id="nombre" name="nombre" type="text" class="[ validate ]" data-parsley-error-message="Este campo es obligatorio" required>
 								<label for="nombre">Nombre y apellido</label>
@@ -92,13 +92,16 @@
 									<option value="Option 3">Option 3</option>
 								</select>
 							</div>
-							<p>
-								<input type="checkbox" id="aviso" data-parsley-error-message="Debe estar de acuerdo con el aviso de privacidad" required/>
-								<label class="[ white-text ]" for="aviso">He leído y estoy de acuerdo con el <a class="[ white-text underlined ]" href="<?php echo site_url('aviso-de-privacidad'); ?>">Aviso de privacidad</a></label>
-							</p>
-							<div class="[ block text-center margin-bottom ]">
-								<button type="submit" class="[ waves-effect waves-light ][ btn-large ][ red ]">Hacer mi cita</button>
+							<div class="[ row ]">
+								<p class="[ col s12 m12 l5 ]">
+									<input type="checkbox" id="aviso" data-parsley-error-message="Debe estar de acuerdo con el aviso de privacidad" required/>
+									<label class="[ white-text ]" for="aviso">He leído y estoy de acuerdo con el <a class="[ white-text underlined ]" href="<?php echo site_url('aviso-de-privacidad'); ?>">Aviso de privacidad</a></label>
+								</p>
+								<div class="[ col s12 m12 l7 ][ block text-center margin-bottom ]">
+									<button type="submit" class="[ waves-effect waves-light ][ btn-large ][ margin-top ][ red ]">Hacer mi cita</button>
+								</div>								
 							</div>
+
 						</form>
 					</div>
 				</div>
