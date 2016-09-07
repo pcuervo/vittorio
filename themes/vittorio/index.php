@@ -32,10 +32,11 @@
 								<?php
 									$query_args = array(
 										'post_type'      => 'ciudades',
-										'order' 		 => 'ASC', 
+										'order' 		 => 'ASC',
 										'orderby'        => 'title',
 										'no_found_rows'  => true,
 										'cache_results'  => false,
+										'posts_per_page' => -1
 									);
 
 								    $posts = new WP_Query( $query_args );
@@ -98,7 +99,7 @@
 							</p>
 							<div class="[ block text-center margin-bottom ]">
 								<button type="submit" class="[ waves-effect waves-light ][ btn-large ][ margin-top ][ red ]">Hacer mi cita</button>
-							</div>								
+							</div>
 						</form>
 					</div>
 				</div>
