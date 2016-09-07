@@ -10,7 +10,6 @@
 					<div class="[ col s12 m7 ][ no-float inline-block ][ text-center-mobile  text-right ]">
 						<a class="[ text-uppercase ][ vertical-aling--50 ][ grey-text text-lighten-3 ]" href="#!">Compra en línea</a>
 						<a class="[ margin-horizontal ][ text-uppercase ][ vertical-aling--50 ][ grey-text text-lighten-3 ]" href="#!">Vittorio Forti</a>
-						<a class="[ margin-xsmall ][ inline-flex ]" href=""><img class="[ height-35 ]" src="<?php echo THEMEPATH; ?>img/shopify-icon.png" alt="shopify icon"></a>
 						<a class="[ margin-horizontal ][ inline-flex ]" href=""><img class="[ height-35 ]" src="<?php echo THEMEPATH; ?>img/facebook-icon.png" alt="facebook icon"></a>
 					</div>
 
