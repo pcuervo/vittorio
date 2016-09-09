@@ -64,6 +64,7 @@
 										'order' 		=> 'ASC',
 										'no_found_rows'  => true,
 										'cache_results'  => false,
+										'posts_per_page' => -1
 									);
 
 								    $posts = new WP_Query( $query_args );
