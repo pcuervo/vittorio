@@ -89,11 +89,34 @@
 							<div class="[ input-field ][ bg-white ]">
 								<select id="horario" name="horario" data-parsley-error-message="Por favor selecciona un horario" required>
 									<option value="" selected>Horario</option>
-									<option value="Option 1">Option 1</option>
-									<option value="Option 2">Option 2</option>
-									<option value="Option 3">Option 3</option>
+									<option id="9am" class="horario" value="9am">De 9:00am - 9:30am</option>
+									<option id="930am" class="horario" value="930am">De 9:30am - 10:00am</option>
+									<option id="10am" class="horario" value="10am">De 10:00am - 10:30am</option>
+									<option id="1030am" class="horario" value="1030am">De 10:30am - 11:00am</option>
+									<option id="11am" class="horario" value="11am">De 11:00am - 11:30am</option>
+									<option id="1130am" class="horario" value="1130am">De 11:30am - 12:00pm</option>
+									<option id="12pm" class="horario" value="12pm">De 12:00pm - 12:30pm</option>
+									<option id="1230pm" class="horario" value="1230pm">De 12:30pm - 1:00pm</option>
+									<option id="1pm" class="horario" value="1pm">De 1:00pm - 1:30pm</option>
+									<option id="130pm" class="horario" value="130pm">De 1:30pm - 2:00pm</option>
+									<option id="2pm" class="horario" value="2pm">De 2:00pm - 2:30pm</option>
+									<option id="230pm" class="horario" value="230pm">De 2:30pm - 3:00pm</option>
+									<option id="3pm" class="horario" value="3pm">De 3:00pm - 3:30pm</option>
+									<option id="330pm" class="horario" value="330pm">De 3:30pm - 4:00pm</option>
+									<option id="4pm" class="horario" value="4pm">De 4:00pm - 4:30pm</option>
+									<option id="430pm" class="horario" value="430pm">De 4:30pm - 5:00pm</option>
+									<option id="5pm" class="horario" value="5pm">De 5:00pm - 5:30pm</option>
+									<option id="530pm" class="horario" value="530pm">De 5:30pm - 5:00pm</option>
+									<option id="6pm" class="horario" value="6pm">De 6:00pm - 6:30pm</option>
+									<option id="630pm" class="horario" value="630pm">De 6:30pm - 7:00pm</option>
+									<option id="7pm" class="horario" value="7pm">De 7:00pm - 7:30pm</option>
+									<option id="730pm" class="horario" value="730pm">De 7:30pm - 8:00pm</option>
+									<option id="8pm" class="horario" value="8pm">De 8:00pm - 8:30pm</option>
+									<option id="830pm" class="horario" value="830pm">De 8:30pm - 9:00pm</option>
 								</select>
+
 							</div>
+							<input type="hidden" id="rutaAjax" name="rutaAjax" value="<?php echo admin_url('admin-ajax.php'); ?>" />
 							<p>
 								<input type="checkbox" id="aviso" data-parsley-error-message="Debe estar de acuerdo con el aviso de privacidad" required/>
 								<label class="[ white-text ]" for="aviso">He leído y estoy de acuerdo con el <a class="[ white-text underlined ]" href="<?php echo site_url('aviso-de-privacidad'); ?>">Aviso de privacidad</a></label>
