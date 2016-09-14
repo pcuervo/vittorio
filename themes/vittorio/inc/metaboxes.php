@@ -97,7 +97,7 @@ function metabox_informacion( $post ){
 }// metabox_informacion
 
 function metabox_ciudad($post){
-	
+
 
 	$punto = get_post_meta($post->ID, '_ubicacion_meta', true);
 	$latitud_punto = get_post_meta($post->ID, '_latitud_meta', true);
@@ -121,7 +121,7 @@ function metabox_ciudad($post){
 }
 
 function metabox_tienda($post){
-	
+
 	$ciudad = get_post_meta($post->ID, '_ciudad_meta', true);
 	$telefono = get_post_meta($post->ID, '_telefono_meta', true);
 	$punto = get_post_meta($post->ID, '_ubicacion_meta', true);
@@ -140,6 +140,7 @@ function metabox_tienda($post){
 		'orderby'        => 'title',
 		'no_found_rows'  => true,
 		'cache_results'  => false,
+		'posts_per_page' => -1
 	);
 
     $posts = new WP_Query( $query_args );
