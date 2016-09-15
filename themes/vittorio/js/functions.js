@@ -3,11 +3,18 @@ var $=jQuery.noConflict();
 (function($){
     "use strict";
     $(function(){
-
+        var hoy = new Date();
+        console.log(hoy);
     	$('select').material_select();
     	$('.datepicker').pickadate({
 			selectMonths: true, //
-			selectYears: 8 //
+			selectYears: 8, //
+            closeOnSelect: true,
+            min: new Date(hoy.getFullYear(),hoy.getMonth(),hoy.getDate()),
+            onSet: function(context) {
+                this.close();
+            }
+
 		});
 
         $('.modal-trigger').leanModal();
@@ -35,6 +42,7 @@ $("#fecha").change(function(e) {
     var fec = new Date($(this).val());
     var diaS = diasSemana[fec.getDay()];
     var fechaFormateada = ('0' + fec.getDate()).slice(-2) + '/'+ ('0' + (fec.getMonth()+1)).slice(-2) + '/'+fec.getFullYear();
+    $(".opcioneshorario").hide();
     //console.log(fec);
     //console.log(fec.getDay());
     //console.log(diaS);

@@ -102,7 +102,7 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 	$subject = 'Vittorio - Confirma tu Cita';
 	$body = 'Hemos registrado tu cita, para confirmarla haz click en el siguiente link: <br />'.$emailurl;
 	$headers = array('Content-Type: text/html; charset=UTF-8');
-	$headers = 'From: Vittorio Forti <' . $correo . '>' . "\r\n";
+	$headers = 'From: Vittorio Forti <no-reply@vittorio.com.mx>' . "\r\n";
 	$message = '<html><body>';
 
 	$message .= '

@@ -9,7 +9,7 @@ var mapGeolocation = function () {
     GMaps.geolocate({
         success: function (position) {
             map.setCenter(position.coords.latitude, position.coords.longitude);
-            console.log('Coordenadas: '+position.coords.latitude+', '+position.coords.longitude);
+            //console.log('Coordenadas: '+position.coords.latitude+', '+position.coords.longitude);
             setTimeout('setCiudad('+position.coords.latitude+','+position.coords.longitude+')', 1000);
             setTimeout('setTienda('+position.coords.latitude+','+position.coords.longitude+')', 2000);
         },

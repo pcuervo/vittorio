@@ -97,6 +97,7 @@ function metabox_informacion( $post ){
 	$telefono = get_post_meta($post->ID, '_telefono_meta', true);
 	$ciudad = get_post_meta($post->ID, '_ciudad_meta', true);
 	$tienda = get_post_meta($post->ID, '_tienda_meta', true);
+	$tiendanombre = get_the_title( $tienda );
 	$fecha = get_post_meta($post->ID, '_fecha_meta', true);
 	$horario = get_post_meta($post->ID, '_horario_meta', true);
 	$status = get_post_meta($post->ID, '_status_meta', true);
@@ -119,7 +120,7 @@ function metabox_informacion( $post ){
 	echo '<label>Ciudad</label>';
 	echo "<input type='text' class='[ widefat ]' name='_ciudad_meta' value='$ciudad'>";
 	echo '<label>Tienda</label>';
-	echo "<input type='text' class='[ widefat ]' name='_tienda_meta' value='$tienda'>";
+	echo "<input type='text' class='[ widefat ]' name='_tienda_meta' value='$tiendanombre'>";
 	echo '<label>Fecha</label>';
 	echo "<input type='text' class='[ widefat ]' name='_fecha_meta' value='$fecha'>";
 	echo '<label>Horario</label>';
@@ -233,6 +234,7 @@ function metabox_tienda_horarios_lunes($post){
 	$lunes_horario_730pm = get_post_meta($post->ID, '_lunes_horario_730pm', true);
 	$lunes_horario_8pm = get_post_meta($post->ID, '_lunes_horario_8pm', true);
 	$lunes_horario_830pm = get_post_meta($post->ID, '_lunes_horario_830pm', true);
+	$lunes_horario_9pm = get_post_meta($post->ID, '_lunes_horario_9pm', true);
 
 
 	wp_nonce_field(__FILE__, '_lunes_horario_9am_nonce');
@@ -259,6 +261,7 @@ function metabox_tienda_horarios_lunes($post){
 	wp_nonce_field(__FILE__, '_lunes_horario_730pm_nonce');
 	wp_nonce_field(__FILE__, '_lunes_horario_8pm_nonce');
 	wp_nonce_field(__FILE__, '_lunes_horario_830pm_nonce');
+	wp_nonce_field(__FILE__, '_lunes_horario_9pm_nonce');
 
 	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
 			 9am - 9:30am  <input type='checkbox' class='[ widefat ]' name='_lunes_horario_9am' ";checked( $lunes_horario_9am, 'SI' ); echo " value='SI'></div>";
@@ -308,6 +311,8 @@ function metabox_tienda_horarios_lunes($post){
 			 8pm - 8:30pm <input type='checkbox' class='[ widefat ]' name='_lunes_horario_8pm' ";checked( $lunes_horario_8pm, 'SI' ); echo " value='SI'></div>";
 	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
 			 8:30pm - 9pm <input type='checkbox' class='[ widefat ]' name='_lunes_horario_830pm' ";checked( $lunes_horario_830pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 9pm - 9:30pm <input type='checkbox' class='[ widefat ]' name='_lunes_horario_9pm' ";checked( $lunes_horario_9pm, 'SI' ); echo " value='SI'></div>";			 
 	echo '<br /><br /><br /><br /><br /><br /><br /><br /><br />';
 	
 
@@ -340,7 +345,7 @@ function metabox_tienda_horarios_martes($post){
 	$martes_horario_730pm = get_post_meta($post->ID, '_martes_horario_730pm', true);
 	$martes_horario_8pm = get_post_meta($post->ID, '_martes_horario_8pm', true);
 	$martes_horario_830pm = get_post_meta($post->ID, '_martes_horario_830pm', true);
-
+	$martes_horario_9pm = get_post_meta($post->ID, '_martes_horario_9pm', true);
 
 	wp_nonce_field(__FILE__, '_martes_horario_9am_nonce');
 	wp_nonce_field(__FILE__, '_martes_horario_930am_nonce');
@@ -366,6 +371,7 @@ function metabox_tienda_horarios_martes($post){
 	wp_nonce_field(__FILE__, '_martes_horario_730pm_nonce');
 	wp_nonce_field(__FILE__, '_martes_horario_8pm_nonce');
 	wp_nonce_field(__FILE__, '_martes_horario_830pm_nonce');
+	wp_nonce_field(__FILE__, '_martes_horario_9pm_nonce');
 
 	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
 			 9am - 9:30am  <input type='checkbox' class='[ widefat ]' name='_martes_horario_9am' ";checked( $martes_horario_9am, 'SI' ); echo " value='SI'></div>";
@@ -415,6 +421,8 @@ function metabox_tienda_horarios_martes($post){
 			 8pm - 8:30pm <input type='checkbox' class='[ widefat ]' name='_martes_horario_8pm' ";checked( $martes_horario_8pm, 'SI' ); echo " value='SI'></div>";
 	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
 			 8:30pm - 9pm <input type='checkbox' class='[ widefat ]' name='_martes_horario_830pm' ";checked( $martes_horario_830pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 9pm - 9:30pm <input type='checkbox' class='[ widefat ]' name='_martes_horario_9pm' ";checked( $martes_horario_9pm, 'SI' ); echo " value='SI'></div>";			 
 	echo '<br /><br /><br /><br /><br /><br /><br /><br /><br />';
 
 }
@@ -445,7 +453,7 @@ function metabox_tienda_horarios_miercoles($post){
 	$miercoles_horario_730pm = get_post_meta($post->ID, '_miercoles_horario_730pm', true);
 	$miercoles_horario_8pm = get_post_meta($post->ID, '_miercoles_horario_8pm', true);
 	$miercoles_horario_830pm = get_post_meta($post->ID, '_miercoles_horario_830pm', true);
-
+	$miercoles_horario_9pm = get_post_meta($post->ID, '_miercoles_horario_9pm', true);
 
 	wp_nonce_field(__FILE__, '_miercoles_horario_9am_nonce');
 	wp_nonce_field(__FILE__, '_miercoles_horario_930am_nonce');
@@ -471,6 +479,7 @@ function metabox_tienda_horarios_miercoles($post){
 	wp_nonce_field(__FILE__, '_miercoles_horario_730pm_nonce');
 	wp_nonce_field(__FILE__, '_miercoles_horario_8pm_nonce');
 	wp_nonce_field(__FILE__, '_miercoles_horario_830pm_nonce');
+	wp_nonce_field(__FILE__, '_miercoles_horario_9pm_nonce');
 
 	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
 			 9am - 9:30am  <input type='checkbox' class='[ widefat ]' name='_miercoles_horario_9am' ";checked( $miercoles_horario_9am, 'SI' ); echo " value='SI'></div>";
@@ -520,6 +529,8 @@ function metabox_tienda_horarios_miercoles($post){
 			 8pm - 8:30pm <input type='checkbox' class='[ widefat ]' name='_miercoles_horario_8pm' ";checked( $miercoles_horario_8pm, 'SI' ); echo " value='SI'></div>";
 	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
 			 8:30pm - 9pm <input type='checkbox' class='[ widefat ]' name='_miercoles_horario_830pm' ";checked( $miercoles_horario_830pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 9pm - 9:30pm <input type='checkbox' class='[ widefat ]' name='_miercoles_horario_9pm' ";checked( $miercoles_horario_9pm, 'SI' ); echo " value='SI'></div>";			 
 	echo '<br /><br /><br /><br /><br /><br /><br /><br /><br />';
 
 }
@@ -550,7 +561,7 @@ function metabox_tienda_horarios_jueves($post){
 	$jueves_horario_730pm = get_post_meta($post->ID, '_jueves_horario_730pm', true);
 	$jueves_horario_8pm = get_post_meta($post->ID, '_jueves_horario_8pm', true);
 	$jueves_horario_830pm = get_post_meta($post->ID, '_jueves_horario_830pm', true);
-
+	$jueves_horario_9pm = get_post_meta($post->ID, '_jueves_horario_9pm', true);
 
 	wp_nonce_field(__FILE__, '_jueves_horario_9am_nonce');
 	wp_nonce_field(__FILE__, '_jueves_horario_930am_nonce');
@@ -576,6 +587,7 @@ function metabox_tienda_horarios_jueves($post){
 	wp_nonce_field(__FILE__, '_jueves_horario_730pm_nonce');
 	wp_nonce_field(__FILE__, '_jueves_horario_8pm_nonce');
 	wp_nonce_field(__FILE__, '_jueves_horario_830pm_nonce');
+	wp_nonce_field(__FILE__, '_jueves_horario_9pm_nonce');
 
 	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
 			 9am - 9:30am  <input type='checkbox' class='[ widefat ]' name='_jueves_horario_9am' ";checked( $jueves_horario_9am, 'SI' ); echo " value='SI'></div>";
@@ -625,6 +637,8 @@ function metabox_tienda_horarios_jueves($post){
 			 8pm - 8:30pm <input type='checkbox' class='[ widefat ]' name='_jueves_horario_8pm' ";checked( $jueves_horario_8pm, 'SI' ); echo " value='SI'></div>";
 	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
 			 8:30pm - 9pm <input type='checkbox' class='[ widefat ]' name='_jueves_horario_830pm' ";checked( $jueves_horario_830pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 9pm - 9:30pm <input type='checkbox' class='[ widefat ]' name='_jueves_horario_9pm' ";checked( $jueves_horario_9pm, 'SI' ); echo " value='SI'></div>";			 
 	echo '<br /><br /><br /><br /><br /><br /><br /><br /><br />';
 
 }
@@ -655,7 +669,7 @@ function metabox_tienda_horarios_viernes($post){
 	$viernes_horario_730pm = get_post_meta($post->ID, '_viernes_horario_730pm', true);
 	$viernes_horario_8pm = get_post_meta($post->ID, '_viernes_horario_8pm', true);
 	$viernes_horario_830pm = get_post_meta($post->ID, '_viernes_horario_830pm', true);
-
+	$viernes_horario_9pm = get_post_meta($post->ID, '_viernes_horario_9pm', true);
 
 	wp_nonce_field(__FILE__, '_viernes_horario_9am_nonce');
 	wp_nonce_field(__FILE__, '_viernes_horario_930am_nonce');
@@ -681,6 +695,7 @@ function metabox_tienda_horarios_viernes($post){
 	wp_nonce_field(__FILE__, '_viernes_horario_730pm_nonce');
 	wp_nonce_field(__FILE__, '_viernes_horario_8pm_nonce');
 	wp_nonce_field(__FILE__, '_viernes_horario_830pm_nonce');
+	wp_nonce_field(__FILE__, '_viernes_horario_9pm_nonce');
 
 	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
 			 9am - 9:30am  <input type='checkbox' class='[ widefat ]' name='_viernes_horario_9am' ";checked( $viernes_horario_9am, 'SI' ); echo " value='SI'></div>";
@@ -730,6 +745,8 @@ function metabox_tienda_horarios_viernes($post){
 			 8pm - 8:30pm <input type='checkbox' class='[ widefat ]' name='_viernes_horario_8pm' ";checked( $viernes_horario_8pm, 'SI' ); echo " value='SI'></div>";
 	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
 			 8:30pm - 9pm <input type='checkbox' class='[ widefat ]' name='_viernes_horario_830pm' ";checked( $viernes_horario_830pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 9pm - 9:30pm <input type='checkbox' class='[ widefat ]' name='_viernes_horario_9pm' ";checked( $viernes_horario_9pm, 'SI' ); echo " value='SI'></div>";			 
 	echo '<br /><br /><br /><br /><br /><br /><br /><br /><br />';
 
 }
@@ -760,7 +777,7 @@ function metabox_tienda_horarios_sabado($post){
 	$sabado_horario_730pm = get_post_meta($post->ID, '_sabado_horario_730pm', true);
 	$sabado_horario_8pm = get_post_meta($post->ID, '_sabado_horario_8pm', true);
 	$sabado_horario_830pm = get_post_meta($post->ID, '_sabado_horario_830pm', true);
-
+	$sabado_horario_9pm = get_post_meta($post->ID, '_sabado_horario_9pm', true);
 
 	wp_nonce_field(__FILE__, '_sabado_horario_9am_nonce');
 	wp_nonce_field(__FILE__, '_sabado_horario_930am_nonce');
@@ -786,6 +803,7 @@ function metabox_tienda_horarios_sabado($post){
 	wp_nonce_field(__FILE__, '_sabado_horario_730pm_nonce');
 	wp_nonce_field(__FILE__, '_sabado_horario_8pm_nonce');
 	wp_nonce_field(__FILE__, '_sabado_horario_830pm_nonce');
+	wp_nonce_field(__FILE__, '_sabado_horario_9pm_nonce');
 
 	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
 			 9am - 9:30am  <input type='checkbox' class='[ widefat ]' name='_sabado_horario_9am' ";checked( $sabado_horario_9am, 'SI' ); echo " value='SI'></div>";
@@ -835,6 +853,8 @@ function metabox_tienda_horarios_sabado($post){
 			 8pm - 8:30pm <input type='checkbox' class='[ widefat ]' name='_sabado_horario_8pm' ";checked( $sabado_horario_8pm, 'SI' ); echo " value='SI'></div>";
 	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
 			 8:30pm - 9pm <input type='checkbox' class='[ widefat ]' name='_sabado_horario_830pm' ";checked( $sabado_horario_830pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 9pm - 9:30pm <input type='checkbox' class='[ widefat ]' name='_sabado_horario_9pm' ";checked( $sabado_horario_9pm, 'SI' ); echo " value='SI'></div>";			 
 	echo '<br /><br /><br /><br /><br /><br /><br /><br /><br />';
 
 }
@@ -865,7 +885,7 @@ function metabox_tienda_horarios_domingo($post){
 	$domingo_horario_730pm = get_post_meta($post->ID, '_domingo_horario_730pm', true);
 	$domingo_horario_8pm = get_post_meta($post->ID, '_domingo_horario_8pm', true);
 	$domingo_horario_830pm = get_post_meta($post->ID, '_domingo_horario_830pm', true);
-
+	$domingo_horario_9pm = get_post_meta($post->ID, '_domingo_horario_9pm', true);
 
 	wp_nonce_field(__FILE__, '_domingo_horario_9am_nonce');
 	wp_nonce_field(__FILE__, '_domingo_horario_930am_nonce');
@@ -891,6 +911,7 @@ function metabox_tienda_horarios_domingo($post){
 	wp_nonce_field(__FILE__, '_domingo_horario_730pm_nonce');
 	wp_nonce_field(__FILE__, '_domingo_horario_8pm_nonce');
 	wp_nonce_field(__FILE__, '_domingo_horario_830pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_9pm_nonce');
 
 	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
 			 9am - 9:30am  <input type='checkbox' class='[ widefat ]' name='_domingo_horario_9am' ";checked( $domingo_horario_9am, 'SI' ); echo " value='SI'></div>";
@@ -940,6 +961,8 @@ function metabox_tienda_horarios_domingo($post){
 			 8pm - 8:30pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_8pm' ";checked( $domingo_horario_8pm, 'SI' ); echo " value='SI'></div>";
 	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
 			 8:30pm - 9pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_830pm' ";checked( $domingo_horario_830pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 9pm - 9:30pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_9pm' ";checked( $domingo_horario_9pm, 'SI' ); echo " value='SI'></div>";			 
 	echo '<br /><br /><br /><br /><br /><br /><br /><br /><br />';
 
 }
@@ -1127,6 +1150,10 @@ function metabox_tienda_horarios_domingo($post){
 			update_post_meta($post_id, '_lunes_horario_830pm', $_POST['_lunes_horario_830pm']);
 			if (isset($_POST['_lunes_horario_830pm'])) { $horario_lunes .= '830pm-'; }
 		}
+		if ( check_admin_referer( __FILE__, '_lunes_horario_9pm_nonce') ){
+			update_post_meta($post_id, '_lunes_horario_9pm', $_POST['_lunes_horario_9pm']);
+			if (isset($_POST['_lunes_horario_9pm'])) { $horario_lunes .= '9pm-'; }
+		}
 		update_post_meta($post_id, 'Lunes_horario',$horario_lunes);		
 
 	}// save_metaboxes_tienda
@@ -1229,6 +1256,10 @@ function metabox_tienda_horarios_domingo($post){
 		if ( check_admin_referer( __FILE__, '_martes_horario_830pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_830pm', $_POST['_martes_horario_830pm']);
 			if (isset($_POST['_martes_horario_830pm'])) { $horario_martes .= '830pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_martes_horario_9pm_nonce') ){
+			update_post_meta($post_id, '_martes_horario_9pm', $_POST['_martes_horario_9pm']);
+			if (isset($_POST['_martes_horario_9pm'])) { $horario_martes .= '9pm-'; }
 		}
 		update_post_meta($post_id, 'Martes_horario',$horario_martes);		
 
@@ -1333,6 +1364,10 @@ function metabox_tienda_horarios_domingo($post){
 			update_post_meta($post_id, '_miercoles_horario_830pm', $_POST['_miercoles_horario_830pm']);
 			if (isset($_POST['_miercoles_horario_830pm'])) { $horario_miercoles .= '830pm-'; }
 		}
+		if ( check_admin_referer( __FILE__, '_miercoles_horario_9pm_nonce') ){
+			update_post_meta($post_id, '_miercoles_horario_9pm', $_POST['_miercoles_horario_9pm']);
+			if (isset($_POST['_miercoles_horario_9pm'])) { $horario_miercoles .= '9pm-'; }
+		}
 		update_post_meta($post_id, 'Miercoles_horario',$horario_miercoles);		
 
 	}
@@ -1436,6 +1471,10 @@ function metabox_tienda_horarios_domingo($post){
 			update_post_meta($post_id, '_jueves_horario_830pm', $_POST['_jueves_horario_830pm']);
 			if (isset($_POST['_jueves_horario_830pm'])) { $horario_jueves .= '830pm-'; }
 		}
+		if ( check_admin_referer( __FILE__, '_jueves_horario_9pm_nonce') ){
+			update_post_meta($post_id, '_jueves_horario_9pm', $_POST['_jueves_horario_9pm']);
+			if (isset($_POST['_jueves_horario_9pm'])) { $horario_jueves .= '9pm-'; }
+		}
 		update_post_meta($post_id, 'Jueves_horario',$horario_jueves);		
 
 	}
@@ -1538,6 +1577,10 @@ function metabox_tienda_horarios_domingo($post){
 		if ( check_admin_referer( __FILE__, '_viernes_horario_830pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_830pm', $_POST['_viernes_horario_830pm']);
 			if (isset($_POST['_viernes_horario_830pm'])) { $horario_viernes .= '830pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_viernes_horario_9pm_nonce') ){
+			update_post_meta($post_id, '_viernes_horario_9pm', $_POST['_viernes_horario_9pm']);
+			if (isset($_POST['_viernes_horario_9pm'])) { $horario_viernes .= '9pm-'; }
 		}
 		update_post_meta($post_id, 'Viernes_horario',$horario_viernes);		
 		
@@ -1643,6 +1686,10 @@ function metabox_tienda_horarios_domingo($post){
 			update_post_meta($post_id, '_sabado_horario_830pm', $_POST['_sabado_horario_830pm']);
 			if (isset($_POST['_sabado_horario_830pm'])) { $horario_sabado .= '830pm-'; }
 		}
+		if ( check_admin_referer( __FILE__, '_sabado_horario_9pm_nonce') ){
+			update_post_meta($post_id, '_sabado_horario_9pm', $_POST['_sabado_horario_9pm']);
+			if (isset($_POST['_sabado_horario_9pm'])) { $horario_sabado .= '9pm-'; }
+		}
 		update_post_meta($post_id, 'Sabado_horario',$horario_sabado);		
 		
 
@@ -1746,6 +1793,10 @@ function save_metaboxes_tienda_domingo_horario( $post_id ){
 		if ( check_admin_referer( __FILE__, '_domingo_horario_830pm_nonce') ){
 			update_post_meta($post_id, '_domingo_horario_830pm', $_POST['_domingo_horario_830pm']);
 			if (isset($_POST['_domingo_horario_830pm'])) { $horario_domingo .= '830pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_9pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_9pm', $_POST['_domingo_horario_9pm']);
+			if (isset($_POST['_domingo_horario_9pm'])) { $horario_domingo .= '9pm-'; }
 		}
 		update_post_meta($post_id, 'Domingo_horario',$horario_domingo);		
 		

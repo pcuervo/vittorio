@@ -113,6 +113,7 @@
 									<option data-clasehorario="730pm" id="730pm" class="opthorario" value="730pm">De 7:30pm - 8:00pm</option>
 									<option data-clasehorario="8pm" id="8pm" class="opthorario" value="8pm">De 8:00pm - 8:30pm</option>
 									<option data-clasehorario="830pm" id="830pm" class="opthorario" value="830pm">De 8:30pm - 9:00pm</option>
+									<option data-clasehorario="9pm" id="9pm" class="opthorario" value="9pm">De 9:00pm - 9:30pm</option>
 								</select>
 
 							</div>
