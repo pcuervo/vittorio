@@ -67,6 +67,7 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 	$telefono = $_POST['telefono'];
 	$ciudad = $_POST['ciudad'];
 	$tienda = $_POST['tienda'];
+	$tiendanombre = get_the_title( $_POST['tienda'] );
 	$fecha = $_POST['fecha'];
 	$horario = $_POST['horario'];
 
@@ -141,7 +142,7 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 																			<div style="color:#737373;font-family:&quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif;font-size:14px;line-height:150%;text-align:left">
 																				<p class="">Nombre: '.$nombre.'</p>
 																				<p>Email: '. $correo . '</p>
-																				<p>Tienda: '. $tienda . '</p>
+																				<p>Tienda: '. $tiendanombre . '</p>
 																				<p>Fecha: '. $fecha . '</p>
 																				<p>Horario: '. $horario . '</p>
 																				<p style="margin:0 0 16px">Para confirmarla haz click en el siguiente link:</p>

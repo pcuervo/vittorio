@@ -78,9 +78,9 @@ $("#fecha").change(function(e) {
        //console.log('Always -> ['+data+']');
     })
     .fail(function(xhr, status, error) {
-        //console.log('FAIL');
-        //console.log(xhr);
-        //console.log(status);
-        //console.log(error);
+        console.log('FAIL');
+        console.log(xhr);
+        console.log(status);
+        console.log(error);
     });
 });
