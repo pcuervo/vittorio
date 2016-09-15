@@ -8,6 +8,12 @@
 	License: GNU General Public License v2
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+/* CSS para manejo del select de horarios */
+select.ocupado {
+  color: red;
+  display: none;
+}
+
 /* line 381, sass/components/_color.scss */
 .materialize-red {
   background-color: #e51c23 !important;
@@ -5928,6 +5934,9 @@ button.btn-floating {
 /* line 24, sass/components/_dropdown.scss */
 .dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
   background-color: #eee;
+}
+.dropdown-content li.ocupado > span {
+  color: red;
 }
 /* line 28, sass/components/_dropdown.scss */
 .dropdown-content li.active.selected {

@@ -76,7 +76,7 @@
 											$posts->the_post();
 											$meta = get_post_meta($posts->post->ID);
 											$claseciudad = str_replace(' ', '', $meta['_ciudad_meta'][0]);
-											echo '<option value="'.get_the_title().'" class="opttienda '.$claseciudad.'" id="tienda_'.$posts->post->ID.'" data-claseciudad="'.$claseciudad.'" data-lat="'.$meta['_latitud_meta'][0].'" data-long="'.$meta['_longitud_meta'][0].'" data-direccion="'.$meta['_ubicacion_meta'][0].'" data-telefono="'.$meta['_telefono_meta'][0].'">'.get_the_title().'</option>';
+											echo '<option value="'.$posts->post->ID.'" class="opttienda '.$claseciudad.'" id="tienda_'.$posts->post->ID.'" data-claseciudad="'.$claseciudad.'" data-lat="'.$meta['_latitud_meta'][0].'" data-long="'.$meta['_longitud_meta'][0].'" data-direccion="'.$meta['_ubicacion_meta'][0].'" data-telefono="'.$meta['_telefono_meta'][0].'">'.get_the_title().'</option>';
 										}
 									}
 									echo '</select>';
@@ -89,30 +89,30 @@
 							<div class="[ input-field ][ bg-white ]">
 								<select id="horario" name="horario" data-parsley-error-message="Por favor selecciona un horario" required>
 									<option value="" selected>Horario</option>
-									<option id="9am" class="horario" value="9am">De 9:00am - 9:30am</option>
-									<option id="930am" class="horario" value="930am">De 9:30am - 10:00am</option>
-									<option id="10am" class="horario" value="10am">De 10:00am - 10:30am</option>
-									<option id="1030am" class="horario" value="1030am">De 10:30am - 11:00am</option>
-									<option id="11am" class="horario" value="11am">De 11:00am - 11:30am</option>
-									<option id="1130am" class="horario" value="1130am">De 11:30am - 12:00pm</option>
-									<option id="12pm" class="horario" value="12pm">De 12:00pm - 12:30pm</option>
-									<option id="1230pm" class="horario" value="1230pm">De 12:30pm - 1:00pm</option>
-									<option id="1pm" class="horario" value="1pm">De 1:00pm - 1:30pm</option>
-									<option id="130pm" class="horario" value="130pm">De 1:30pm - 2:00pm</option>
-									<option id="2pm" class="horario" value="2pm">De 2:00pm - 2:30pm</option>
-									<option id="230pm" class="horario" value="230pm">De 2:30pm - 3:00pm</option>
-									<option id="3pm" class="horario" value="3pm">De 3:00pm - 3:30pm</option>
-									<option id="330pm" class="horario" value="330pm">De 3:30pm - 4:00pm</option>
-									<option id="4pm" class="horario" value="4pm">De 4:00pm - 4:30pm</option>
-									<option id="430pm" class="horario" value="430pm">De 4:30pm - 5:00pm</option>
-									<option id="5pm" class="horario" value="5pm">De 5:00pm - 5:30pm</option>
-									<option id="530pm" class="horario" value="530pm">De 5:30pm - 5:00pm</option>
-									<option id="6pm" class="horario" value="6pm">De 6:00pm - 6:30pm</option>
-									<option id="630pm" class="horario" value="630pm">De 6:30pm - 7:00pm</option>
-									<option id="7pm" class="horario" value="7pm">De 7:00pm - 7:30pm</option>
-									<option id="730pm" class="horario" value="730pm">De 7:30pm - 8:00pm</option>
-									<option id="8pm" class="horario" value="8pm">De 8:00pm - 8:30pm</option>
-									<option id="830pm" class="horario" value="830pm">De 8:30pm - 9:00pm</option>
+									<option data-clasehorario="9am" id="9am" class="opthorario" value="9am">De 9:00am - 9:30am</option>
+									<option data-clasehorario="930am" id="930am" class="opthorario" value="930am">De 9:30am - 10:00am</option>
+									<option data-clasehorario="10am" id="10am" class="opthorario" value="10am">De 10:00am - 10:30am</option>
+									<option data-clasehorario="1030am" id="1030am" class="opthorario" value="1030am">De 10:30am - 11:00am</option>
+									<option data-clasehorario="11am" id="11am" class="opthorario" value="11am">De 11:00am - 11:30am</option>
+									<option data-clasehorario="1130am" id="1130am" class="opthorario" value="1130am">De 11:30am - 12:00pm</option>
+									<option data-clasehorario="12pm" id="12pm" class="opthorario" value="12pm">De 12:00pm - 12:30pm</option>
+									<option data-clasehorario="1230pm" id="1230pm" class="opthorario" value="1230pm">De 12:30pm - 1:00pm</option>
+									<option data-clasehorario="1pm" id="1pm" class="opthorario" value="1pm">De 1:00pm - 1:30pm</option>
+									<option data-clasehorario="130pm" id="130pm" class="opthorario" value="130pm">De 1:30pm - 2:00pm</option>
+									<option data-clasehorario="2pm" id="2pm" class="opthorario" value="2pm">De 2:00pm - 2:30pm</option>
+									<option data-clasehorario="230pm" id="230pm" class="opthorario" value="230pm">De 2:30pm - 3:00pm</option>
+									<option data-clasehorario="3pm" id="3pm" class="opthorario" value="3pm">De 3:00pm - 3:30pm</option>
+									<option data-clasehorario="330pm" id="330pm" class="opthorario" value="330pm">De 3:30pm - 4:00pm</option>
+									<option data-clasehorario="4pm" id="4pm" class="opthorario" value="4pm">De 4:00pm - 4:30pm</option>
+									<option data-clasehorario="430pm" id="430pm" class="opthorario" value="430pm">De 4:30pm - 5:00pm</option>
+									<option data-clasehorario="5pm" id="5pm" class="opthorario" value="5pm">De 5:00pm - 5:30pm</option>
+									<option data-clasehorario="530pm" id="530pm" class="opthorario" value="530pm">De 5:30pm - 5:00pm</option>
+									<option data-clasehorario="6pm" id="6pm" class="opthorario" value="6pm">De 6:00pm - 6:30pm</option>
+									<option data-clasehorario="630pm" id="630pm" class="opthorario" value="630pm">De 6:30pm - 7:00pm</option>
+									<option data-clasehorario="7pm" id="7pm" class="opthorario" value="7pm">De 7:00pm - 7:30pm</option>
+									<option data-clasehorario="730pm" id="730pm" class="opthorario" value="730pm">De 7:30pm - 8:00pm</option>
+									<option data-clasehorario="8pm" id="8pm" class="opthorario" value="8pm">De 8:00pm - 8:30pm</option>
+									<option data-clasehorario="830pm" id="830pm" class="opthorario" value="830pm">De 8:30pm - 9:00pm</option>
 								</select>
 
 							</div>

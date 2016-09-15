@@ -20,6 +20,37 @@ add_action('add_meta_boxes', function(){
 
 
 
+function validar_horarios() {
+	global $wpdb;
+	$resp = "OK";
+	$fecha = $_POST['fecha'];
+	$diaSemana = $_POST['dia'];
+	$resp .= "-".$fecha;
+
+	$horarios = get_post_meta($_POST['tiendaid'], $diaSemana.'_horario', true);
+	
+    $citas = $wpdb->get_results(
+		"SELECT (select meta_value FROM ".$wpdb->prefix . "postmeta where post_id = p.ID and meta_key = '_horario_meta') as hora FROM ".$wpdb->prefix . "posts p, ".$wpdb->prefix . "postmeta pm WHERE p.post_type = 'citas' and p.ID = pm.post_id and pm.meta_key = '_fecha_meta' and pm.meta_value = '".$fecha."' and p.post_status = 'publish'"
+		);
+	//echo "SELECT ID FROM ".$wpdb->prefix . "posts p, ".$wpdb->prefix . "postmeta pm WHERE p.post_type = 'citas' and p.ID = pm.post_id and pm.meta_key = '_fecha_meta' and pm.meta_value = '".$fecha."' and p.post_status = 'publish'<br />";
+	//var_dump($citas);
+
+	$c = '';
+
+	for($i=0; $i<count($citas); $i++) {
+		$c .= $citas[$i]->hora.'-';
+	}
+	//$c = substr($c, -1);
+	//echo $_POST['tiendaid'].' - '.$diaSemana;
+	echo $horarios."*****".$c;
+	wp_die();
+}
+
+add_action( 'wp_ajax_validar_horarios', 'validar_horarios');
+add_action( 'wp_ajax_nopriv_validar_horarios', 'validar_horarios');
+
+
+
 /*------------------------------------*\
 	CUSTOM METABOXES FUNCTIONS
 \*------------------------------------*/
@@ -175,7 +206,8 @@ function metabox_tienda($post){
 }
 
 function metabox_tienda_horarios_lunes($post){
-	
+	$meta = get_post_meta($post->ID, 'Lunes_horario', true);
+	//var_dump($meta);
 	$lunes_horario_9am = get_post_meta($post->ID, '_lunes_horario_9am', true);
 	$lunes_horario_930am = get_post_meta($post->ID, '_lunes_horario_930am', true);
 	$lunes_horario_10am = get_post_meta($post->ID, '_lunes_horario_10am', true);
@@ -891,469 +923,620 @@ function metabox_tienda_horarios_sabado($post){
 	}// save_metaboxes_tienda
 
 	function save_metaboxes_tienda_lunes_horario( $post_id ){
-
+		$horario_lunes = '';
 		if ( check_admin_referer( __FILE__, '_lunes_horario_9am_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_9am', $_POST['_lunes_horario_9am']);
+			if (isset($_POST['_lunes_horario_9am'])) { $horario_lunes .= '9am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_930am_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_930am', $_POST['_lunes_horario_930am']);
+			if (isset($_POST['_lunes_horario_930am'])) { $horario_lunes .= '930am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_10am_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_10am', $_POST['_lunes_horario_10am']);
+			if (isset($_POST['_lunes_horario_10am'])) { $horario_lunes .= '10am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_1030am_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_1030am', $_POST['_lunes_horario_1030am']);
+			if (isset($_POST['_lunes_horario_1030am'])) { $horario_lunes .= '1030am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_11am_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_11am', $_POST['_lunes_horario_11am']);
+			if (isset($_POST['_lunes_horario_11am'])) { $horario_lunes .= '11am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_1130am_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_1130am', $_POST['_lunes_horario_1130am']);
+			if (isset($_POST['_lunes_horario_1130am'])) { $horario_lunes .= '1130am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_12pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_12pm', $_POST['_lunes_horario_12pm']);
+			if (isset($_POST['_lunes_horario_12pm'])) { $horario_lunes .= '12pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_1230pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_1230pm', $_POST['_lunes_horario_1230pm']);
+			if (isset($_POST['_lunes_horario_1230pm'])) { $horario_lunes .= '1230pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_1pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_1pm', $_POST['_lunes_horario_1pm']);
+			if (isset($_POST['_lunes_horario_1pm'])) { $horario_lunes .= '1pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_130pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_130pm', $_POST['_lunes_horario_130pm']);
+			if (isset($_POST['_lunes_horario_130pm'])) { $horario_lunes .= '130pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_2pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_2pm', $_POST['_lunes_horario_2pm']);
+			if (isset($_POST['_lunes_horario_2pm'])) { $horario_lunes .= '2pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_230pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_230pm', $_POST['_lunes_horario_230pm']);
+			if (isset($_POST['_lunes_horario_230pm'])) { $horario_lunes .= '230pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_3pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_3pm', $_POST['_lunes_horario_3pm']);
+			if (isset($_POST['_lunes_horario_3pm'])) { $horario_lunes .= '3pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_330pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_330pm', $_POST['_lunes_horario_330pm']);
+			if (isset($_POST['_lunes_horario_330pm'])) { $horario_lunes .= '330pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_4pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_4pm', $_POST['_lunes_horario_4pm']);
+			if (isset($_POST['_lunes_horario_4pm'])) { $horario_lunes .= '4pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_430pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_430pm', $_POST['_lunes_horario_430pm']);
+			if (isset($_POST['_lunes_horario_430pm'])) { $horario_lunes .= '430pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_5pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_5pm', $_POST['_lunes_horario_5pm']);
+			if (isset($_POST['_lunes_horario_5pm'])) { $horario_lunes .= '5pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_530pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_530pm', $_POST['_lunes_horario_530pm']);
+			if (isset($_POST['_lunes_horario_530pm'])) { $horario_lunes .= '530pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_6pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_6pm', $_POST['_lunes_horario_6pm']);
+			if (isset($_POST['_lunes_horario_6pm'])) { $horario_lunes .= '6pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_630pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_630pm', $_POST['_lunes_horario_630pm']);
+			if (isset($_POST['_lunes_horario_630pm'])) { $horario_lunes .= '630pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_7pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_7pm', $_POST['_lunes_horario_7pm']);
+			if (isset($_POST['_lunes_horario_7pm'])) { $horario_lunes .= '7pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_730pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_730pm', $_POST['_lunes_horario_730pm']);
+			if (isset($_POST['_lunes_horario_730pm'])) { $horario_lunes .= '730pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_8pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_8pm', $_POST['_lunes_horario_8pm']);
+			if (isset($_POST['_lunes_horario_8pm'])) { $horario_lunes .= '8pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_lunes_horario_830pm_nonce') ){
 			update_post_meta($post_id, '_lunes_horario_830pm', $_POST['_lunes_horario_830pm']);
+			if (isset($_POST['_lunes_horario_830pm'])) { $horario_lunes .= '830pm-'; }
 		}
-		
+		update_post_meta($post_id, 'Lunes_horario',$horario_lunes);		
 
 	}// save_metaboxes_tienda
 
 	function save_metaboxes_tienda_martes_horario( $post_id ){
 
+		$horario_martes = '';
 		if ( check_admin_referer( __FILE__, '_martes_horario_9am_nonce') ){
 			update_post_meta($post_id, '_martes_horario_9am', $_POST['_martes_horario_9am']);
+			if (isset($_POST['_martes_horario_9am'])) { $horario_martes .= '9am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_930am_nonce') ){
 			update_post_meta($post_id, '_martes_horario_930am', $_POST['_martes_horario_930am']);
+			if (isset($_POST['_martes_horario_930am'])) { $horario_martes .= '930am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_10am_nonce') ){
 			update_post_meta($post_id, '_martes_horario_10am', $_POST['_martes_horario_10am']);
+			if (isset($_POST['_martes_horario_10am'])) { $horario_martes .= '10am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_1030am_nonce') ){
 			update_post_meta($post_id, '_martes_horario_1030am', $_POST['_martes_horario_1030am']);
+			if (isset($_POST['_martes_horario_1030am'])) { $horario_martes .= '1030am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_11am_nonce') ){
 			update_post_meta($post_id, '_martes_horario_11am', $_POST['_martes_horario_11am']);
+			if (isset($_POST['_martes_horario_11am'])) { $horario_martes .= '11am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_1130am_nonce') ){
 			update_post_meta($post_id, '_martes_horario_1130am', $_POST['_martes_horario_1130am']);
+			if (isset($_POST['_martes_horario_1130am'])) { $horario_martes .= '1130am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_12pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_12pm', $_POST['_martes_horario_12pm']);
+			if (isset($_POST['_martes_horario_12pm'])) { $horario_martes .= '12pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_1230pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_1230pm', $_POST['_martes_horario_1230pm']);
+			if (isset($_POST['_martes_horario_1230pm'])) { $horario_martes .= '1230pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_1pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_1pm', $_POST['_martes_horario_1pm']);
+			if (isset($_POST['_martes_horario_1pm'])) { $horario_martes .= '1pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_130pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_130pm', $_POST['_martes_horario_130pm']);
+			if (isset($_POST['_martes_horario_130pm'])) { $horario_martes .= '130pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_2pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_2pm', $_POST['_martes_horario_2pm']);
+			if (isset($_POST['_martes_horario_2pm'])) { $horario_martes .= '2pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_230pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_230pm', $_POST['_martes_horario_230pm']);
+			if (isset($_POST['_martes_horario_230pm'])) { $horario_martes .= '230pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_3pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_3pm', $_POST['_martes_horario_3pm']);
+			if (isset($_POST['_martes_horario_3pm'])) { $horario_martes .= '3pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_330pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_330pm', $_POST['_martes_horario_330pm']);
+			if (isset($_POST['_martes_horario_330pm'])) { $horario_martes .= '330pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_4pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_4pm', $_POST['_martes_horario_4pm']);
+			if (isset($_POST['_martes_horario_4pm'])) { $horario_martes .= '4pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_430pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_430pm', $_POST['_martes_horario_430pm']);
+			if (isset($_POST['_martes_horario_430pm'])) { $horario_martes .= '430pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_5pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_5pm', $_POST['_martes_horario_5pm']);
+			if (isset($_POST['_martes_horario_5pm'])) { $horario_martes .= '5pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_530pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_530pm', $_POST['_martes_horario_530pm']);
+			if (isset($_POST['_martes_horario_530pm'])) { $horario_martes .= '530pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_6pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_6pm', $_POST['_martes_horario_6pm']);
+			if (isset($_POST['_martes_horario_6pm'])) { $horario_martes .= '6pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_630pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_630pm', $_POST['_martes_horario_630pm']);
+			if (isset($_POST['_martes_horario_630pm'])) { $horario_martes .= '630pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_7pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_7pm', $_POST['_martes_horario_7pm']);
+			if (isset($_POST['_martes_horario_7pm'])) { $horario_martes .= '7pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_730pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_730pm', $_POST['_martes_horario_730pm']);
+			if (isset($_POST['_martes_horario_730pm'])) { $horario_martes .= '730pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_8pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_8pm', $_POST['_martes_horario_8pm']);
+			if (isset($_POST['_martes_horario_8pm'])) { $horario_martes .= '8pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_martes_horario_830pm_nonce') ){
 			update_post_meta($post_id, '_martes_horario_830pm', $_POST['_martes_horario_830pm']);
+			if (isset($_POST['_martes_horario_830pm'])) { $horario_martes .= '830pm-'; }
 		}
-		
+		update_post_meta($post_id, 'Martes_horario',$horario_martes);		
 
 	}
 
 	function save_metaboxes_tienda_miercoles_horario( $post_id ){
 
+		$horario_miercoles = '';
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_9am_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_9am', $_POST['_miercoles_horario_9am']);
+			if (isset($_POST['_miercoles_horario_9am'])) { $horario_miercoles .= '9am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_930am_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_930am', $_POST['_miercoles_horario_930am']);
+			if (isset($_POST['_miercoles_horario_930am'])) { $horario_miercoles .= '930am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_10am_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_10am', $_POST['_miercoles_horario_10am']);
+			if (isset($_POST['_miercoles_horario_10am'])) { $horario_miercoles .= '10am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_1030am_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_1030am', $_POST['_miercoles_horario_1030am']);
+			if (isset($_POST['_miercoles_horario_1030am'])) { $horario_miercoles .= '1030am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_11am_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_11am', $_POST['_miercoles_horario_11am']);
+			if (isset($_POST['_miercoles_horario_11am'])) { $horario_miercoles .= '11am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_1130am_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_1130am', $_POST['_miercoles_horario_1130am']);
+			if (isset($_POST['_miercoles_horario_1130am'])) { $horario_miercoles .= '1130am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_12pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_12pm', $_POST['_miercoles_horario_12pm']);
+			if (isset($_POST['_miercoles_horario_12pm'])) { $horario_miercoles .= '12pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_1230pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_1230pm', $_POST['_miercoles_horario_1230pm']);
+			if (isset($_POST['_miercoles_horario_1230pm'])) { $horario_miercoles .= '1230pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_1pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_1pm', $_POST['_miercoles_horario_1pm']);
+			if (isset($_POST['_miercoles_horario_1pm'])) { $horario_miercoles .= '1pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_130pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_130pm', $_POST['_miercoles_horario_130pm']);
+			if (isset($_POST['_miercoles_horario_130pm'])) { $horario_miercoles .= '130pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_2pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_2pm', $_POST['_miercoles_horario_2pm']);
+			if (isset($_POST['_miercoles_horario_2pm'])) { $horario_miercoles .= '2pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_230pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_230pm', $_POST['_miercoles_horario_230pm']);
+			if (isset($_POST['_miercoles_horario_230pm'])) { $horario_miercoles .= '230pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_3pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_3pm', $_POST['_miercoles_horario_3pm']);
+			if (isset($_POST['_miercoles_horario_3pm'])) { $horario_miercoles .= '3pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_330pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_330pm', $_POST['_miercoles_horario_330pm']);
+			if (isset($_POST['_miercoles_horario_330pm'])) { $horario_miercoles .= '330pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_4pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_4pm', $_POST['_miercoles_horario_4pm']);
+			if (isset($_POST['_miercoles_horario_4pm'])) { $horario_miercoles .= '4pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_430pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_430pm', $_POST['_miercoles_horario_430pm']);
+			if (isset($_POST['_miercoles_horario_430pm'])) { $horario_miercoles .= '430pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_5pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_5pm', $_POST['_miercoles_horario_5pm']);
+			if (isset($_POST['_miercoles_horario_5pm'])) { $horario_miercoles .= '5pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_530pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_530pm', $_POST['_miercoles_horario_530pm']);
+			if (isset($_POST['_miercoles_horario_530pm'])) { $horario_miercoles .= '530pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_6pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_6pm', $_POST['_miercoles_horario_6pm']);
+			if (isset($_POST['_miercoles_horario_6pm'])) { $horario_miercoles .= '6pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_630pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_630pm', $_POST['_miercoles_horario_630pm']);
+			if (isset($_POST['_miercoles_horario_630pm'])) { $horario_miercoles .= '630pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_7pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_7pm', $_POST['_miercoles_horario_7pm']);
+			if (isset($_POST['_miercoles_horario_7pm'])) { $horario_miercoles .= '7pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_730pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_730pm', $_POST['_miercoles_horario_730pm']);
+			if (isset($_POST['_miercoles_horario_730pm'])) { $horario_miercoles .= '730pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_8pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_8pm', $_POST['_miercoles_horario_8pm']);
+			if (isset($_POST['_miercoles_horario_8pm'])) { $horario_miercoles .= '8pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_miercoles_horario_830pm_nonce') ){
 			update_post_meta($post_id, '_miercoles_horario_830pm', $_POST['_miercoles_horario_830pm']);
+			if (isset($_POST['_miercoles_horario_830pm'])) { $horario_miercoles .= '830pm-'; }
 		}
-		
+		update_post_meta($post_id, 'Miercoles_horario',$horario_miercoles);		
 
 	}
 
 	function save_metaboxes_tienda_jueves_horario( $post_id ){
 
+		$horario_jueves = '';
 		if ( check_admin_referer( __FILE__, '_jueves_horario_9am_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_9am', $_POST['_jueves_horario_9am']);
+			if (isset($_POST['_jueves_horario_9am'])) { $horario_jueves .= '9am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_930am_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_930am', $_POST['_jueves_horario_930am']);
+			if (isset($_POST['_jueves_horario_930am'])) { $horario_jueves .= '930am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_10am_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_10am', $_POST['_jueves_horario_10am']);
+			if (isset($_POST['_jueves_horario_10am'])) { $horario_jueves .= '10am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_1030am_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_1030am', $_POST['_jueves_horario_1030am']);
+			if (isset($_POST['_jueves_horario_1030am'])) { $horario_jueves .= '1030am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_11am_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_11am', $_POST['_jueves_horario_11am']);
+			if (isset($_POST['_jueves_horario_11am'])) { $horario_jueves .= '11am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_1130am_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_1130am', $_POST['_jueves_horario_1130am']);
+			if (isset($_POST['_jueves_horario_1130am'])) { $horario_jueves .= '1130am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_12pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_12pm', $_POST['_jueves_horario_12pm']);
+			if (isset($_POST['_jueves_horario_12pm'])) { $horario_jueves .= '12pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_1230pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_1230pm', $_POST['_jueves_horario_1230pm']);
+			if (isset($_POST['_jueves_horario_1230pm'])) { $horario_jueves .= '1230pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_1pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_1pm', $_POST['_jueves_horario_1pm']);
+			if (isset($_POST['_jueves_horario_1pm'])) { $horario_jueves .= '1pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_130pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_130pm', $_POST['_jueves_horario_130pm']);
+			if (isset($_POST['_jueves_horario_130pm'])) { $horario_jueves .= '130pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_2pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_2pm', $_POST['_jueves_horario_2pm']);
+			if (isset($_POST['_jueves_horario_2pm'])) { $horario_jueves .= '2pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_230pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_230pm', $_POST['_jueves_horario_230pm']);
+			if (isset($_POST['_jueves_horario_230pm'])) { $horario_jueves .= '230pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_3pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_3pm', $_POST['_jueves_horario_3pm']);
+			if (isset($_POST['_jueves_horario_3pm'])) { $horario_jueves .= '3pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_330pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_330pm', $_POST['_jueves_horario_330pm']);
+			if (isset($_POST['_jueves_horario_330pm'])) { $horario_jueves .= '330pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_4pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_4pm', $_POST['_jueves_horario_4pm']);
+			if (isset($_POST['_jueves_horario_4pm'])) { $horario_jueves .= '4pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_430pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_430pm', $_POST['_jueves_horario_430pm']);
+			if (isset($_POST['_jueves_horario_430pm'])) { $horario_jueves .= '430pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_5pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_5pm', $_POST['_jueves_horario_5pm']);
+			if (isset($_POST['_jueves_horario_5pm'])) { $horario_jueves .= '5pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_530pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_530pm', $_POST['_jueves_horario_530pm']);
+			if (isset($_POST['_jueves_horario_530pm'])) { $horario_jueves .= '530pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_6pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_6pm', $_POST['_jueves_horario_6pm']);
+			if (isset($_POST['_jueves_horario_6pm'])) { $horario_jueves .= '6pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_630pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_630pm', $_POST['_jueves_horario_630pm']);
+			if (isset($_POST['_jueves_horario_630pm'])) { $horario_jueves .= '630pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_7pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_7pm', $_POST['_jueves_horario_7pm']);
+			if (isset($_POST['_jueves_horario_7pm'])) { $horario_jueves .= '7pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_730pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_730pm', $_POST['_jueves_horario_730pm']);
+			if (isset($_POST['_jueves_horario_730pm'])) { $horario_jueves .= '730pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_8pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_8pm', $_POST['_jueves_horario_8pm']);
+			if (isset($_POST['_jueves_horario_8pm'])) { $horario_jueves .= '8pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_jueves_horario_830pm_nonce') ){
 			update_post_meta($post_id, '_jueves_horario_830pm', $_POST['_jueves_horario_830pm']);
+			if (isset($_POST['_jueves_horario_830pm'])) { $horario_jueves .= '830pm-'; }
 		}
-		
+		update_post_meta($post_id, 'Jueves_horario',$horario_jueves);		
 
 	}
 
 	function save_metaboxes_tienda_viernes_horario( $post_id ){
 
+		$horario_viernes = '';
 		if ( check_admin_referer( __FILE__, '_viernes_horario_9am_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_9am', $_POST['_viernes_horario_9am']);
+			if (isset($_POST['_viernes_horario_9am'])) { $horario_viernes .= '9am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_930am_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_930am', $_POST['_viernes_horario_930am']);
+			if (isset($_POST['_viernes_horario_930am'])) { $horario_viernes .= '930am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_10am_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_10am', $_POST['_viernes_horario_10am']);
+			if (isset($_POST['_viernes_horario_10am'])) { $horario_viernes .= '10am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_1030am_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_1030am', $_POST['_viernes_horario_1030am']);
+			if (isset($_POST['_viernes_horario_1030am'])) { $horario_viernes .= '1030am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_11am_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_11am', $_POST['_viernes_horario_11am']);
+			if (isset($_POST['_viernes_horario_11am'])) { $horario_viernes .= '11am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_1130am_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_1130am', $_POST['_viernes_horario_1130am']);
+			if (isset($_POST['_viernes_horario_1130am'])) { $horario_viernes .= '1130am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_12pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_12pm', $_POST['_viernes_horario_12pm']);
+			if (isset($_POST['_viernes_horario_12pm'])) { $horario_viernes .= '12pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_1230pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_1230pm', $_POST['_viernes_horario_1230pm']);
+			if (isset($_POST['_viernes_horario_1230pm'])) { $horario_viernes .= '1230pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_1pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_1pm', $_POST['_viernes_horario_1pm']);
+			if (isset($_POST['_viernes_horario_1pm'])) { $horario_viernes .= '1pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_130pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_130pm', $_POST['_viernes_horario_130pm']);
+			if (isset($_POST['_viernes_horario_130pm'])) { $horario_viernes .= '130pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_2pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_2pm', $_POST['_viernes_horario_2pm']);
+			if (isset($_POST['_viernes_horario_2pm'])) { $horario_viernes .= '2pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_230pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_230pm', $_POST['_viernes_horario_230pm']);
+			if (isset($_POST['_viernes_horario_230pm'])) { $horario_viernes .= '230pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_3pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_3pm', $_POST['_viernes_horario_3pm']);
+			if (isset($_POST['_viernes_horario_3pm'])) { $horario_viernes .= '3pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_330pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_330pm', $_POST['_viernes_horario_330pm']);
+			if (isset($_POST['_viernes_horario_330pm'])) { $horario_viernes .= '330pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_4pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_4pm', $_POST['_viernes_horario_4pm']);
+			if (isset($_POST['_viernes_horario_4pm'])) { $horario_viernes .= '4pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_430pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_430pm', $_POST['_viernes_horario_430pm']);
+			if (isset($_POST['_viernes_horario_430pm'])) { $horario_viernes .= '430pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_5pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_5pm', $_POST['_viernes_horario_5pm']);
+			if (isset($_POST['_viernes_horario_5pm'])) { $horario_viernes .= '5pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_530pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_530pm', $_POST['_viernes_horario_530pm']);
+			if (isset($_POST['_viernes_horario_530pm'])) { $horario_viernes .= '530pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_6pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_6pm', $_POST['_viernes_horario_6pm']);
+			if (isset($_POST['_viernes_horario_6pm'])) { $horario_viernes .= '6pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_630pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_630pm', $_POST['_viernes_horario_630pm']);
+			if (isset($_POST['_viernes_horario_630pm'])) { $horario_viernes .= '630pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_7pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_7pm', $_POST['_viernes_horario_7pm']);
+			if (isset($_POST['_viernes_horario_7pm'])) { $horario_viernes .= '7pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_730pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_730pm', $_POST['_viernes_horario_730pm']);
+			if (isset($_POST['_viernes_horario_730pm'])) { $horario_viernes .= '730pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_8pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_8pm', $_POST['_viernes_horario_8pm']);
+			if (isset($_POST['_viernes_horario_8pm'])) { $horario_viernes .= '8pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_viernes_horario_830pm_nonce') ){
 			update_post_meta($post_id, '_viernes_horario_830pm', $_POST['_viernes_horario_830pm']);
+			if (isset($_POST['_viernes_horario_830pm'])) { $horario_viernes .= '830pm-'; }
 		}
+		update_post_meta($post_id, 'Viernes_horario',$horario_viernes);		
 		
 
 	}
 
 	function save_metaboxes_tienda_sabado_horario( $post_id ){
 
+		$horario_sabado = '';
 		if ( check_admin_referer( __FILE__, '_sabado_horario_9am_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_9am', $_POST['_sabado_horario_9am']);
+			if (isset($_POST['_sabado_horario_9am'])) { $horario_sabado .= '9am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_930am_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_930am', $_POST['_sabado_horario_930am']);
+			if (isset($_POST['_sabado_horario_930am'])) { $horario_sabado .= '930am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_10am_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_10am', $_POST['_sabado_horario_10am']);
+			if (isset($_POST['_sabado_horario_10am'])) { $horario_sabado .= '10am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_1030am_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_1030am', $_POST['_sabado_horario_1030am']);
+			if (isset($_POST['_sabado_horario_1030am'])) { $horario_sabado .= '1030am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_11am_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_11am', $_POST['_sabado_horario_11am']);
+			if (isset($_POST['_sabado_horario_11am'])) { $horario_sabado .= '11am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_1130am_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_1130am', $_POST['_sabado_horario_1130am']);
+			if (isset($_POST['_sabado_horario_1130am'])) { $horario_sabado .= '1130am-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_12pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_12pm', $_POST['_sabado_horario_12pm']);
+			if (isset($_POST['_sabado_horario_12pm'])) { $horario_sabado .= '12pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_1230pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_1230pm', $_POST['_sabado_horario_1230pm']);
+			if (isset($_POST['_sabado_horario_1230pm'])) { $horario_sabado .= '1230pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_1pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_1pm', $_POST['_sabado_horario_1pm']);
+			if (isset($_POST['_sabado_horario_1pm'])) { $horario_sabado .= '1pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_130pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_130pm', $_POST['_sabado_horario_130pm']);
+			if (isset($_POST['_sabado_horario_130pm'])) { $horario_sabado .= '130pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_2pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_2pm', $_POST['_sabado_horario_2pm']);
+			if (isset($_POST['_sabado_horario_2pm'])) { $horario_sabado .= '2pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_230pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_230pm', $_POST['_sabado_horario_230pm']);
+			if (isset($_POST['_sabado_horario_230pm'])) { $horario_sabado .= '230pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_3pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_3pm', $_POST['_sabado_horario_3pm']);
+			if (isset($_POST['_sabado_horario_3pm'])) { $horario_sabado .= '3pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_330pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_330pm', $_POST['_sabado_horario_330pm']);
+			if (isset($_POST['_sabado_horario_330pm'])) { $horario_sabado .= '330pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_4pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_4pm', $_POST['_sabado_horario_4pm']);
+			if (isset($_POST['_sabado_horario_4pm'])) { $horario_sabado .= '4pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_430pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_430pm', $_POST['_sabado_horario_430pm']);
+			if (isset($_POST['_sabado_horario_430pm'])) { $horario_sabado .= '430pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_5pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_5pm', $_POST['_sabado_horario_5pm']);
+			if (isset($_POST['_sabado_horario_5pm'])) { $horario_sabado .= '5pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_530pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_530pm', $_POST['_sabado_horario_530pm']);
+			if (isset($_POST['_sabado_horario_530pm'])) { $horario_sabado .= '530pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_6pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_6pm', $_POST['_sabado_horario_6pm']);
+			if (isset($_POST['_sabado_horario_6pm'])) { $horario_sabado .= '6pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_630pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_630pm', $_POST['_sabado_horario_630pm']);
+			if (isset($_POST['_sabado_horario_630pm'])) { $horario_sabado .= '630pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_7pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_7pm', $_POST['_sabado_horario_7pm']);
+			if (isset($_POST['_sabado_horario_7pm'])) { $horario_sabado .= '7pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_730pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_730pm', $_POST['_sabado_horario_730pm']);
+			if (isset($_POST['_sabado_horario_730pm'])) { $horario_sabado .= '730pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_8pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_8pm', $_POST['_sabado_horario_8pm']);
+			if (isset($_POST['_sabado_horario_8pm'])) { $horario_sabado .= '8pm-'; }
 		}
 		if ( check_admin_referer( __FILE__, '_sabado_horario_830pm_nonce') ){
 			update_post_meta($post_id, '_sabado_horario_830pm', $_POST['_sabado_horario_830pm']);
+			if (isset($_POST['_sabado_horario_830pm'])) { $horario_sabado .= '830pm-'; }
 		}
+		update_post_meta($post_id, 'Sabado_horario',$horario_sabado);		
 		
 
 	}
