@@ -39,7 +39,7 @@ a {
   -webkit-tap-highlight-color: transparent;
 
 
-  &:hover{ 
+  &:hover{
     opacity: .6;
     transition:       all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -360,16 +360,15 @@ ul.staggered-list li {
 // Footer
 
 .page-footer {
-  margin-top: 20px;
   padding: 0px;
   position: absolute;
   width: 100%;
   background-color: $dark-color;
 
   .container {
-      @media #{$small-and-down} { 
+      @media #{$small-and-down} {
         margin-top: 0px;
-        padding-left: 15px; 
+        padding-left: 15px;
         padding-right: 15px;
     }
   }

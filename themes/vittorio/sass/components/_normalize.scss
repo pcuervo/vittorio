@@ -10,6 +10,9 @@ html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+
+  background: #000;
+
 }
 
 /**
@@ -47,7 +50,7 @@ summary {
 }
 
 header{
-  margin-bottom: $margin-size
+  margin-bottom: 0;
 }
 
 /**
