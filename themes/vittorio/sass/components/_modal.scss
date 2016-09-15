@@ -20,11 +20,8 @@
   }
 
   @media #{$medium-and-up} {
-      height: 30vh;
+      height: 50vh;
    }
-  @media #{$large-and-up}{
-      height: 25vh;
-    }
 
   div.modal-content a{
     margin-top:5%;
