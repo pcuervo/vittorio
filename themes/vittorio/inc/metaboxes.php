@@ -78,6 +78,7 @@ function add_metaboxes_tienda(){
 	add_meta_box( 'meta-box-tienda-horario-jueves', 'Jueves Horarios ', 'metabox_tienda_horarios_jueves', 'tiendas');
 	add_meta_box( 'meta-box-tienda-horario-viernes', 'Viernes Horarios ', 'metabox_tienda_horarios_viernes', 'tiendas');
 	add_meta_box( 'meta-box-tienda-horario-sabado', 'Sabado Horarios ', 'metabox_tienda_horarios_sabado', 'tiendas');
+	add_meta_box( 'meta-box-tienda-horario-domingo', 'Domingo Horarios ', 'metabox_tienda_horarios_domingo', 'tiendas');
 }// add_metaboxes_PAGE
 
 
@@ -838,6 +839,111 @@ function metabox_tienda_horarios_sabado($post){
 
 }
 
+function metabox_tienda_horarios_domingo($post){
+
+	$domingo_horario_9am = get_post_meta($post->ID, '_domingo_horario_9am', true);
+	$domingo_horario_930am = get_post_meta($post->ID, '_domingo_horario_930am', true);
+	$domingo_horario_10am = get_post_meta($post->ID, '_domingo_horario_10am', true);
+	$domingo_horario_1030am = get_post_meta($post->ID, '_domingo_horario_1030am', true);
+	$domingo_horario_11am = get_post_meta($post->ID, '_domingo_horario_11am', true);
+	$domingo_horario_1130am = get_post_meta($post->ID, '_domingo_horario_1130am', true);
+	$domingo_horario_12pm = get_post_meta($post->ID, '_domingo_horario_12pm', true);
+	$domingo_horario_1230pm = get_post_meta($post->ID, '_domingo_horario_1230pm', true);
+	$domingo_horario_1pm = get_post_meta($post->ID, '_domingo_horario_1pm', true);
+	$domingo_horario_130pm = get_post_meta($post->ID, '_domingo_horario_130pm', true);
+	$domingo_horario_2pm = get_post_meta($post->ID, '_domingo_horario_2pm', true);
+	$domingo_horario_230pm = get_post_meta($post->ID, '_domingo_horario_230pm', true);
+	$domingo_horario_3pm = get_post_meta($post->ID, '_domingo_horario_3pm', true);
+	$domingo_horario_330pm = get_post_meta($post->ID, '_domingo_horario_330pm', true);
+	$domingo_horario_4pm = get_post_meta($post->ID, '_domingo_horario_4pm', true);
+	$domingo_horario_430pm = get_post_meta($post->ID, '_domingo_horario_430pm', true);
+	$domingo_horario_5pm = get_post_meta($post->ID, '_domingo_horario_5pm', true);
+	$domingo_horario_530pm = get_post_meta($post->ID, '_domingo_horario_530pm', true);
+	$domingo_horario_6pm = get_post_meta($post->ID, '_domingo_horario_6pm', true);
+	$domingo_horario_630pm = get_post_meta($post->ID, '_domingo_horario_630pm', true);
+	$domingo_horario_7pm = get_post_meta($post->ID, '_domingo_horario_7pm', true);
+	$domingo_horario_730pm = get_post_meta($post->ID, '_domingo_horario_730pm', true);
+	$domingo_horario_8pm = get_post_meta($post->ID, '_domingo_horario_8pm', true);
+	$domingo_horario_830pm = get_post_meta($post->ID, '_domingo_horario_830pm', true);
+
+
+	wp_nonce_field(__FILE__, '_domingo_horario_9am_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_930am_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_10am_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_1030am_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_11am_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_1130am_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_12pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_1230pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_1pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_130pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_2pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_230pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_3pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_330pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_4pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_430pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_5pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_530pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_6pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_630pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_7pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_730pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_8pm_nonce');
+	wp_nonce_field(__FILE__, '_domingo_horario_830pm_nonce');
+
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 9am - 9:30am  <input type='checkbox' class='[ widefat ]' name='_domingo_horario_9am' ";checked( $domingo_horario_9am, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 9:30am - 10am  <input type='checkbox' class='[ widefat ]' name='_domingo_horario_930am' ";checked( $domingo_horario_930am, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 10am - 10:30am <input type='checkbox' class='[ widefat ]' name='_domingo_horario_10am' ";checked( $domingo_horario_10am, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 10:30am - 11am <input type='checkbox' class='[ widefat ]' name='_domingo_horario_1030am' ";checked( $domingo_horario_1030am , 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 11am - 11:30am <input type='checkbox' class='[ widefat ]' name='_domingo_horario_11am' ";checked( $domingo_horario_11am, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 11:30am - 12pm   <input type='checkbox' class='[ widefat ]' name='_domingo_horario_1130am' ";checked( $domingo_horario_1130am, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 12pm - 12:30pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_12pm' ";checked( $domingo_horario_12pm, 'SI' ); echo " value='SI'></div>";			 
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 12:30pm - 1pm  <input type='checkbox' class='[ widefat ]' name='_domingo_horario_1230pm' ";checked( $domingo_horario_1230pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 1pm - 1:30pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_1pm' ";checked( $domingo_horario_1pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 1:30pm - 2pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_130pm' ";checked( $domingo_horario_130pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 2pm - 2:30pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_2pm' ";checked( $domingo_horario_2pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 2:30pm - 3pm   <input type='checkbox' class='[ widefat ]' name='_domingo_horario_230pm' ";checked( $domingo_horario_230pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 3pm - 3:30pm  <input type='checkbox' class='[ widefat ]' name='_domingo_horario_3pm' ";checked( $domingo_horario_3pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 3:30pm - 4pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_330pm' ";checked( $domingo_horario_330pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 4pm - 4:30pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_4pm' ";checked( $domingo_horario_4pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 4:30pm - 5pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_430pm' ";checked( $domingo_horario_430pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 5pm - 5:30pm   <input type='checkbox' class='[ widefat ]' name='_domingo_horario_5pm' ";checked( $domingo_horario_5pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 5:30pm - 6pm  <input type='checkbox' class='[ widefat ]' name='_domingo_horario_530pm' ";checked( $domingo_horario_530pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 6pm - 6:30pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_6pm' ";checked( $domingo_horario_6pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 6:30pm - 7pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_630pm' ";checked( $domingo_horario_630pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 7pm - 7:30pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_7pm' ";checked( $domingo_horario_7pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 7:30pm - 8pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_730pm' ";checked( $domingo_horario_730pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 8pm - 8:30pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_8pm' ";checked( $domingo_horario_8pm, 'SI' ); echo " value='SI'></div>";
+	echo "<div style='border: 1px solid gray; width: 16%; float:left; padding: 2px;'>
+			 8:30pm - 9pm <input type='checkbox' class='[ widefat ]' name='_domingo_horario_830pm' ";checked( $domingo_horario_830pm, 'SI' ); echo " value='SI'></div>";
+	echo '<br /><br /><br /><br /><br /><br /><br /><br /><br />';
+
+}
+
 /*------------------------------------*\
 	SAVE METABOXES DATA
 \*------------------------------------*/
@@ -853,6 +959,7 @@ function metabox_tienda_horarios_sabado($post){
 		save_metaboxes_tienda_jueves_horario( $post_id );
 		save_metaboxes_tienda_viernes_horario( $post_id );
 		save_metaboxes_tienda_sabado_horario( $post_id );
+		save_metaboxes_tienda_domingo_horario( $post_id );
 
 	});
 
@@ -1537,6 +1644,110 @@ function metabox_tienda_horarios_sabado($post){
 			if (isset($_POST['_sabado_horario_830pm'])) { $horario_sabado .= '830pm-'; }
 		}
 		update_post_meta($post_id, 'Sabado_horario',$horario_sabado);		
+		
+
+	}
+
+function save_metaboxes_tienda_domingo_horario( $post_id ){
+
+		$horario_domingo = '';
+		if ( check_admin_referer( __FILE__, '_domingo_horario_9am_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_9am', $_POST['_domingo_horario_9am']);
+			if (isset($_POST['_domingo_horario_9am'])) { $horario_domingo .= '9am-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_930am_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_930am', $_POST['_domingo_horario_930am']);
+			if (isset($_POST['_domingo_horario_930am'])) { $horario_domingo .= '930am-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_10am_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_10am', $_POST['_domingo_horario_10am']);
+			if (isset($_POST['_domingo_horario_10am'])) { $horario_domingo .= '10am-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_1030am_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_1030am', $_POST['_domingo_horario_1030am']);
+			if (isset($_POST['_domingo_horario_1030am'])) { $horario_domingo .= '1030am-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_11am_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_11am', $_POST['_domingo_horario_11am']);
+			if (isset($_POST['_domingo_horario_11am'])) { $horario_domingo .= '11am-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_1130am_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_1130am', $_POST['_domingo_horario_1130am']);
+			if (isset($_POST['_domingo_horario_1130am'])) { $horario_domingo .= '1130am-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_12pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_12pm', $_POST['_domingo_horario_12pm']);
+			if (isset($_POST['_domingo_horario_12pm'])) { $horario_domingo .= '12pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_1230pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_1230pm', $_POST['_domingo_horario_1230pm']);
+			if (isset($_POST['_domingo_horario_1230pm'])) { $horario_domingo .= '1230pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_1pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_1pm', $_POST['_domingo_horario_1pm']);
+			if (isset($_POST['_domingo_horario_1pm'])) { $horario_domingo .= '1pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_130pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_130pm', $_POST['_domingo_horario_130pm']);
+			if (isset($_POST['_domingo_horario_130pm'])) { $horario_domingo .= '130pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_2pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_2pm', $_POST['_domingo_horario_2pm']);
+			if (isset($_POST['_domingo_horario_2pm'])) { $horario_domingo .= '2pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_230pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_230pm', $_POST['_domingo_horario_230pm']);
+			if (isset($_POST['_domingo_horario_230pm'])) { $horario_domingo .= '230pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_3pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_3pm', $_POST['_domingo_horario_3pm']);
+			if (isset($_POST['_domingo_horario_3pm'])) { $horario_domingo .= '3pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_330pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_330pm', $_POST['_domingo_horario_330pm']);
+			if (isset($_POST['_domingo_horario_330pm'])) { $horario_domingo .= '330pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_4pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_4pm', $_POST['_domingo_horario_4pm']);
+			if (isset($_POST['_domingo_horario_4pm'])) { $horario_domingo .= '4pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_430pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_430pm', $_POST['_domingo_horario_430pm']);
+			if (isset($_POST['_domingo_horario_430pm'])) { $horario_domingo .= '430pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_5pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_5pm', $_POST['_domingo_horario_5pm']);
+			if (isset($_POST['_domingo_horario_5pm'])) { $horario_domingo .= '5pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_530pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_530pm', $_POST['_domingo_horario_530pm']);
+			if (isset($_POST['_domingo_horario_530pm'])) { $horario_domingo .= '530pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_6pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_6pm', $_POST['_domingo_horario_6pm']);
+			if (isset($_POST['_domingo_horario_6pm'])) { $horario_domingo .= '6pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_630pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_630pm', $_POST['_domingo_horario_630pm']);
+			if (isset($_POST['_domingo_horario_630pm'])) { $horario_domingo .= '630pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_7pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_7pm', $_POST['_domingo_horario_7pm']);
+			if (isset($_POST['_domingo_horario_7pm'])) { $horario_domingo .= '7pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_730pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_730pm', $_POST['_domingo_horario_730pm']);
+			if (isset($_POST['_domingo_horario_730pm'])) { $horario_domingo .= '730pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_8pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_8pm', $_POST['_domingo_horario_8pm']);
+			if (isset($_POST['_domingo_horario_8pm'])) { $horario_domingo .= '8pm-'; }
+		}
+		if ( check_admin_referer( __FILE__, '_domingo_horario_830pm_nonce') ){
+			update_post_meta($post_id, '_domingo_horario_830pm', $_POST['_domingo_horario_830pm']);
+			if (isset($_POST['_domingo_horario_830pm'])) { $horario_domingo .= '830pm-'; }
+		}
+		update_post_meta($post_id, 'Domingo_horario',$horario_domingo);		
 		
 
 	}
