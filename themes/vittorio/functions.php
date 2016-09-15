@@ -73,8 +73,8 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 	//the array of arguements to be inserted with wp_insert_post
 	$new_post = array(
 	'post_title'    => $title,
-	'post_status'   => 'draft',          
-	'post_type'     => $post_type 
+	'post_status'   => 'draft',
+	'post_type'     => $post_type
 
 	);
 

@@ -6106,15 +6106,27 @@ button.btn-floating {
     width: 100%;
   }
 }
-/* line 22, sass/components/_modal.scss */
+@media only screen and (min-width: 601px) {
+  /* line 1, sass/components/_modal.scss */
+  .modal {
+    height: 30vh;
+  }
+}
+@media only screen and (min-width: 993px) {
+  /* line 1, sass/components/_modal.scss */
+  .modal {
+    height: 25vh;
+  }
+}
+/* line 29, sass/components/_modal.scss */
 .modal div.modal-content a {
   margin-top: 5%;
 }
-/* line 25, sass/components/_modal.scss */
+/* line 32, sass/components/_modal.scss */
 .modal h1, .modal h2, .modal h3, .modal h4 {
   margin-top: 0;
 }
-/* line 29, sass/components/_modal.scss */
+/* line 36, sass/components/_modal.scss */
 .modal .modal-content {
   padding: 24px;
   width: 100%;
@@ -6126,11 +6138,11 @@ button.btn-floating {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 40, sass/components/_modal.scss */
+/* line 47, sass/components/_modal.scss */
 .modal .modal-close {
   cursor: pointer;
 }
-/* line 44, sass/components/_modal.scss */
+/* line 51, sass/components/_modal.scss */
 .modal .modal-footer {
   border-radius: 0 0 2px 2px;
   background-color: #fafafa;
@@ -6138,13 +6150,13 @@ button.btn-floating {
   height: 56px;
   width: 100%;
 }
-/* line 51, sass/components/_modal.scss */
+/* line 58, sass/components/_modal.scss */
 .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
   float: right;
   margin: 6px 0;
 }
 
-/* line 57, sass/components/_modal.scss */
+/* line 64, sass/components/_modal.scss */
 .lean-overlay {
   position: fixed;
   z-index: 999;
@@ -6159,12 +6171,12 @@ button.btn-floating {
   will-change: opacity;
 }
 
-/* line 73, sass/components/_modal.scss */
+/* line 80, sass/components/_modal.scss */
 .modal.modal-fixed-footer {
   padding: 0;
   height: 70%;
 }
-/* line 77, sass/components/_modal.scss */
+/* line 84, sass/components/_modal.scss */
 .modal.modal-fixed-footer .modal-content {
   position: absolute;
   height: calc(100% - 56px);
@@ -6172,14 +6184,14 @@ button.btn-floating {
   width: 100%;
   overflow-y: auto;
 }
-/* line 85, sass/components/_modal.scss */
+/* line 92, sass/components/_modal.scss */
 .modal.modal-fixed-footer .modal-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   bottom: 0;
 }
 
-/* line 93, sass/components/_modal.scss */
+/* line 100, sass/components/_modal.scss */
 .modal.bottom-sheet {
   top: auto;
   bottom: -100%;
@@ -6887,19 +6899,20 @@ textarea.materialize-textarea {
 .parsley-errors-list .parsley-custom-error-message,
 .parsley-errors-list .parsley-required {
   color: #CC2334;
+  font-size: 10px;
 }
 
-/* line 278, sass/components/forms/_input-fields.scss */
+/* line 281, sass/components/forms/_input-fields.scss */
 .parsley-errors-list .parsley-type {
   color: #757575;
 }
 
-/* line 279, sass/components/forms/_input-fields.scss */
+/* line 282, sass/components/forms/_input-fields.scss */
 .parsley-errors-list {
   margin-top: -15px;
 }
 
-/* line 280, sass/components/forms/_input-fields.scss */
+/* line 283, sass/components/forms/_input-fields.scss */
 .parsley-custom-error-message {
   background-color: #000000;
 }
@@ -7074,7 +7087,6 @@ form p:last-child {
   cursor: pointer;
   display: inline-block;
   height: 25px;
-  line-height: 25px;
   font-size: 1rem;
   -webkit-user-select: none;
   /* webkit (safari, chrome) browsers */
@@ -7085,7 +7097,7 @@ form p:last-child {
   -ms-user-select: none;
   /* IE10+ */
 }
-/* line 41, sass/components/forms/_checkboxes.scss */
+/* line 40, sass/components/forms/_checkboxes.scss */
 [type="checkbox"] + label:before, [type="checkbox"]:not(.filled-in) + label:after {
   content: '';
   position: absolute;
@@ -7099,17 +7111,17 @@ form p:last-child {
   margin-top: 2px;
   transition: .2s;
 }
-/* line 56, sass/components/forms/_checkboxes.scss */
+/* line 55, sass/components/forms/_checkboxes.scss */
 [type="checkbox"]:not(.filled-in) + label:after {
   border: 0;
   transform: scale(0);
 }
-/* line 61, sass/components/forms/_checkboxes.scss */
+/* line 60, sass/components/forms/_checkboxes.scss */
 [type="checkbox"]:not(:checked):disabled + label:before {
   border: none;
   background-color: rgba(0, 0, 0, 0.26);
 }
-/* line 67, sass/components/forms/_checkboxes.scss */
+/* line 66, sass/components/forms/_checkboxes.scss */
 [type="checkbox"].tabbed:focus + label:after {
   transform: scale(1);
   border: 0;
@@ -7118,7 +7130,7 @@ form p:last-child {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* line 77, sass/components/forms/_checkboxes.scss */
+/* line 76, sass/components/forms/_checkboxes.scss */
 [type="checkbox"]:checked + label:before {
   top: -4px;
   left: -5px;
@@ -7132,14 +7144,14 @@ form p:last-child {
   backface-visibility: hidden;
   transform-origin: 100% 100%;
 }
-/* line 91, sass/components/forms/_checkboxes.scss */
+/* line 90, sass/components/forms/_checkboxes.scss */
 [type="checkbox"]:checked:disabled + label:before {
   border-right: 2px solid rgba(0, 0, 0, 0.26);
   border-bottom: 2px solid rgba(0, 0, 0, 0.26);
 }
 
 /* Indeterminate checkbox */
-/* line 99, sass/components/forms/_checkboxes.scss */
+/* line 98, sass/components/forms/_checkboxes.scss */
 [type="checkbox"]:indeterminate + label:before {
   top: -11px;
   left: -12px;
@@ -7153,17 +7165,17 @@ form p:last-child {
   backface-visibility: hidden;
   transform-origin: 100% 100%;
 }
-/* line 114, sass/components/forms/_checkboxes.scss */
+/* line 113, sass/components/forms/_checkboxes.scss */
 [type="checkbox"]:indeterminate:disabled + label:before {
   border-right: 2px solid rgba(0, 0, 0, 0.26);
   background-color: transparent;
 }
 
-/* line 123, sass/components/forms/_checkboxes.scss */
+/* line 122, sass/components/forms/_checkboxes.scss */
 [type="checkbox"].filled-in + label:after {
   border-radius: 2px;
 }
-/* line 127, sass/components/forms/_checkboxes.scss */
+/* line 126, sass/components/forms/_checkboxes.scss */
 [type="checkbox"].filled-in + label:before,
 [type="checkbox"].filled-in + label:after {
   content: '';
@@ -7173,7 +7185,7 @@ form p:last-child {
   transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
   z-index: 1;
 }
-/* line 138, sass/components/forms/_checkboxes.scss */
+/* line 137, sass/components/forms/_checkboxes.scss */
 [type="checkbox"].filled-in:not(:checked) + label:before {
   width: 0;
   height: 0;
@@ -7185,7 +7197,7 @@ form p:last-child {
   -webkit-transform-origin: 20% 40%;
   transform-origin: 100% 100%;
 }
-/* line 151, sass/components/forms/_checkboxes.scss */
+/* line 150, sass/components/forms/_checkboxes.scss */
 [type="checkbox"].filled-in:not(:checked) + label:after {
   height: 20px;
   width: 20px;
@@ -7194,7 +7206,7 @@ form p:last-child {
   top: 0px;
   z-index: 0;
 }
-/* line 162, sass/components/forms/_checkboxes.scss */
+/* line 161, sass/components/forms/_checkboxes.scss */
 [type="checkbox"].filled-in:checked + label:before {
   top: 0;
   left: 1px;
@@ -7209,7 +7221,7 @@ form p:last-child {
   -webkit-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
 }
-/* line 178, sass/components/forms/_checkboxes.scss */
+/* line 177, sass/components/forms/_checkboxes.scss */
 [type="checkbox"].filled-in:checked + label:after {
   top: 0;
   width: 20px;
@@ -7218,33 +7230,33 @@ form p:last-child {
   background-color: #757575;
   z-index: 0;
 }
-/* line 189, sass/components/forms/_checkboxes.scss */
+/* line 188, sass/components/forms/_checkboxes.scss */
 [type="checkbox"].filled-in.tabbed:focus + label:after {
   border-radius: 2px;
   border-color: #5a5a5a;
   background-color: rgba(0, 0, 0, 0.1);
 }
-/* line 195, sass/components/forms/_checkboxes.scss */
+/* line 194, sass/components/forms/_checkboxes.scss */
 [type="checkbox"].filled-in.tabbed:checked:focus + label:after {
   border-radius: 2px;
   background-color: #757575;
   border-color: #757575;
 }
-/* line 202, sass/components/forms/_checkboxes.scss */
+/* line 201, sass/components/forms/_checkboxes.scss */
 [type="checkbox"].filled-in:disabled:not(:checked) + label:before {
   background-color: transparent;
   border: 2px solid transparent;
 }
-/* line 207, sass/components/forms/_checkboxes.scss */
+/* line 206, sass/components/forms/_checkboxes.scss */
 [type="checkbox"].filled-in:disabled:not(:checked) + label:after {
   border-color: transparent;
   background-color: #BDBDBD;
 }
-/* line 212, sass/components/forms/_checkboxes.scss */
+/* line 211, sass/components/forms/_checkboxes.scss */
 [type="checkbox"].filled-in:disabled:checked + label:before {
   background-color: transparent;
 }
-/* line 216, sass/components/forms/_checkboxes.scss */
+/* line 215, sass/components/forms/_checkboxes.scss */
 [type="checkbox"].filled-in:disabled:checked + label:after {
   background-color: #BDBDBD;
   border-color: #BDBDBD;
@@ -7385,7 +7397,7 @@ select {
   color: initial;
   position: absolute;
   right: 0;
-  top: 16px;
+  top: 9px;
   font-size: 10px;
   margin-right: 3%;
   z-index: 1;

@@ -14,10 +14,17 @@
   border-radius: 2px;
   will-change: top, opacity;
   text-align: center;
+
   @media #{$medium-and-down} {
    width: 100%;
-
   }
+
+  @media #{$medium-and-up} {
+      height: 30vh;
+   }
+  @media #{$large-and-up}{
+      height: 25vh;
+    }
 
   div.modal-content a{
     margin-top:5%;
