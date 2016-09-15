@@ -81,6 +81,10 @@ select:disabled {
   background-color: transparent;
 }
 
+.select-dropdown li.ocupado span{
+  color: red;
+}
+
 // Prefix Icons
 .prefix ~ .select-wrapper {
   margin-left: 3rem;

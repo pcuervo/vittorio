@@ -8,12 +8,6 @@
 	License: GNU General Public License v2
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-/* CSS para manejo del select de horarios */
-select.ocupado {
-  color: red;
-  display: none;
-}
-
 /* line 381, sass/components/_color.scss */
 .materialize-red {
   background-color: #e51c23 !important;
@@ -5935,9 +5929,6 @@ button.btn-floating {
 .dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
   background-color: #eee;
 }
-.dropdown-content li.ocupado > span {
-  color: red;
-}
 /* line 28, sass/components/_dropdown.scss */
 .dropdown-content li.active.selected {
   background-color: #e1e1e1;
@@ -6118,24 +6109,18 @@ button.btn-floating {
 @media only screen and (min-width: 601px) {
   /* line 1, sass/components/_modal.scss */
   .modal {
-    height: 30vh;
+    height: 50vh;
   }
 }
-@media only screen and (min-width: 993px) {
-  /* line 1, sass/components/_modal.scss */
-  .modal {
-    height: 25vh;
-  }
-}
-/* line 29, sass/components/_modal.scss */
+/* line 26, sass/components/_modal.scss */
 .modal div.modal-content a {
   margin-top: 5%;
 }
-/* line 32, sass/components/_modal.scss */
+/* line 29, sass/components/_modal.scss */
 .modal h1, .modal h2, .modal h3, .modal h4 {
   margin-top: 0;
 }
-/* line 36, sass/components/_modal.scss */
+/* line 33, sass/components/_modal.scss */
 .modal .modal-content {
   padding: 24px;
   width: 100%;
@@ -6147,11 +6132,11 @@ button.btn-floating {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 47, sass/components/_modal.scss */
+/* line 44, sass/components/_modal.scss */
 .modal .modal-close {
   cursor: pointer;
 }
-/* line 51, sass/components/_modal.scss */
+/* line 48, sass/components/_modal.scss */
 .modal .modal-footer {
   border-radius: 0 0 2px 2px;
   background-color: #fafafa;
@@ -6159,13 +6144,13 @@ button.btn-floating {
   height: 56px;
   width: 100%;
 }
-/* line 58, sass/components/_modal.scss */
+/* line 55, sass/components/_modal.scss */
 .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
   float: right;
   margin: 6px 0;
 }
 
-/* line 64, sass/components/_modal.scss */
+/* line 61, sass/components/_modal.scss */
 .lean-overlay {
   position: fixed;
   z-index: 999;
@@ -6180,12 +6165,12 @@ button.btn-floating {
   will-change: opacity;
 }
 
-/* line 80, sass/components/_modal.scss */
+/* line 77, sass/components/_modal.scss */
 .modal.modal-fixed-footer {
   padding: 0;
   height: 70%;
 }
-/* line 84, sass/components/_modal.scss */
+/* line 81, sass/components/_modal.scss */
 .modal.modal-fixed-footer .modal-content {
   position: absolute;
   height: calc(100% - 56px);
@@ -6193,14 +6178,14 @@ button.btn-floating {
   width: 100%;
   overflow-y: auto;
 }
-/* line 92, sass/components/_modal.scss */
+/* line 89, sass/components/_modal.scss */
 .modal.modal-fixed-footer .modal-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   bottom: 0;
 }
 
-/* line 100, sass/components/_modal.scss */
+/* line 97, sass/components/_modal.scss */
 .modal.bottom-sheet {
   top: auto;
   bottom: -100%;
@@ -6500,7 +6485,7 @@ textarea.materialize-textarea {
   height: 2.3rem;
   width: 95%;
   font-size: 1rem;
-  margin: 0 0 14px 0;
+  margin: 0 0 16px 0;
   padding: 0 2.5%;
   box-shadow: none;
   box-sizing: content-box;
@@ -7453,19 +7438,24 @@ select:disabled {
   background-color: transparent;
 }
 
-/* line 85, sass/components/forms/_select.scss */
+/* line 84, sass/components/forms/_select.scss */
+.select-dropdown li.ocupado span {
+  color: red;
+}
+
+/* line 89, sass/components/forms/_select.scss */
 .prefix ~ .select-wrapper {
   margin-left: 3rem;
   width: 92%;
   width: calc(100% - 3rem);
 }
 
-/* line 91, sass/components/forms/_select.scss */
+/* line 95, sass/components/forms/_select.scss */
 .prefix ~ label {
   margin-left: 3rem;
 }
 
-/* line 95, sass/components/forms/_select.scss */
+/* line 99, sass/components/forms/_select.scss */
 .select-dropdown li img {
   height: 40px;
   width: 40px;
@@ -7473,19 +7463,19 @@ select:disabled {
   float: right;
 }
 
-/* line 104, sass/components/forms/_select.scss */
+/* line 108, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup {
   border-top: 1px solid #eee;
 }
-/* line 107, sass/components/forms/_select.scss */
+/* line 111, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup.selected > span {
   color: rgba(0, 0, 0, 0.7);
 }
-/* line 111, sass/components/forms/_select.scss */
+/* line 115, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup > span {
   color: rgba(0, 0, 0, 0.4);
 }
-/* line 115, sass/components/forms/_select.scss */
+/* line 119, sass/components/forms/_select.scss */
 .select-dropdown li.optgroup ~ li.optgroup-option {
   padding-left: 1rem;
 }
@@ -9768,7 +9758,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 /* line 7, sass/components/_images.scss */
 .background-img {
-  background-position: center;
+  background-position: center top;
   background-size: cover;
 }
 

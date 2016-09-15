@@ -5,7 +5,7 @@
 .img-responsive{ max-width: 100%; }
 
 .background-img {
-	background-position: center;
+	background-position: center top;
 	background-size: cover;
 }
 
@@ -15,6 +15,6 @@
 	.background-img--main {
 		background-position: top;
 		background-repeat: no-repeat;
-		background-size: 200%
+		background-size: 200%;
 	}
 }

@@ -7,7 +7,7 @@
 		<div class="[ container ]">
 			<div class="[ row ]">
 				<div class="[ col l7 ][ hide-on-med-and-up ]">
-					<img class="[ img-responsive ][ middle ]" src="<?php echo THEMEPATH; ?>img/el_poder.png" alt="El poder de un traje">
+					<img class="[ img-responsive ][ middle ]" src="<?php echo THEMEPATH; ?>img/el_poder.svg" alt="El poder de un traje">
 				</div>
 
 				<div class="[ col s12 m5 ][ no-float ][ inline-block ][ middle ]">
@@ -128,7 +128,7 @@
 					</div>
 				</div><div
 					class="[ col s6 m7 ][ hide-on-small-only ][ no-float ][ inline-block ][ middle ]">
-					<img class="[ img-responsive ]" src="<?php echo THEMEPATH; ?>img/el_poder.png" alt="El poder de un traje">
+					<img class="[ img-responsive ]" src="<?php echo THEMEPATH; ?>img/el_poder.svg" alt="El poder de un traje">
 				</div>
 
 
