@@ -1,0 +1,21 @@
+[19-Sep-2016 23:00:28 UTC] PHP Warning:  Ocurrió un error inesperado. Algo puede estar mal con Wordpress.org o con la configuración de este servidor. Si continúas teniendo problemas, por favor trata de resolverlos en los <a href="https://wordpress.org/support/">foros de soporte</a>.  (WordPress no pudo establecer una conexión segura a WordPress.org. Por favor contacte al administrador de su servidor) in C:\wamp\www\vittorio\wp-includes\update.php on line 123
+[19-Sep-2016 23:00:28 UTC] PHP Stack trace:
+[19-Sep-2016 23:00:28 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-cron.php:0
+[19-Sep-2016 23:00:28 UTC] PHP   2. do_action_ref_array() C:\wamp\www\vittorio\wp-cron.php:117
+[19-Sep-2016 23:00:28 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[19-Sep-2016 23:00:28 UTC] PHP   4. wp_version_check() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[19-Sep-2016 23:00:28 UTC] PHP   5. trigger_error() C:\wamp\www\vittorio\wp-includes\update.php:123
+[19-Sep-2016 23:00:31 UTC] PHP Warning:  Ocurrió un error inesperado. Algo puede estar mal con Wordpress.org o con la configuración de este servidor. Si continúas teniendo problemas, por favor trata de resolverlos en los <a href="https://wordpress.org/support/">foros de soporte</a>.  (WordPress no pudo establecer una conexión segura a WordPress.org. Por favor contacte al administrador de su servidor) in C:\wamp\www\vittorio\wp-includes\update.php on line 306
+[19-Sep-2016 23:00:31 UTC] PHP Stack trace:
+[19-Sep-2016 23:00:31 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-cron.php:0
+[19-Sep-2016 23:00:31 UTC] PHP   2. do_action_ref_array() C:\wamp\www\vittorio\wp-cron.php:117
+[19-Sep-2016 23:00:31 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[19-Sep-2016 23:00:31 UTC] PHP   4. wp_update_plugins() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[19-Sep-2016 23:00:31 UTC] PHP   5. trigger_error() C:\wamp\www\vittorio\wp-includes\update.php:306
+[19-Sep-2016 23:00:32 UTC] PHP Warning:  Ocurrió un error inesperado. Algo puede estar mal con Wordpress.org o con la configuración de este servidor. Si continúas teniendo problemas, por favor trata de resolverlos en los <a href="https://wordpress.org/support/">foros de soporte</a>.  (WordPress no pudo establecer una conexión segura a WordPress.org. Por favor contacte al administrador de su servidor) in C:\wamp\www\vittorio\wp-includes\update.php on line 479
+[19-Sep-2016 23:00:32 UTC] PHP Stack trace:
+[19-Sep-2016 23:00:32 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-cron.php:0
+[19-Sep-2016 23:00:32 UTC] PHP   2. do_action_ref_array() C:\wamp\www\vittorio\wp-cron.php:117
+[19-Sep-2016 23:00:32 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[19-Sep-2016 23:00:32 UTC] PHP   4. wp_update_themes() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[19-Sep-2016 23:00:32 UTC] PHP   5. trigger_error() C:\wamp\www\vittorio\wp-includes\update.php:479

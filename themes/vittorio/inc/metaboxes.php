@@ -61,6 +61,7 @@ add_action( 'wp_ajax_nopriv_validar_horarios', 'validar_horarios');
 function add_metaboxes_citas(){
 
 	add_meta_box( 'meta-box-citas', 'Información', 'metabox_informacion', 'citas', 'advanced', 'high' );
+	
 
 }// add_metaboxes_PAGE
 
@@ -82,6 +83,263 @@ function add_metaboxes_tienda(){
 }// add_metaboxes_PAGE
 
 
+
+
+/*-----------------------------------------*\
+	CUSTOM POST LIST'S CALLBACK FUNCTIONS
+\*-----------------------------------------*/
+add_filter( 'manage_edit-citas_columns', 'my_edit_citas_columns' );
+
+function my_edit_citas_columns( $columns ) {
+
+	$columns = array(
+		'cb' => '<input type="checkbox" />',
+		'title' => __( 'Cliente' ),
+		'_ciudad_meta' => __( 'Ciudad' ),
+		'_tienda_meta' => __( 'Tienda' ),
+		'_fecha_meta' => __( 'Fecha' ),
+		'_horario_meta' => __( 'Hora' )
+	);
+
+	return $columns;
+}
+
+add_action( 'manage_citas_posts_custom_column', 'my_manage_citas_columns', 10, 2 );
+
+function my_manage_citas_columns( $column, $post_id ) {
+	global $post;
+	
+	switch( $column ) {
+
+		/* If displaying the '_ciudad_meta' column. */
+		case '_ciudad_meta' :
+
+			/* Get the post meta. */
+			$_ciudad_meta = get_post_meta( $post_id, '_ciudad_meta', true );
+
+			/* If no _ciudad_meta is found, output a default message. */
+			if ( empty( $_ciudad_meta ) )
+				echo __( 'Unknown' );
+
+			/* If there is a _ciudad_meta, append 'minutes' to the text string. */
+			else
+				echo $_ciudad_meta;
+
+			break;
+		case '_tienda_meta' :
+
+			/* Get the post meta. */
+			$_tienda_meta = get_post_meta( $post_id, '_tienda_meta', true );
+			$tiendanombre = get_the_title( $_tienda_meta );
+
+			/* If no _tienda_meta is found, output a default message. */
+			if ( empty( $_tienda_meta ) )
+				echo __( 'Unknown' );
+
+			/* If there is a _tienda_meta, append 'minutes' to the text string. */
+			else
+				echo $tiendanombre;
+
+			break;
+		case '_fecha_meta' :
+
+			/* Get the post meta. */
+			$_fecha_meta = get_post_meta( $post_id, '_fecha_meta', true );
+
+			/* If no _fecha_meta is found, output a default message. */
+			if ( empty( $_fecha_meta ) )
+				echo __( 'Unknown' );
+
+			/* If there is a _fecha_meta, append 'minutes' to the text string. */
+			else
+				echo $_fecha_meta;
+
+			break;
+		case '_horario_meta' :
+
+			/* Get the post meta. */
+			$_horario_meta = get_post_meta( $post_id, '_horario_meta', true );
+
+			/* If no _horario_meta is found, output a default message. */
+			if ( empty( $_horario_meta ) )
+				echo __( 'Unknown' );
+
+			/* If there is a _horario_meta, append 'minutes' to the text string. */
+			else
+				echo $_horario_meta;
+
+			break;
+
+		/* If displaying the 'genre' column. */
+		case 'genre' :
+
+			/* Get the genres for the post. */
+			$terms = get_the_terms( $post_id, 'genre' );
+
+			/* If terms were found. */
+			if ( !empty( $terms ) ) {
+
+				$out = array();
+
+				/* Loop through each term, linking to the 'edit posts' page for the specific term. */
+				foreach ( $terms as $term ) {
+					$out[] = sprintf( '<a href="%s">%s</a>',
+						esc_url( add_query_arg( array( 'post_type' => $post->post_type, 'genre' => $term->slug ), 'edit.php' ) ),
+						esc_html( sanitize_term_field( 'name', $term->name, $term->term_id, 'genre', 'display' ) )
+					);
+				}
+
+				/* Join the terms, separating them with a comma. */
+				echo join( ', ', $out );
+			}
+
+			/* If no terms were found, output a default message. */
+			else {
+				_e( 'No Genres' );
+			}
+
+			break;
+
+		/* Just break out of the switch statement for everything else. */
+		default :
+			break;
+	}
+}
+
+add_filter( 'manage_edit-citas_sortable_columns', 'my_citas_sortable_columns' );
+
+function my_citas_sortable_columns( $columns ) {
+
+	$columns['_ciudad_meta'] = '_ciudad_meta';
+	$columns['_tienda_meta'] = '_tienda_meta';
+	$columns['_fecha_meta'] = '_fecha_meta';
+	$columns['_horario_meta'] = '_horario_meta';
+
+	return $columns;
+}
+
+/* Only run our customization on the 'edit.php' page in the admin. */
+add_action( 'load-edit.php', 'my_edit_citas_load' );
+
+function my_edit_citas_load() {
+	add_filter( 'request', 'my_sort_citas' );
+}
+
+/* Sorts the citas. */
+function my_sort_citas( $vars ) {
+
+	/* Check if we're viewing the 'citas' post type. */
+	if ( isset( $vars['post_type'] ) && 'citas' == $vars['post_type'] ) {
+
+		/* Check if 'orderby' is set to '_ciudad_meta'. */
+		if ( isset( $vars['orderby'] ) && '_ciudad_meta' == $vars['orderby'] ) {
+
+			/* Merge the query vars with our custom variables. */
+			$vars = array_merge(
+				$vars,
+				array(
+					'meta_key' => '_ciudad_meta',
+					'orderby' => 'meta_value_num'
+				)
+			);
+		}
+		/* Check if 'orderby' is set to '_tienda_meta'. */
+		if ( isset( $vars['orderby'] ) && '_tienda_meta' == $vars['orderby'] ) {
+
+			/* Merge the query vars with our custom variables. */
+			$vars = array_merge(
+				$vars,
+				array(
+					'meta_key' => '_tienda_meta',
+					'orderby' => 'meta_value_num'
+				)
+			);
+		}
+		/* Check if 'orderby' is set to '_fecha_meta'. */
+		if ( isset( $vars['orderby'] ) && '_fecha_meta' == $vars['orderby'] ) {
+
+			/* Merge the query vars with our custom variables. */
+			$vars = array_merge(
+				$vars,
+				array(
+					'meta_key' => '_fecha_meta',
+					'orderby' => 'meta_value_num'
+				)
+			);
+		}
+		/* Check if 'orderby' is set to '_horario_meta'. */
+		if ( isset( $vars['orderby'] ) && '_horario_meta' == $vars['orderby'] ) {
+
+			/* Merge the query vars with our custom variables. */
+			$vars = array_merge(
+				$vars,
+				array(
+					'meta_key' => '_horario_meta',
+					'orderby' => 'meta_value_num'
+				)
+			);
+		}
+	}
+
+	return $vars;
+}
+
+add_action( 'restrict_manage_posts' , 'modify_citas_filters'  );
+
+function modify_citas_filters()
+{
+    // Only apply the filter to our specific post type
+    global $wpdb;
+	
+    global $typenow;
+    if( $typenow == 'citas' )
+    {
+    	$tiendas = $wpdb->get_results(
+		"SELECT * FROM " . $wpdb->prefix . "posts WHERE post_type = 'tiendas' and post_status = 'publish'"
+		);
+		if (count($tiendas[0]) > 0) {
+			echo '<select id="tienda" name="tienda" data-parsley-error-message="Seleccione una tienda" >';
+	 		echo '<option class="" value="" disabled selected>Selecciona una Tienda</option>';
+			foreach ( $tiendas as $tienda )
+			{
+				if(isset($_GET['tienda'])) { $selected = $tienda->ID == $_GET['tienda'] ? ' selected ' : ''; }
+				else { $selected = ''; }
+				echo '<option value="'.$tienda->ID.'" '.$selected.'>'.$tienda->post_title.'</option>';
+			}
+			echo '</select>';
+		}
+    	
+    	$fechas = $wpdb->get_results(
+		"SELECT distinct(pm.meta_value) FROM " . $wpdb->prefix . "posts p, " . $wpdb->prefix . "postmeta pm WHERE p.post_type = 'citas' and p.post_status = 'publish' and p.ID = pm.post_id AND pm.meta_key = '_fecha_meta';"
+		);
+		if (count($fechas[0]) > 0) {
+			echo '<select id="fecha" name="fecha" data-parsley-error-message="Seleccione una Fecha" >';
+	 		echo '<option class="" value="" disabled selected>Selecciona una fecha</option>';
+			foreach ( $fechas as $fecha )
+			{
+				if(isset($_GET['fecha'])) { $selected = $fecha->meta_value == $_GET['fecha'] ? ' selected ' : ''; }
+				else { $selected = ''; }
+				echo '<option value="'.$fecha->meta_value.'" '.$selected.'>'.$fecha->meta_value.'</option>';
+			}
+			echo '</select>';
+		}
+    }
+}
+
+add_filter( 'parse_query', 'modify_filter_citas' );
+function modify_filter_citas( $query )
+{
+    global $typenow;
+    global $pagenow;
+    if( isset($_GET['tienda'])) {
+	    if( $pagenow == 'edit.php' && $typenow == 'citas' && $_GET['tienda'] )
+	    {
+	        $query->query_vars[ 'meta_key' ] = '_tienda_meta';
+	        $query->query_vars[ 'meta_value' ] = (int)$_GET['tienda'];
+	    }
+	}
+}
+
 /*-----------------------------------------*\
 	CUSTOM METABOXES CALLBACK FUNCTIONS
 \*-----------------------------------------*/
@@ -100,7 +358,7 @@ function metabox_informacion( $post ){
 	$tiendanombre = get_the_title( $tienda );
 	$fecha = get_post_meta($post->ID, '_fecha_meta', true);
 	$horario = get_post_meta($post->ID, '_horario_meta', true);
-	$status = get_post_meta($post->ID, '_status_meta', true);
+	//$status = get_post_meta($post->ID, '_status_meta', true);
 
 	wp_nonce_field(__FILE__, '_nombre_meta_nonce');
 	wp_nonce_field(__FILE__, '_email_meta_nonce');
@@ -109,7 +367,7 @@ function metabox_informacion( $post ){
 	wp_nonce_field(__FILE__, '_tienda_meta_nonce');
 	wp_nonce_field(__FILE__, '_fecha_meta_nonce');
 	wp_nonce_field(__FILE__, '_horario_meta_nonce');
-	wp_nonce_field(__FILE__, '_status_meta_nonce');
+	//wp_nonce_field(__FILE__, '_status_meta_nonce');
 
 	echo '<label>Nombre</label>';
 	echo "<input type='text' class='[ widefat ]' name='_nombre_meta' value='$nombre'>";

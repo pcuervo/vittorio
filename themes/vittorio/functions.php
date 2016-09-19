@@ -208,7 +208,40 @@ if ( isset($_GET['citaid']) && !empty($_GET['citaid']) ) {
 	echo '<input type="hidden" id="confirmada" value="'.$_GET['citaid'].'" />';
 }
 
+// Add a custom user role
 
+$result = add_role( 'citas_admin', __('Admin de Citas' ),
+
+array(
+/*
+'read' => true, // true allows this capability
+'edit_posts' => true, // Allows user to edit their own posts
+'edit_pages' => true, // Allows user to edit pages
+'edit_others_posts' => true, // Allows user to edit others posts not just their own
+'create_posts' => true, // Allows user to create new posts
+'manage_categories' => true, // Allows user to manage post categories
+'publish_posts' => true, // Allows the user to publish, otherwise posts stays in draft mode
+'edit_themes' => false, // false denies this capability. User can’t edit your theme
+'install_plugins' => false, // User cant add new plugins
+'update_plugin' => false, // User can’t update any plugins
+'update_core' => false, // user cant perform core updates
+*/
+"create_citass" => false,
+"edit_citass" => true,
+"read_citass" => true,
+"edit_published_citass" => true,
+"manage_categories" => true,
+"assign_dir_category" => true,
+"assign_dir_location" => true,
+"read_dir_category" => true,
+"read_dir_location" => true,
+"read" => true,
+"upload_files" => true,
+"directory_account_update" => true
+
+)
+
+);
 
 /*------------------------------------*\
 	#INCLUDES
