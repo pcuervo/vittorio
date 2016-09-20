@@ -6,6 +6,18 @@
 
 add_action('init', function(){
 
+	$capabilities_citas = array(
+	    'publish_posts' => 'publish_citas',
+	    'edit_posts' => 'edit_citas',
+	    'edit_others_posts' => 'edit_others_citas',
+	    'delete_posts' => 'delete_citas',
+	    'delete_others_posts' => 'delete_others_citas',
+	    'read_private_posts' => 'read_private_citas',
+	    'edit_post' => 'edit_cita',
+	    'delete_post' => 'delete_cita',
+	    'read_post' => 'read_cita'
+	);
+
 	// Citas
 	$labels = array(
 		'name'          => 'Citas',
@@ -29,6 +41,7 @@ add_action('init', function(){
 		'query_var'          => true,
 		'rewrite'            => array( 'slug' => 'citas' ),
 		'capability_type'    => 'post',
+		'capabilities' 		 => $capabilities_citas,
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => 6,
