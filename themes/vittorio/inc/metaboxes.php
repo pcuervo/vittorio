@@ -298,8 +298,8 @@ function modify_citas_filters()
 		"SELECT * FROM " . $wpdb->prefix . "posts WHERE post_type = 'tiendas' and post_status = 'publish'"
 		);
 		if (count($tiendas[0]) > 0) {
-			echo '<select id="tienda" name="tienda" data-parsley-error-message="Seleccione una tienda" >';
-	 		echo '<option class="" value="" disabled selected>Selecciona una Tienda</option>';
+			echo '<select id="tienda" name="tienda" data-parsley-error-message="Todas las tiendas" >';
+	 		echo '<option class="" value="" selected>Todas las Tiendas</option>';
 			foreach ( $tiendas as $tienda )
 			{
 				if(isset($_GET['tienda'])) { $selected = $tienda->ID == $_GET['tienda'] ? ' selected ' : ''; }
@@ -313,8 +313,8 @@ function modify_citas_filters()
 		"SELECT distinct(pm.meta_value) FROM " . $wpdb->prefix . "posts p, " . $wpdb->prefix . "postmeta pm WHERE p.post_type = 'citas' and p.post_status = 'publish' and p.ID = pm.post_id AND pm.meta_key = '_fecha_meta';"
 		);
 		if (count($fechas[0]) > 0) {
-			echo '<select id="fecha" name="fecha" data-parsley-error-message="Seleccione una Fecha" >';
-	 		echo '<option class="" value="" disabled selected>Selecciona una fecha</option>';
+			echo '<select id="fecha" name="fecha" data-parsley-error-message="Cualquier Fecha" >';
+	 		echo '<option class="" value="" selected>Cualquier Fecha</option>';
 			foreach ( $fechas as $fecha )
 			{
 				if(isset($_GET['fecha'])) { $selected = $fecha->meta_value == $_GET['fecha'] ? ' selected ' : ''; }
@@ -331,12 +331,34 @@ function modify_filter_citas( $query )
 {
     global $typenow;
     global $pagenow;
-    if( isset($_GET['tienda'])) {
-	    if( $pagenow == 'edit.php' && $typenow == 'citas' && $_GET['tienda'] )
-	    {
-	        $query->query_vars[ 'meta_key' ] = '_tienda_meta';
-	        $query->query_vars[ 'meta_value' ] = (int)$_GET['tienda'];
-	    }
+    if( isset($_GET['tienda']) && $_GET['tienda'] != '' && isset($_GET['fecha']) && $_GET['fecha'] != '') {
+    	//FILTRO COMBINADO
+    	$query->query_vars['meta_query'] =  array(
+										        'relation' => 'AND',
+										        array(
+										            'key'     	=> '_tienda_meta',
+										            'value'		=> $_GET['tienda']
+										        ),
+										        array(
+										            'key'     => '_fecha_meta',
+										            'value'		=> $_GET['fecha']
+										        ),
+										    );
+    } else {
+	    if( isset($_GET['tienda']) && $_GET['tienda'] != '') {
+		    if( $pagenow == 'edit.php' && $typenow == 'citas' && $_GET['tienda'] )
+		    {
+		        $query->query_vars[ 'meta_key' ] = '_tienda_meta';
+		        $query->query_vars[ 'meta_value' ] = (int)$_GET['tienda'];
+		    }
+		}
+		if( isset($_GET['fecha']) && $_GET['fecha'] != '') {
+		    if( $pagenow == 'edit.php' && $typenow == 'citas' && $_GET['fecha'] )
+		    {
+		        $query->query_vars[ 'meta_key' ] = '_fecha_meta';
+		        $query->query_vars[ 'meta_value' ] = $_GET['fecha'];
+		    }
+		}
 	}
 }
 

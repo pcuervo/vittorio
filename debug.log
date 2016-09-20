@@ -19,3 +19,347 @@
 [19-Sep-2016 23:00:32 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
 [19-Sep-2016 23:00:32 UTC] PHP   4. wp_update_themes() C:\wamp\www\vittorio\wp-includes\plugin.php:601
 [19-Sep-2016 23:00:32 UTC] PHP   5. trigger_error() C:\wamp\www\vittorio\wp-includes\update.php:479
+[20-Sep-2016 15:33:52 UTC] PHP Notice:  Undefined index: _direccion_meta in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 450
+[20-Sep-2016 15:33:52 UTC] PHP Stack trace:
+[20-Sep-2016 15:33:52 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:33:52 UTC] PHP   2. include() C:\wamp\www\vittorio\wp-admin\post.php:173
+[20-Sep-2016 15:33:52 UTC] PHP   3. do_meta_boxes() C:\wamp\www\vittorio\wp-admin\edit-form-advanced.php:717
+[20-Sep-2016 15:33:52 UTC] PHP   4. call_user_func() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:33:52 UTC] PHP   5. metabox_tienda() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:33:52 UTC] PHP Notice:  Undefined index: _telefono_meta in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 450
+[20-Sep-2016 15:33:52 UTC] PHP Stack trace:
+[20-Sep-2016 15:33:52 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:33:52 UTC] PHP   2. include() C:\wamp\www\vittorio\wp-admin\post.php:173
+[20-Sep-2016 15:33:52 UTC] PHP   3. do_meta_boxes() C:\wamp\www\vittorio\wp-admin\edit-form-advanced.php:717
+[20-Sep-2016 15:33:52 UTC] PHP   4. call_user_func() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:33:52 UTC] PHP   5. metabox_tienda() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:33:52 UTC] PHP Notice:  Undefined index: _direccion_meta in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 450
+[20-Sep-2016 15:33:52 UTC] PHP Stack trace:
+[20-Sep-2016 15:33:52 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:33:52 UTC] PHP   2. include() C:\wamp\www\vittorio\wp-admin\post.php:173
+[20-Sep-2016 15:33:52 UTC] PHP   3. do_meta_boxes() C:\wamp\www\vittorio\wp-admin\edit-form-advanced.php:717
+[20-Sep-2016 15:33:52 UTC] PHP   4. call_user_func() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:33:52 UTC] PHP   5. metabox_tienda() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:33:52 UTC] PHP Notice:  Undefined index: _telefono_meta in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 450
+[20-Sep-2016 15:33:52 UTC] PHP Stack trace:
+[20-Sep-2016 15:33:52 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:33:52 UTC] PHP   2. include() C:\wamp\www\vittorio\wp-admin\post.php:173
+[20-Sep-2016 15:33:52 UTC] PHP   3. do_meta_boxes() C:\wamp\www\vittorio\wp-admin\edit-form-advanced.php:717
+[20-Sep-2016 15:33:52 UTC] PHP   4. call_user_func() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:33:52 UTC] PHP   5. metabox_tienda() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:33:52 UTC] PHP Notice:  Undefined index: _direccion_meta in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 450
+[20-Sep-2016 15:33:52 UTC] PHP Stack trace:
+[20-Sep-2016 15:33:52 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:33:52 UTC] PHP   2. include() C:\wamp\www\vittorio\wp-admin\post.php:173
+[20-Sep-2016 15:33:52 UTC] PHP   3. do_meta_boxes() C:\wamp\www\vittorio\wp-admin\edit-form-advanced.php:717
+[20-Sep-2016 15:33:52 UTC] PHP   4. call_user_func() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:33:52 UTC] PHP   5. metabox_tienda() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:33:52 UTC] PHP Notice:  Undefined index: _telefono_meta in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 450
+[20-Sep-2016 15:33:52 UTC] PHP Stack trace:
+[20-Sep-2016 15:33:52 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:33:52 UTC] PHP   2. include() C:\wamp\www\vittorio\wp-admin\post.php:173
+[20-Sep-2016 15:33:52 UTC] PHP   3. do_meta_boxes() C:\wamp\www\vittorio\wp-admin\edit-form-advanced.php:717
+[20-Sep-2016 15:33:52 UTC] PHP   4. call_user_func() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:33:52 UTC] PHP   5. metabox_tienda() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:34:14 UTC] PHP Notice:  Undefined index: _sabado_horario_9pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 1948
+[20-Sep-2016 15:34:14 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:14 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:14 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:14 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:14 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:14 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:14 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:14 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:14 UTC] PHP   8. save_metaboxes_tienda_sabado_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1242
+[20-Sep-2016 15:34:14 UTC] PHP Notice:  Undefined index: _domingo_horario_9am in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 1960
+[20-Sep-2016 15:34:14 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:14 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:14 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:14 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:14 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:14 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:14 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:14 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:14 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:14 UTC] PHP Notice:  Undefined index: _domingo_horario_930am in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 1964
+[20-Sep-2016 15:34:14 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:14 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:14 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:14 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:14 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:14 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:14 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:14 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:14 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:14 UTC] PHP Notice:  Undefined index: _domingo_horario_10am in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 1968
+[20-Sep-2016 15:34:14 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:14 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:15 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:15 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:15 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:15 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:15 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:15 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:15 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:15 UTC] PHP Notice:  Undefined index: _domingo_horario_1030am in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 1972
+[20-Sep-2016 15:34:15 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:15 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:15 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:15 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:15 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:15 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:15 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:15 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:15 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:15 UTC] PHP Notice:  Undefined index: _domingo_horario_11am in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 1976
+[20-Sep-2016 15:34:15 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:15 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:15 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:15 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:15 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:15 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:15 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:15 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:15 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:15 UTC] PHP Notice:  Undefined index: _domingo_horario_1130am in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 1980
+[20-Sep-2016 15:34:15 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:15 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:15 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:15 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:15 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:15 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:15 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:15 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:15 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:15 UTC] PHP Notice:  Undefined index: _domingo_horario_12pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 1984
+[20-Sep-2016 15:34:15 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:15 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:15 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:15 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:15 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:15 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:15 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:15 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:15 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:15 UTC] PHP Notice:  Undefined index: _domingo_horario_1230pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 1988
+[20-Sep-2016 15:34:15 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:15 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:15 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:15 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:15 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:15 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:15 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:15 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:15 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:15 UTC] PHP Notice:  Undefined index: _domingo_horario_1pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 1992
+[20-Sep-2016 15:34:15 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:15 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:15 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:15 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:15 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:15 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:15 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:15 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:15 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:15 UTC] PHP Notice:  Undefined index: _domingo_horario_130pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 1996
+[20-Sep-2016 15:34:16 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:16 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:16 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:16 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:16 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:16 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:16 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:16 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:16 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:16 UTC] PHP Notice:  Undefined index: _domingo_horario_2pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 2000
+[20-Sep-2016 15:34:16 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:16 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:16 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:16 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:16 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:16 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:16 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:16 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:16 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:16 UTC] PHP Notice:  Undefined index: _domingo_horario_230pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 2004
+[20-Sep-2016 15:34:16 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:16 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:16 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:16 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:16 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:16 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:16 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:16 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:16 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:16 UTC] PHP Notice:  Undefined index: _domingo_horario_3pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 2008
+[20-Sep-2016 15:34:16 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:16 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:16 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:16 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:16 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:16 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:16 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:16 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:16 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:16 UTC] PHP Notice:  Undefined index: _domingo_horario_330pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 2012
+[20-Sep-2016 15:34:16 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:16 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:16 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:16 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:16 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:16 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:16 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:16 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:16 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:16 UTC] PHP Notice:  Undefined index: _domingo_horario_4pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 2016
+[20-Sep-2016 15:34:16 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:16 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:16 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:16 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:16 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:16 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:16 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:16 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:16 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:17 UTC] PHP Notice:  Undefined index: _domingo_horario_430pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 2020
+[20-Sep-2016 15:34:17 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:17 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:17 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:17 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:17 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:17 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:17 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:17 UTC] PHP Notice:  Undefined index: _domingo_horario_5pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 2024
+[20-Sep-2016 15:34:17 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:17 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:17 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:17 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:17 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:17 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:17 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:17 UTC] PHP Notice:  Undefined index: _domingo_horario_530pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 2028
+[20-Sep-2016 15:34:17 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:17 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:17 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:17 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:17 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:17 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:17 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:17 UTC] PHP Notice:  Undefined index: _domingo_horario_6pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 2032
+[20-Sep-2016 15:34:17 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:17 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:17 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:17 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:17 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:17 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:17 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:17 UTC] PHP Notice:  Undefined index: _domingo_horario_630pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 2036
+[20-Sep-2016 15:34:17 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:17 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:17 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:17 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:17 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:17 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:17 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:17 UTC] PHP Notice:  Undefined index: _domingo_horario_7pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 2040
+[20-Sep-2016 15:34:17 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:17 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:17 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:17 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:17 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:17 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:17 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:17 UTC] PHP Notice:  Undefined index: _domingo_horario_730pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 2044
+[20-Sep-2016 15:34:17 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:17 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:17 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:17 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:17 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:17 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:17 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:17 UTC] PHP Notice:  Undefined index: _domingo_horario_8pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 2048
+[20-Sep-2016 15:34:17 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:17 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:17 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:17 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:17 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:17 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:17 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:17 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:17 UTC] PHP Notice:  Undefined index: _domingo_horario_830pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 2052
+[20-Sep-2016 15:34:18 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:18 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:18 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:18 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:18 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:18 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:18 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:18 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:18 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:18 UTC] PHP Notice:  Undefined index: _domingo_horario_9pm in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 2056
+[20-Sep-2016 15:34:18 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:18 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:18 UTC] PHP   2. edit_post() C:\wamp\www\vittorio\wp-admin\post.php:193
+[20-Sep-2016 15:34:18 UTC] PHP   3. wp_update_post() C:\wamp\www\vittorio\wp-admin\includes\post.php:376
+[20-Sep-2016 15:34:18 UTC] PHP   4. wp_insert_post() C:\wamp\www\vittorio\wp-includes\post.php:3602
+[20-Sep-2016 15:34:18 UTC] PHP   5. do_action() C:\wamp\www\vittorio\wp-includes\post.php:3529
+[20-Sep-2016 15:34:18 UTC] PHP   6. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:18 UTC] PHP   7. {closure:C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1232-1245}() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[20-Sep-2016 15:34:18 UTC] PHP   8. save_metaboxes_tienda_domingo_horario() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:1243
+[20-Sep-2016 15:34:19 UTC] PHP Notice:  Undefined index: _direccion_meta in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 450
+[20-Sep-2016 15:34:19 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:19 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:19 UTC] PHP   2. include() C:\wamp\www\vittorio\wp-admin\post.php:173
+[20-Sep-2016 15:34:19 UTC] PHP   3. do_meta_boxes() C:\wamp\www\vittorio\wp-admin\edit-form-advanced.php:717
+[20-Sep-2016 15:34:19 UTC] PHP   4. call_user_func() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:34:19 UTC] PHP   5. metabox_tienda() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:34:19 UTC] PHP Notice:  Undefined index: _telefono_meta in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 450
+[20-Sep-2016 15:34:19 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:19 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:19 UTC] PHP   2. include() C:\wamp\www\vittorio\wp-admin\post.php:173
+[20-Sep-2016 15:34:19 UTC] PHP   3. do_meta_boxes() C:\wamp\www\vittorio\wp-admin\edit-form-advanced.php:717
+[20-Sep-2016 15:34:19 UTC] PHP   4. call_user_func() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:34:19 UTC] PHP   5. metabox_tienda() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:34:19 UTC] PHP Notice:  Undefined index: _direccion_meta in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 450
+[20-Sep-2016 15:34:19 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:19 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:19 UTC] PHP   2. include() C:\wamp\www\vittorio\wp-admin\post.php:173
+[20-Sep-2016 15:34:19 UTC] PHP   3. do_meta_boxes() C:\wamp\www\vittorio\wp-admin\edit-form-advanced.php:717
+[20-Sep-2016 15:34:19 UTC] PHP   4. call_user_func() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:34:19 UTC] PHP   5. metabox_tienda() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:34:19 UTC] PHP Notice:  Undefined index: _telefono_meta in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 450
+[20-Sep-2016 15:34:19 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:19 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:19 UTC] PHP   2. include() C:\wamp\www\vittorio\wp-admin\post.php:173
+[20-Sep-2016 15:34:19 UTC] PHP   3. do_meta_boxes() C:\wamp\www\vittorio\wp-admin\edit-form-advanced.php:717
+[20-Sep-2016 15:34:19 UTC] PHP   4. call_user_func() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:34:19 UTC] PHP   5. metabox_tienda() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:34:19 UTC] PHP Notice:  Undefined index: _direccion_meta in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 450
+[20-Sep-2016 15:34:19 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:19 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:19 UTC] PHP   2. include() C:\wamp\www\vittorio\wp-admin\post.php:173
+[20-Sep-2016 15:34:19 UTC] PHP   3. do_meta_boxes() C:\wamp\www\vittorio\wp-admin\edit-form-advanced.php:717
+[20-Sep-2016 15:34:19 UTC] PHP   4. call_user_func() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:34:19 UTC] PHP   5. metabox_tienda() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:34:19 UTC] PHP Notice:  Undefined index: _telefono_meta in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 450
+[20-Sep-2016 15:34:19 UTC] PHP Stack trace:
+[20-Sep-2016 15:34:19 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[20-Sep-2016 15:34:20 UTC] PHP   2. include() C:\wamp\www\vittorio\wp-admin\post.php:173
+[20-Sep-2016 15:34:20 UTC] PHP   3. do_meta_boxes() C:\wamp\www\vittorio\wp-admin\edit-form-advanced.php:717
+[20-Sep-2016 15:34:20 UTC] PHP   4. call_user_func() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 15:34:20 UTC] PHP   5. metabox_tienda() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
