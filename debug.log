@@ -363,3 +363,432 @@
 [20-Sep-2016 15:34:20 UTC] PHP   3. do_meta_boxes() C:\wamp\www\vittorio\wp-admin\edit-form-advanced.php:717
 [20-Sep-2016 15:34:20 UTC] PHP   4. call_user_func() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
 [20-Sep-2016 15:34:20 UTC] PHP   5. metabox_tienda() C:\wamp\www\vittorio\wp-admin\includes\template.php:1037
+[20-Sep-2016 21:32:03 UTC] PHP Notice:  Undefined index: fecha in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 356
+[20-Sep-2016 21:32:03 UTC] PHP Stack trace:
+[20-Sep-2016 21:32:03 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:32:03 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:32:03 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:32:03 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:32:03 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:32:03 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:32:03 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:32:03 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:32:03 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:32:03 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:32:03 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:03 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:03 UTC] PHP Notice:  Undefined index: fecha in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 356
+[20-Sep-2016 21:32:03 UTC] PHP Stack trace:
+[20-Sep-2016 21:32:03 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:32:03 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:32:03 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:32:03 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:32:03 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:32:03 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:32:03 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:32:03 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:32:03 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:32:03 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:32:03 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:03 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:03 UTC] PHP Notice:  Undefined offset: 1 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:32:03 UTC] PHP Stack trace:
+[20-Sep-2016 21:32:03 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:32:03 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:32:03 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:32:03 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:32:03 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:32:03 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:32:03 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:32:03 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:32:03 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:32:03 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:32:03 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:03 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:03 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:356
+[20-Sep-2016 21:32:03 UTC] PHP Notice:  Undefined index:  in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:32:03 UTC] PHP Stack trace:
+[20-Sep-2016 21:32:03 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:32:03 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:32:03 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:32:03 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:32:03 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:32:03 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:32:03 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:32:03 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:32:03 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:32:03 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:32:03 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:03 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:03 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:356
+[20-Sep-2016 21:32:03 UTC] PHP Notice:  Undefined offset: 2 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:32:03 UTC] PHP Stack trace:
+[20-Sep-2016 21:32:03 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:32:03 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:32:03 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:32:03 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:32:03 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:32:03 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:32:03 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:32:03 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:32:03 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:32:03 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:32:03 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:03 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:03 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:356
+[20-Sep-2016 21:32:36 UTC] PHP Notice:  Undefined index: fecha in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 356
+[20-Sep-2016 21:32:36 UTC] PHP Stack trace:
+[20-Sep-2016 21:32:36 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:32:36 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:32:36 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:32:36 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:32:36 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:32:36 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:32:36 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:32:36 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:32:36 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:32:36 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:32:36 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:36 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:36 UTC] PHP Notice:  Undefined index: fecha in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 356
+[20-Sep-2016 21:32:36 UTC] PHP Stack trace:
+[20-Sep-2016 21:32:36 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:32:36 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:32:36 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:32:36 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:32:36 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:32:36 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:32:36 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:32:36 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:32:36 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:32:36 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:32:36 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:36 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:36 UTC] PHP Notice:  Undefined offset: 1 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:32:36 UTC] PHP Stack trace:
+[20-Sep-2016 21:32:36 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:32:36 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:32:36 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:32:36 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:32:36 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:32:36 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:32:36 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:32:36 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:32:36 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:32:36 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:32:36 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:36 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:36 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:356
+[20-Sep-2016 21:32:36 UTC] PHP Notice:  Undefined index:  in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:32:36 UTC] PHP Stack trace:
+[20-Sep-2016 21:32:36 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:32:36 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:32:36 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:32:36 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:32:36 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:32:36 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:32:36 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:32:36 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:32:36 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:32:36 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:32:36 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:36 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:36 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:356
+[20-Sep-2016 21:32:36 UTC] PHP Notice:  Undefined offset: 2 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:32:36 UTC] PHP Stack trace:
+[20-Sep-2016 21:32:36 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:32:37 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:32:37 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:32:37 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:32:37 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:32:37 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:32:37 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:32:37 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:32:37 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:32:37 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:32:37 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:37 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:32:37 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:356
+[20-Sep-2016 21:33:21 UTC] PHP Notice:  Undefined index: fecha in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 356
+[20-Sep-2016 21:33:21 UTC] PHP Stack trace:
+[20-Sep-2016 21:33:21 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:33:21 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:33:21 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:33:21 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:33:21 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:33:21 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:33:21 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:33:21 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:33:21 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:33:21 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:33:21 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:21 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:21 UTC] PHP Notice:  Undefined index: fecha in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 356
+[20-Sep-2016 21:33:21 UTC] PHP Stack trace:
+[20-Sep-2016 21:33:21 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:33:21 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:33:21 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:33:21 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:33:21 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:33:21 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:33:21 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:33:21 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:33:21 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:33:21 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:33:21 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:21 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:21 UTC] PHP Notice:  Undefined offset: 1 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:33:21 UTC] PHP Stack trace:
+[20-Sep-2016 21:33:21 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:33:21 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:33:21 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:33:21 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:33:21 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:33:21 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:33:21 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:33:21 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:33:21 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:33:21 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:33:21 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:21 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:21 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:356
+[20-Sep-2016 21:33:21 UTC] PHP Notice:  Undefined index:  in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:33:21 UTC] PHP Stack trace:
+[20-Sep-2016 21:33:21 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:33:21 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:33:21 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:33:21 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:33:21 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:33:21 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:33:21 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:33:21 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:33:21 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:33:21 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:33:21 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:21 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:21 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:356
+[20-Sep-2016 21:33:21 UTC] PHP Notice:  Undefined offset: 2 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:33:21 UTC] PHP Stack trace:
+[20-Sep-2016 21:33:21 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:33:21 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:33:21 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:33:21 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:33:21 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:33:21 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:33:21 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:33:21 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:33:21 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:33:21 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:33:21 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:21 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:21 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:356
+[20-Sep-2016 21:33:32 UTC] PHP Notice:  Undefined offset: 1 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:33:32 UTC] PHP Stack trace:
+[20-Sep-2016 21:33:32 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:33:32 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:33:32 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:33:32 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:33:32 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:33:32 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:33:32 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:33:32 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:33:32 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:33:32 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:33:32 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:32 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:32 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:356
+[20-Sep-2016 21:33:32 UTC] PHP Notice:  Undefined index:  in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:33:32 UTC] PHP Stack trace:
+[20-Sep-2016 21:33:32 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:33:32 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:33:33 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:33:33 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:33:33 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:33:33 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:33:33 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:33:33 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:33:33 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:33:33 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:33:33 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:33 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:33 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:356
+[20-Sep-2016 21:33:33 UTC] PHP Notice:  Undefined offset: 2 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:33:33 UTC] PHP Stack trace:
+[20-Sep-2016 21:33:33 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:33:33 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:33:33 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:33:33 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:33:33 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:33:33 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:33:33 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:33:33 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:33:33 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:33:33 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:33:33 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:33 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:33 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:356
+[20-Sep-2016 21:33:33 UTC] PHP Notice:  Undefined offset: 1 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:33:33 UTC] PHP Stack trace:
+[20-Sep-2016 21:33:33 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:33:33 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:33:33 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:33:33 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:33:33 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:33:33 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:33:33 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:33:33 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:33:33 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:33:33 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:33:33 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:33 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:33 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:382
+[20-Sep-2016 21:33:33 UTC] PHP Notice:  Undefined index:  in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:33:33 UTC] PHP Stack trace:
+[20-Sep-2016 21:33:33 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:33:33 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:33:33 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:33:33 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:33:33 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:33:33 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:33:33 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:33:33 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:33:33 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:33:33 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:33:33 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:33 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:33 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:382
+[20-Sep-2016 21:33:33 UTC] PHP Notice:  Undefined offset: 2 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:33:33 UTC] PHP Stack trace:
+[20-Sep-2016 21:33:33 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:33:33 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:33:33 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:33:33 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:33:33 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:33:33 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:33:33 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:33:33 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:33:33 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:33:33 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:33:33 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:33 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:33:33 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:382
+[20-Sep-2016 21:34:27 UTC] PHP Notice:  Undefined offset: 1 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:34:27 UTC] PHP Stack trace:
+[20-Sep-2016 21:34:27 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:34:27 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:34:27 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:34:27 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:34:27 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:34:27 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:34:27 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:34:27 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:34:27 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:34:27 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:34:27 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:34:27 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:34:27 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:356
+[20-Sep-2016 21:34:27 UTC] PHP Notice:  Undefined index:  in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:34:27 UTC] PHP Stack trace:
+[20-Sep-2016 21:34:27 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:34:27 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:34:27 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:34:27 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:34:27 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:34:27 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:34:27 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:34:27 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:34:27 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:34:27 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:34:27 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:34:27 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:34:27 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:356
+[20-Sep-2016 21:34:27 UTC] PHP Notice:  Undefined offset: 2 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:34:27 UTC] PHP Stack trace:
+[20-Sep-2016 21:34:27 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:34:27 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:34:27 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:34:27 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:34:27 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:34:27 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:34:27 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:34:27 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:34:27 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:34:27 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:34:27 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:34:27 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:34:28 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:356
+[20-Sep-2016 21:34:28 UTC] PHP Notice:  Undefined offset: 1 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:34:28 UTC] PHP Stack trace:
+[20-Sep-2016 21:34:28 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:34:28 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:34:28 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:34:28 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:34:28 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:34:28 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:34:28 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:34:28 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:34:28 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:34:28 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:34:28 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:34:28 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:34:28 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:382
+[20-Sep-2016 21:34:28 UTC] PHP Notice:  Undefined index:  in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:34:28 UTC] PHP Stack trace:
+[20-Sep-2016 21:34:28 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:34:28 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:34:28 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:34:28 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:34:28 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:34:28 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:34:28 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:34:28 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:34:28 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:34:28 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:34:28 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:34:28 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:34:28 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:382
+[20-Sep-2016 21:34:28 UTC] PHP Notice:  Undefined offset: 2 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 349
+[20-Sep-2016 21:34:28 UTC] PHP Stack trace:
+[20-Sep-2016 21:34:28 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:34:28 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:34:28 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:34:28 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:34:28 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:34:28 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:34:28 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:34:28 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:34:28 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:34:28 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:34:28 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:34:28 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:34:28 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:382
+[20-Sep-2016 21:35:37 UTC] PHP Notice:  Undefined offset: 2 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 350
+[20-Sep-2016 21:35:37 UTC] PHP Stack trace:
+[20-Sep-2016 21:35:37 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:35:37 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:35:37 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:35:37 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:35:37 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:35:37 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:35:37 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:35:37 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:35:38 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:35:38 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:35:38 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:35:38 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:35:38 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:357
+[20-Sep-2016 21:35:38 UTC] PHP Notice:  Undefined offset: 2 in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 350
+[20-Sep-2016 21:35:38 UTC] PHP Stack trace:
+[20-Sep-2016 21:35:38 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\edit.php:0
+[20-Sep-2016 21:35:38 UTC] PHP   2. WP_Posts_List_Table->prepare_items() C:\wamp\www\vittorio\wp-admin\edit.php:176
+[20-Sep-2016 21:35:38 UTC] PHP   3. wp_edit_posts_query() C:\wamp\www\vittorio\wp-admin\includes\class-wp-posts-list-table.php:142
+[20-Sep-2016 21:35:38 UTC] PHP   4. wp() C:\wamp\www\vittorio\wp-admin\includes\post.php:1070
+[20-Sep-2016 21:35:38 UTC] PHP   5. WP->main() C:\wamp\www\vittorio\wp-includes\functions.php:952
+[20-Sep-2016 21:35:38 UTC] PHP   6. WP->query_posts() C:\wamp\www\vittorio\wp-includes\class-wp.php:726
+[20-Sep-2016 21:35:38 UTC] PHP   7. WP_Query->query() C:\wamp\www\vittorio\wp-includes\class-wp.php:608
+[20-Sep-2016 21:35:38 UTC] PHP   8. WP_Query->get_posts() C:\wamp\www\vittorio\wp-includes\query.php:4006
+[20-Sep-2016 21:35:38 UTC] PHP   9. WP_Query->parse_query() C:\wamp\www\vittorio\wp-includes\query.php:2480
+[20-Sep-2016 21:35:38 UTC] PHP  10. do_action_ref_array() C:\wamp\www\vittorio\wp-includes\query.php:1869
+[20-Sep-2016 21:35:38 UTC] PHP  11. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:35:38 UTC] PHP  12. modify_filter_citas() C:\wamp\www\vittorio\wp-includes\plugin.php:601
+[20-Sep-2016 21:35:38 UTC] PHP  13. ajusta_fecha() C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php:383

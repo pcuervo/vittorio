@@ -312,7 +312,7 @@ function modify_citas_filters()
     	$fechas = $wpdb->get_results(
 		"SELECT distinct(pm.meta_value) FROM " . $wpdb->prefix . "posts p, " . $wpdb->prefix . "postmeta pm WHERE p.post_type = 'citas' and p.post_status = 'publish' and p.ID = pm.post_id AND pm.meta_key = '_fecha_meta';"
 		);
-		echo '<input type="date" id="fecha" name="example[datepicker]" value="" class="example-datepicker" />';
+		echo '<input type="date" id="fecha" name="fecha" value="" class="example-datepicker" />';
 		/*
 		if (count($fechas[0]) > 0) {
 			echo '<select id="fecha" name="fecha" data-parsley-error-message="Cualquier Fecha" >';
@@ -330,10 +330,31 @@ function modify_citas_filters()
 }
 
 add_filter( 'parse_query', 'modify_filter_citas' );
+function ajusta_fecha( $fecha ) {
+	$meses = array(
+		'01' => 'Enero', 
+		'02' => 'Febrero', 
+		'03' => 'Marzo', 
+		'04' => 'Abril', 
+		'05' => 'Mayo', 
+		'06' => 'Junio', 
+		'07' => 'Julio', 
+		'08' => 'Agosto', 
+		'09' => 'Septiembre', 
+		'10' => 'Octubre', 
+		'11' => 'Noviembre', 
+		'12' => 'Diciembre'
+	);
+	$fec = explode("-", $fecha);
+
+	$fecFormat = $fec[2].' '.$meses[$fec[1]].', '.$fec[0];
+	return $fecFormat;
+}
 function modify_filter_citas( $query )
 {
     global $typenow;
     global $pagenow;
+    
     if( isset($_GET['tienda']) && $_GET['tienda'] != '' && isset($_GET['fecha']) && $_GET['fecha'] != '') {
     	//FILTRO COMBINADO
     	$query->query_vars['meta_query'] =  array(
@@ -344,7 +365,7 @@ function modify_filter_citas( $query )
 										        ),
 										        array(
 										            'key'     => '_fecha_meta',
-										            'value'		=> $_GET['fecha']
+										            'value'		=> ajusta_fecha($_GET['fecha'])
 										        ),
 										    );
     } else {
@@ -359,7 +380,7 @@ function modify_filter_citas( $query )
 		    if( $pagenow == 'edit.php' && $typenow == 'citas' && $_GET['fecha'] )
 		    {
 		        $query->query_vars[ 'meta_key' ] = '_fecha_meta';
-		        $query->query_vars[ 'meta_value' ] = $_GET['fecha'];
+		        $query->query_vars[ 'meta_value' ] = ajusta_fecha($_GET['fecha']);
 		    }
 		}
 	}
