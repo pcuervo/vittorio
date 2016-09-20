@@ -312,6 +312,8 @@ function modify_citas_filters()
     	$fechas = $wpdb->get_results(
 		"SELECT distinct(pm.meta_value) FROM " . $wpdb->prefix . "posts p, " . $wpdb->prefix . "postmeta pm WHERE p.post_type = 'citas' and p.post_status = 'publish' and p.ID = pm.post_id AND pm.meta_key = '_fecha_meta';"
 		);
+		echo '<input type="date" id="fecha" name="example[datepicker]" value="" class="example-datepicker" />';
+		/*
 		if (count($fechas[0]) > 0) {
 			echo '<select id="fecha" name="fecha" data-parsley-error-message="Cualquier Fecha" >';
 	 		echo '<option class="" value="" selected>Cualquier Fecha</option>';
@@ -323,6 +325,7 @@ function modify_citas_filters()
 			}
 			echo '</select>';
 		}
+		*/
     }
 }
 
@@ -1292,9 +1295,11 @@ function metabox_tienda_horarios_domingo($post){
 		if ( isset($_POST['_horario_meta']) and check_admin_referer( __FILE__, '_horario_meta_nonce') ){
 			update_post_meta($post_id, '_horario_meta', $_POST['_horario_meta']);
 		}
+		/*
 		if ( isset($_POST['_status_meta']) and check_admin_referer( __FILE__, '_status_meta_nonce') ){
 			update_post_meta($post_id, '_status_meta', $_POST['_status_meta']);
 		}
+		*/
 
 	}// save_metaboxes_cita
 
