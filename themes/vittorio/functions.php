@@ -236,3 +236,19 @@ $result = add_role( 'citas_admin', __('Admin de Citas' ),
 		"upload_files" => false
 	)
 );
+
+function add_theme_caps() {
+    // gets the administrator role
+    $admins = get_role( 'administrator' );
+
+    $admins->add_cap( 'publish_citas' ); 
+    $admins->add_cap( 'edit_citas' ); 
+    $admins->add_cap( 'edit_others_citas' ); 
+    $admins->add_cap( 'delete_citas' ); 
+    $admins->add_cap( 'delete_others_citas' ); 
+    $admins->add_cap( 'read_private_citas' ); 
+    $admins->add_cap( 'edit_cita' ); 
+    $admins->add_cap( 'delete_cita' ); 
+    $admins->add_cap( 'read_cita' ); 
+}
+add_action( 'admin_init', 'add_theme_caps');

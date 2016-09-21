@@ -6,15 +6,17 @@
 
 add_action('add_meta_boxes', function(){
 	global $post;
-	switch ( $post->post_name ) {
-		case 'PAGENAME':
+	//var_dump($post);
+	switch ( $post->post_type ) {
+		case 'tiendas':
 			//add_metaboxes_PAGENAE();
+			add_metaboxes_tienda();
 			break;
 		default:
 			// POST TYPES
 			add_metaboxes_citas();
 			add_metaboxes_ciudad();
-			add_metaboxes_tienda();
+			
 	}
 });
 
@@ -395,17 +397,18 @@ function modify_filter_citas( $query )
 * @param obj $post
 **/
 function metabox_informacion( $post ){
-
+	
 	$nombre = get_post_meta($post->ID, '_nombre_meta', true);
 	$email = get_post_meta($post->ID, '_email_meta', true);
 	$telefono = get_post_meta($post->ID, '_telefono_meta', true);
 	$ciudad = get_post_meta($post->ID, '_ciudad_meta', true);
 	$tienda = get_post_meta($post->ID, '_tienda_meta', true);
-	$tiendanombre = get_the_title( $tienda );
+	if($tienda != '') { $tiendanombre = get_the_title( $tienda ); }
+	else { $tiendanombre = ''; }
 	$fecha = get_post_meta($post->ID, '_fecha_meta', true);
 	$horario = get_post_meta($post->ID, '_horario_meta', true);
 	//$status = get_post_meta($post->ID, '_status_meta', true);
-
+	
 	wp_nonce_field(__FILE__, '_nombre_meta_nonce');
 	wp_nonce_field(__FILE__, '_email_meta_nonce');
 	wp_nonce_field(__FILE__, '_telefono_meta_nonce');
@@ -493,7 +496,7 @@ function metabox_tienda($post){
 			$posts->the_post();
 			$meta = get_post_meta($posts->post->ID);
 			if(get_the_title() == $ciudad) { $selected = 'selected'; }
-			echo '<option value="'.get_the_title().'" class="ciudad" id="ciudad_'.$posts->post->ID.'" data-lat="'.$meta['_latitud_meta'][0].'" data-long="'.$meta['_longitud_meta'][0].'" data-direccion="'.$meta['_direccion_meta'][0].'" data-tel="'.$meta['_telefono_meta'][0].'" '.$selected.'>'.get_the_title().'</option>';
+			echo '<option value="'.get_the_title().'" class="ciudad" id="ciudad_'.$posts->post->ID.'" data-lat="'.$meta['_latitud_meta'][0].'" data-long="'.$meta['_longitud_meta'][0].'" '.$selected.'>'.get_the_title().'</option>';
 		}
 	}
 	echo '</select><br>';
@@ -1276,18 +1279,28 @@ function metabox_tienda_horarios_domingo($post){
 \*------------------------------------*/
 
 	add_action('save_post', function( $post_id ){
-
-		save_metaboxes_cita( $post_id );
-		save_metaboxes_ciudad( $post_id );
-		save_metaboxes_tienda( $post_id );
-		save_metaboxes_tienda_lunes_horario( $post_id );
-		save_metaboxes_tienda_martes_horario( $post_id );
-		save_metaboxes_tienda_miercoles_horario( $post_id );
-		save_metaboxes_tienda_jueves_horario( $post_id );
-		save_metaboxes_tienda_viernes_horario( $post_id );
-		save_metaboxes_tienda_sabado_horario( $post_id );
-		save_metaboxes_tienda_domingo_horario( $post_id );
-
+		global $post;
+		if(isset($post)) {
+			switch ( $post->post_type ) {
+				case 'tiendas':
+					save_metaboxes_tienda( $post_id );
+					save_metaboxes_tienda_lunes_horario( $post_id );
+					save_metaboxes_tienda_martes_horario( $post_id );
+					save_metaboxes_tienda_miercoles_horario( $post_id );
+					save_metaboxes_tienda_jueves_horario( $post_id );
+					save_metaboxes_tienda_viernes_horario( $post_id );
+					save_metaboxes_tienda_sabado_horario( $post_id );
+					save_metaboxes_tienda_domingo_horario( $post_id );
+					break;
+				case 'citas':
+					save_metaboxes_cita( $post_id );
+					break;
+				case 'ciudades':
+					save_metaboxes_ciudad( $post_id );
+					break;				
+				default:
+			}
+		}
 	});
 
 	/**
@@ -1460,6 +1473,14 @@ function metabox_tienda_horarios_domingo($post){
 			update_post_meta($post_id, '_lunes_horario_9pm', $_POST['_lunes_horario_9pm']);
 			if (isset($_POST['_lunes_horario_9pm'])) { $horario_lunes .= '9pm-'; }
 		}
+		/*
+		if (isset($_POST['_lunes_horario_9pm'])) { 
+			$horario_lunes .= '9pm-'; 
+			if ( check_admin_referer( __FILE__, '_lunes_horario_9pm_nonce') ){
+				update_post_meta($post_id, '_lunes_horario_9pm', $_POST['_lunes_horario_9pm']);
+			}
+		}
+		*/
 		update_post_meta($post_id, 'Lunes_horario',$horario_lunes);		
 
 	}// save_metaboxes_tienda
