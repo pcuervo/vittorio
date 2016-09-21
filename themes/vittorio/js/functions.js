@@ -6,13 +6,16 @@ var $=jQuery.noConflict();
         var hoy = new Date();
         console.log(hoy);
     	$('select').material_select();
-    	$('.datepicker').pickadate({
+    	var picker = $('.datepicker').pickadate({
 			selectMonths: true, //
 			selectYears: 8, //
             closeOnSelect: true,
             min: new Date(hoy.getFullYear(),hoy.getMonth(),hoy.getDate()),
             onSet: function(context) {
-                this.close();
+                if(context.select) {
+                    this.close();    
+                }
+                
             }
 
 		});
@@ -37,6 +40,7 @@ $(document).ready(function() {
 });
 
 $("#fecha").change(function(e) {
+    //picker.close(true);
     //console.log($(this).val());
     var diasSemana = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
     var fec = new Date($(this).val());

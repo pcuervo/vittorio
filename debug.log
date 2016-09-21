@@ -1,0 +1,24 @@
+[21-Sep-2016 21:15:36 UTC] PHP Notice:  Undefined index: dia in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 29
+[21-Sep-2016 21:15:36 UTC] PHP Stack trace:
+[21-Sep-2016 21:15:36 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[21-Sep-2016 21:15:36 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:89
+[21-Sep-2016 21:15:36 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[21-Sep-2016 21:15:36 UTC] PHP   4. validar_horarios() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[21-Sep-2016 21:15:42 UTC] PHP Notice:  Undefined index: dia in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 29
+[21-Sep-2016 21:15:42 UTC] PHP Stack trace:
+[21-Sep-2016 21:15:42 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[21-Sep-2016 21:15:42 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:89
+[21-Sep-2016 21:15:42 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[21-Sep-2016 21:15:42 UTC] PHP   4. validar_horarios() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[21-Sep-2016 21:15:43 UTC] PHP Notice:  Undefined index: dia in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 29
+[21-Sep-2016 21:15:43 UTC] PHP Stack trace:
+[21-Sep-2016 21:15:43 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[21-Sep-2016 21:15:43 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:89
+[21-Sep-2016 21:15:43 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[21-Sep-2016 21:15:43 UTC] PHP   4. validar_horarios() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[21-Sep-2016 21:37:36 UTC] PHP Notice:  Undefined index: dia in C:\wamp\www\vittorio\wp-content\themes\vittorio\inc\metaboxes.php on line 29
+[21-Sep-2016 21:37:36 UTC] PHP Stack trace:
+[21-Sep-2016 21:37:36 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[21-Sep-2016 21:37:36 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:89
+[21-Sep-2016 21:37:36 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[21-Sep-2016 21:37:36 UTC] PHP   4. validar_horarios() C:\wamp\www\vittorio\wp-includes\plugin.php:525
