@@ -13,7 +13,7 @@
 				<div class="[ col s12 m5 ][ no-float ][ inline-block ][ middle ]">
 					<div class="[ bg-dark ][ padding ][ margin-vertical ]">
 						<p class="[ text-uppercase white-text ][ no-margin-top ]">¡hombre, muy bien! </p>
-						<p class="[ white-text ]">Compártenos los siguientes datos para hacer una cita con uno de nuestros Expertos en Trajes y te ayude a encontrar tu traje perfecto.</p>
+						<p class="[ white-text ]">Tu próximo traje y el éxito que viene incluido, a unos datos de distancia.Un Experto en trajes te estará esperando para ayudarte a encontrar el traje perfecto para ti.</p>
 
 						<form class="[ margin-top ]" method="post" name="front_end" action="citas">
 							<div class="[ input-field ]">

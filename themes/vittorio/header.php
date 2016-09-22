@@ -22,10 +22,10 @@
 					</div>
 					<div class="[ col s12 m9 ]">
 						<div class="[ nav-options ]">
-							<a href="http://www.tiendasvittorioforti.com">Ir al sitio</a>
+							<a href="http://www.tiendasvittorioforti.com">COMPRA EN LÍNEA</a>
 							<a class="[ inline-block ][ margin-left ]" href="tel:+55000000">
 								<img class="[ middle ][ height-30 ]" src="<?php echo THEMEPATH; ?>img/whatsapp-icon.png" alt="Whats app icon">
-								55-00-00-00
+								55-10-48-30-30
 							</a>
 						</div>
 					</div>
