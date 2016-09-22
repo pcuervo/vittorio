@@ -9,12 +9,9 @@
 	background-size: cover;
 }
 
-.background-img--main { background-image: url(img/background.png); }
-
-@media #{$small-and-down} {
-	.background-img--main {
-		background-position: top;
-		background-repeat: no-repeat;
-		background-size: 200%;
+.background-img--main {
+	background-color: #000;
+	@media #{$medium-and-up}{
+		background-image: url(img/background.png);
 	}
 }
