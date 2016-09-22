@@ -22,7 +22,7 @@
 					</a>
 					<div class="[ nav-options ][ middle ][ inline-block ]">
 						<a href="http://www.tiendasvittorioforti.com">COMPRA EN LÍNEA</a>
-						<a class="[ inline-block ][ margin-left ]" href="tel:+55000000">
+						<a class="[ inline-block ][ margin-left ]" href="#">
 							<img class="[ middle ][ height-30 ]" src="<?php echo THEMEPATH; ?>img/whatsapp-icon.png" alt="Whats app icon">
 							5510483030
 						</a>
