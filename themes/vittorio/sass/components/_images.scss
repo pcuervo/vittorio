@@ -14,4 +14,7 @@
 	@media #{$medium-and-up}{
 		background-image: url(img/background.png);
 	}
+	@media #{$large-and-up}{
+		min-height: 70vh;
+	}
 }

@@ -3,9 +3,13 @@ var $=jQuery.noConflict();
 (function($){
     "use strict";
     $(function(){
+
         var hoy = new Date();
-        console.log(hoy);
+
     	$('select').material_select();
+        $('.modal-trigger').leanModal();
+        $('form').parsley();
+
     	var picker = $('.datepicker').pickadate({
 			selectMonths: true, //
 			selectYears: 8, //
@@ -13,16 +17,11 @@ var $=jQuery.noConflict();
             min: new Date(hoy.getFullYear(),hoy.getMonth(),hoy.getDate()),
             onSet: function(context) {
                 if(context.select) {
-                    this.close();    
+                    this.close();
                 }
-                
             }
 
 		});
-
-        $('.modal-trigger').leanModal();
-
-		$('form').parsley();
 
     });
 })(jQuery);
@@ -53,7 +52,7 @@ $("#fecha").change(function(e) {
     //console.log(fechaFormateada);
     //console.log('TIENDAID:'+$("#tienda").val());
     $(".opcioneshorario").addClass('ocupado');
-    $.post($("#rutaAjax").val(), {action: 'validar_horarios', fecha: $(this).val(), dia: diaS, tiendaid: $("#tienda").val() }, 
+    $.post($("#rutaAjax").val(), {action: 'validar_horarios', fecha: $(this).val(), dia: diaS, tiendaid: $("#tienda").val() },
       function(data) {
         //console.log("AQUI:"+data);
         if(data != "") {
@@ -83,10 +82,10 @@ $("#fecha").change(function(e) {
                 $(".select-dropdown:eq(4)").val('No hay horarios disponibles');
                 $(".opcioneshorario").hide();
             }
-        } 
-        
+        }
+
     })
-    .always(function(data){ 
+    .always(function(data){
        //console.log('Always -> ['+data+']');
     })
     .fail(function(xhr, status, error) {

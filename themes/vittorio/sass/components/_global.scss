@@ -360,10 +360,10 @@ ul.staggered-list li {
 // Footer
 
 .page-footer {
-  padding: 0px;
-  position: absolute;
-  width: 100%;
-  background-color: $dark-color;
+
+  @media #{$large-and-up}{
+    height: 20vh;
+  }
 
   .container {
       @media #{$small-and-down} {

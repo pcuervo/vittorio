@@ -16,18 +16,16 @@
 
 		<header>
 			<div class="[ container ]">
-				<div class="[ row padding-vertical--small ]">
-					<div class="[ col s12 m3 ]">
-						<a href="<?php echo site_url(); ?>"><img class="[ middle ][ center-block ]" src="<?php echo THEMEPATH; ?>img/logo.png" alt="Vittorio Forti Logo"></a>
-					</div>
-					<div class="[ col s12 m9 ]">
-						<div class="[ nav-options ]">
-							<a href="http://www.tiendasvittorioforti.com">COMPRA EN LÍNEA</a>
-							<a class="[ inline-block ][ margin-left ]" href="tel:+55000000">
-								<img class="[ middle ][ height-30 ]" src="<?php echo THEMEPATH; ?>img/whatsapp-icon.png" alt="Whats app icon">
-								55-10-48-30-30
-							</a>
-						</div>
+				<div class="[ row padding-vertical--small ][ header-container ]">
+					<a class="[ middle ][ inline-block ]" href="<?php echo site_url(); ?>">
+						<img class="" src="<?php echo THEMEPATH; ?>img/logo.png" alt="Vittorio Forti Logo">
+					</a>
+					<div class="[ nav-options ][ middle ][ inline-block ]">
+						<a href="http://www.tiendasvittorioforti.com">COMPRA EN LÍNEA</a>
+						<a class="[ inline-block ][ margin-left ]" href="tel:+55000000">
+							<img class="[ middle ][ height-30 ]" src="<?php echo THEMEPATH; ?>img/whatsapp-icon.png" alt="Whats app icon">
+							5510483030
+						</a>
 					</div>
 				</div>
 			</div>
