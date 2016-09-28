@@ -125,7 +125,7 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 												<tbody>
 													<tr>
 														<td style="padding:36px 48px;display:block; text-align:center; ">
-															<img src="http://pcuervo.com/vittorio/wp-content/themes/vittorio/img/logo.png" alt="Logo Vitorio Forti" style="border:none;display:inline;font-size:14px;font-weight:bold;min-height:auto;line-height:100%;outline:none;text-decoration:none;text-transform:capitalize" class="CToWUd">
+															<img src="http://localhost:8888/vittorio/wp-content/themes/vittorio/img/logo.png" alt="Logo Vitorio Forti" style="border:none;display:inline;font-size:14px;font-weight:bold;min-height:auto;line-height:100%;outline:none;text-decoration:none;text-transform:capitalize" class="CToWUd">
 															<h1 style="color:#ffffff;font-family:&quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif;font-size:30px;font-weight:300;line-height:150%;margin:0;text-align:center">Hemos registrado tu cita</h1>
 														</td>
 													</tr>
@@ -172,7 +172,7 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 																<tbody>
 																	<tr>
 																		<td colspan="2" valign="middle" style="padding:2em;border:0;color:#fff;font-family:Arial;font-size:12px;line-height:125%;text-align:center">
-																			<p>Vittorio Forti – El poder de un traje.</p>
+																			<img class="CToWUd" width="50%" style="border:none;display:inline;font-size:14px;font-weight:bold;min-height:auto;line-height:100%;outline:none;text-decoration:none;text-transform:capitalize" alt="Logo Vitorio Forti" src="http://localhost:8888/vittorio/wp-content/themes/vittorio/img/el_poder.png">
 																		</td>
 																	</tr>
 																</tbody>
