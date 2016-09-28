@@ -69,11 +69,13 @@ $("#fecha").change(function(e) {
                     //console.log(i+'->'+hs[i]);
                     $("."+hs[i]).removeClass('ocupado');
                     $("."+hs[i]).show();
+                    $("."+hs[i]).show();
                 }
                 if(ocus.length>1) {
                     for (var i = 0; i < ocus.length-1; i++) {
                         //console.log(i+'->'+ocus[i]);
                         $("."+ocus[i]).addClass('ocupado');
+                        $("."+ocus[i]).hide();
                         //$("."+ocus[i]).hide();
                     }
                 }

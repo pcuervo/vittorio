@@ -101,7 +101,8 @@ function my_edit_citas_columns( $columns ) {
 		'_tienda_meta' => __( 'Tienda' ),
 		'_fecha_meta' => __( 'Fecha' ),
 		'_horario_meta' => __( 'Hora' ),
-		'_porque_meta' => __( '¿Por qué?' )
+		'_porque_meta' => __( '¿Por qué?' ),
+		'_quebuscas_meta' => __( '¿Qué buscas?' )
 	);
 
 	return $columns;
@@ -186,7 +187,16 @@ function my_manage_citas_columns( $column, $post_id ) {
 				echo $_porque_meta;
 
 			break;			
+		case '_quebuscas_meta' :
 
+			/* Get the post meta. */
+			$_quebuscas_meta = get_post_meta( $post_id, '_quebuscas_meta', true );
+
+			/* If no _quebuscas_meta is found, output a default message. */
+			if ( !empty( $_quebuscas_meta ) ) echo $_quebuscas_meta;
+
+
+			break;
 		/* If displaying the 'genre' column. */
 		case 'genre' :
 
