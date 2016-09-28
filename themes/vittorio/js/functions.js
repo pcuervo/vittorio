@@ -54,7 +54,7 @@ $("#fecha").change(function(e) {
     $(".opcioneshorario").addClass('ocupado');
     $.post($("#rutaAjax").val(), {action: 'validar_horarios', fecha: $(this).val(), dia: diaS, tiendaid: $("#tienda").val() },
       function(data) {
-        //console.log("AQUI:"+data);
+        console.log("AQUI:"+data);
         if(data != "") {
             $(".select-dropdown:eq(4)").val('Horario');
             //$(".opcioneshorario").show();

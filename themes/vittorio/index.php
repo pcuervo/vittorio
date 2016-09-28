@@ -89,31 +89,19 @@
 							<div class="[ input-field ][ bg-white ]">
 								<select id="horario" name="horario" data-parsley-error-message="Por favor selecciona un horario" required>
 									<option value="" selected>Horario</option>
-									<option data-clasehorario="9am" id="9am" class="opthorario" value="9am">De 9:00am - 9:30am</option>
-									<option data-clasehorario="930am" id="930am" class="opthorario" value="930am">De 9:30am - 10:00am</option>
-									<option data-clasehorario="10am" id="10am" class="opthorario" value="10am">De 10:00am - 10:30am</option>
-									<option data-clasehorario="1030am" id="1030am" class="opthorario" value="1030am">De 10:30am - 11:00am</option>
-									<option data-clasehorario="11am" id="11am" class="opthorario" value="11am">De 11:00am - 11:30am</option>
-									<option data-clasehorario="1130am" id="1130am" class="opthorario" value="1130am">De 11:30am - 12:00pm</option>
-									<option data-clasehorario="12pm" id="12pm" class="opthorario" value="12pm">De 12:00pm - 12:30pm</option>
-									<option data-clasehorario="1230pm" id="1230pm" class="opthorario" value="1230pm">De 12:30pm - 1:00pm</option>
-									<option data-clasehorario="1pm" id="1pm" class="opthorario" value="1pm">De 1:00pm - 1:30pm</option>
-									<option data-clasehorario="130pm" id="130pm" class="opthorario" value="130pm">De 1:30pm - 2:00pm</option>
-									<option data-clasehorario="2pm" id="2pm" class="opthorario" value="2pm">De 2:00pm - 2:30pm</option>
-									<option data-clasehorario="230pm" id="230pm" class="opthorario" value="230pm">De 2:30pm - 3:00pm</option>
-									<option data-clasehorario="3pm" id="3pm" class="opthorario" value="3pm">De 3:00pm - 3:30pm</option>
-									<option data-clasehorario="330pm" id="330pm" class="opthorario" value="330pm">De 3:30pm - 4:00pm</option>
-									<option data-clasehorario="4pm" id="4pm" class="opthorario" value="4pm">De 4:00pm - 4:30pm</option>
-									<option data-clasehorario="430pm" id="430pm" class="opthorario" value="430pm">De 4:30pm - 5:00pm</option>
-									<option data-clasehorario="5pm" id="5pm" class="opthorario" value="5pm">De 5:00pm - 5:30pm</option>
-									<option data-clasehorario="530pm" id="530pm" class="opthorario" value="530pm">De 5:30pm - 5:00pm</option>
-									<option data-clasehorario="6pm" id="6pm" class="opthorario" value="6pm">De 6:00pm - 6:30pm</option>
-									<option data-clasehorario="630pm" id="630pm" class="opthorario" value="630pm">De 6:30pm - 7:00pm</option>
-									<option data-clasehorario="7pm" id="7pm" class="opthorario" value="7pm">De 7:00pm - 7:30pm</option>
-									<option data-clasehorario="730pm" id="730pm" class="opthorario" value="730pm">De 7:30pm - 8:00pm</option>
-									<option data-clasehorario="8pm" id="8pm" class="opthorario" value="8pm">De 8:00pm - 8:30pm</option>
-									<option data-clasehorario="830pm" id="830pm" class="opthorario" value="830pm">De 8:30pm - 9:00pm</option>
-									<option data-clasehorario="9pm" id="9pm" class="opthorario" value="9pm">De 9:00pm - 9:30pm</option>
+									<option data-clasehorario="9" id="9" class="opthorario" value="9">De 9:00 - 10:00</option>
+									<option data-clasehorario="10" id="10" class="opthorario" value="10">De 10:00 - 11:00</option>
+									<option data-clasehorario="11" id="11" class="opthorario" value="11">De 11:00 - 12:00</option>
+									<option data-clasehorario="12" id="12" class="opthorario" value="12">De 12:00 - 13:00</option>
+									<option data-clasehorario="13" id="13" class="opthorario" value="13">De 13:00 - 14:00</option>
+									<option data-clasehorario="14" id="14" class="opthorario" value="14">De 14:00 - 15:00</option>
+									<option data-clasehorario="15" id="15" class="opthorario" value="15">De 15:00 - 16:00</option>
+									<option data-clasehorario="16" id="16" class="opthorario" value="16">De 16:00 - 17:00</option>
+									<option data-clasehorario="17" id="17" class="opthorario" value="17">De 17:00 - 18:00</option>
+									<option data-clasehorario="18" id="18" class="opthorario" value="18">De 18:00 - 19:00</option>
+									<option data-clasehorario="19" id="19" class="opthorario" value="19">De 19:00 - 20:00</option>
+									<option data-clasehorario="20" id="20" class="opthorario" value="20">De 20:00 - 21:00</option>
+									<option data-clasehorario="21" id="21" class="opthorario" value="21">De 21:00 - 22:00</option>
 								</select>
 
 							</div>

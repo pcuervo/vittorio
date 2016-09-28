@@ -23,6 +23,7 @@ function load_maps_js(){
 		// scripts
 		wp_enqueue_script( 'api-google', 'https://maps.google.com/maps/api/js?libraries=places&key=AIzaSyABZ4eSBYBsLi5WQ7WdXZpivNq6n4wQZPA&language=es-ES', array('jquery'), '1.0', true );
 		wp_enqueue_script( 'google-function-autocomplete', THEMEPATH. 'js/google-autocomplete.js', array('api-google'), '1.0', true );
+		wp_enqueue_script( 'manage-checks', THEMEPATH. 'js/manage-checks.js', array('jquery'), '1.0', true );
 	}
 
 }
@@ -262,3 +263,43 @@ function add_theme_caps() {
   	$admins->remove_cap(  'edit_cita' ); 
 }
 add_action( 'admin_init', 'add_theme_caps');
+
+
+//add_action('show_user_profile', 'show_my_extra_fields' );
+add_action( 'edit_user_profile', 'show_my_extra_fields' );
+		
+function show_my_extra_fields($user) {
+
+	echo '<h3>Tienda</h3>';
+	//Select area-entrega post type
+    $query_args = array(
+		'post_type'      => 'tiendas',
+		'orderby'        => 'date',
+		'no_found_rows'  => true,
+		'cache_results'  => false,
+	);
+
+    $posts = new WP_Query( $query_args );
+    $area = get_the_author_meta('tiendas', $user->ID);
+    echo '<select id="tiendas" name="tiendas" class="input-text" >';
+ 		echo '<option></option>';
+	if ( $posts->have_posts() ) {
+		while ( $posts->have_posts() ) {
+			$posts->the_post();
+			$sel = '';
+			if($area == $posts->post->ID) { $sel = 'selected'; }
+			echo '<option value="'.$posts->post->ID.'" id="ae_'.$posts->post->ID.'" '.$sel.'>'.get_the_title().'</option>';
+		}
+	}
+
+	echo '</select>';
+
+	
+}
+
+//add_action('personal_options_update', 'update_extra_fields');
+add_action( 'edit_user_profile_update', 'update_extra_fields');
+function update_extra_fields($user_id) {
+	update_user_meta($user_id, 'tiendas', $_POST['tiendas']);
+	
+}
