@@ -70,6 +70,8 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 	$tiendanombre = get_the_title( $_POST['tienda'] );
 	$fecha = $_POST['fecha'];
 	$horario = $_POST['horario'];
+	$porque = $_POST['porque'];
+	$quebuscas = $_POST['quebuscas'];
 
 	//the array of arguements to be inserted with wp_insert_post
 	$new_post = array(
@@ -95,6 +97,8 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 	add_post_meta($pid, '_tienda_meta', $tienda, true);
 	add_post_meta($pid, '_fecha_meta', $fecha, true);
 	add_post_meta($pid, '_horario_meta', $horario, true);
+	add_post_meta($pid, '_porque_meta', $porque, true);
+	add_post_meta($pid, '_quebuscas_meta', $quebuscas, true);
 	//add_post_meta($pid, '_status_meta', 'PENDIENTE', true);
 
 	echo '<input type="hidden" id="citaid" value="'.$pid.'" />';
