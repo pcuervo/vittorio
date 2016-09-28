@@ -100,7 +100,8 @@ function my_edit_citas_columns( $columns ) {
 		'_ciudad_meta' => __( 'Ciudad' ),
 		'_tienda_meta' => __( 'Tienda' ),
 		'_fecha_meta' => __( 'Fecha' ),
-		'_horario_meta' => __( 'Hora' )
+		'_horario_meta' => __( 'Hora' ),
+		'_porque_meta' => __( '¿Por qué?' )
 	);
 
 	return $columns;
@@ -171,6 +172,20 @@ function my_manage_citas_columns( $column, $post_id ) {
 				echo $_horario_meta;
 
 			break;
+		case '_porque_meta' :
+
+			/* Get the post meta. */
+			$_porque_meta = get_post_meta( $post_id, '_porque_meta', true );
+
+			/* If no _porque_meta is found, output a default message. */
+			if ( empty( $_porque_meta ) )
+				echo __( 'Desconocido' );
+
+			/* If there is a _porque_meta, append 'minutes' to the text string. */
+			else
+				echo $_porque_meta;
+
+			break;			
 
 		/* If displaying the 'genre' column. */
 		case 'genre' :
@@ -407,6 +422,8 @@ function metabox_informacion( $post ){
 	else { $tiendanombre = ''; }
 	$fecha = get_post_meta($post->ID, '_fecha_meta', true);
 	$horario = get_post_meta($post->ID, '_horario_meta', true);
+	$porque = get_post_meta($post->ID, '_porque_meta', true);
+	$quebuscas = get_post_meta($post->ID, '_quebuscas_meta', true);
 	//$status = get_post_meta($post->ID, '_status_meta', true);
 	
 	wp_nonce_field(__FILE__, '_nombre_meta_nonce');
@@ -416,6 +433,8 @@ function metabox_informacion( $post ){
 	wp_nonce_field(__FILE__, '_tienda_meta_nonce');
 	wp_nonce_field(__FILE__, '_fecha_meta_nonce');
 	wp_nonce_field(__FILE__, '_horario_meta_nonce');
+	wp_nonce_field(__FILE__, '_porque_meta_nonce');
+	wp_nonce_field(__FILE__, '_quebuscas_meta_nonce');
 	//wp_nonce_field(__FILE__, '_status_meta_nonce');
 
 	echo '<label>Nombre</label>';
@@ -432,6 +451,10 @@ function metabox_informacion( $post ){
 	echo "<input type='text' class='[ widefat ]' name='_fecha_meta' value='$fecha'>";
 	echo '<label>Horario</label>';
 	echo "<input type='text' class='[ widefat ]' name='_horario_meta' value='$horario'>";
+	echo '<label>¿Por qué necesitas un traje?</label>';
+	echo "<input type='text' class='[ widefat ]' name='_porque_meta' value='$porque'>";
+	echo '<label>¿Qué buscas en un traje?</label>';
+	echo "<input type='text' class='[ widefat ]' name='_quebuscas_meta' value='$quebuscas'>";
 	//echo '<label>Estatus</label>';
 	//echo "<input type='text' disabled class='[ widefat ]' name='_status_meta' value='$status'>";
 }// metabox_informacion

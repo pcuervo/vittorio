@@ -117,6 +117,23 @@
 								</select>
 
 							</div>
+							<div class="[ input-field ][ bg-white ]">
+								<select id="porque" name="porque" data-parsley-error-message="¿Por qué necesitas un traje?" required>
+									<option value="" selected>¿Por qué necesitas un traje?</option>
+									<option id="porque0"  value="Boda">Boda</option>
+									<option id="porque1"  value="Trabajo">Trabajo</option>
+									<option id="porque2"  value="Graduación">Gracuación</option>
+									<option id="porque3"  value="XV Años">XV Años</option>
+									<option id="porque4"  value="Bautizo">Bautizo</option>
+									<option id="porque5"  value="Comida / Cena">Comida / Cena</option>
+									<option id="porque6"  value="Otros">Otros</option>
+								</select>
+
+							</div>
+							<div class="[ input-field ]">
+								<input type="text" class="" id="quebuscas" data-parsley-error-message="¿Qué buscas en un traje?" name="quebuscas" >
+								<label for="quebuscas">¿Qué buscas en un traje?</label>
+							</div>
 							<input type="hidden" id="rutaAjax" name="rutaAjax" value="<?php echo admin_url('admin-ajax.php'); ?>" />
 							<p>
 								<input type="checkbox" id="aviso" data-parsley-error-message="Debe estar de acuerdo con el aviso de privacidad" required/>
