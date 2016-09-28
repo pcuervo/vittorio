@@ -21,7 +21,8 @@
 						<img class="" src="<?php echo THEMEPATH; ?>img/logo.png" alt="Vittorio Forti Logo">
 					</a>
 					<div class="[ nav-options ][ middle ][ inline-block ]">
-						<a href="http://www.tiendasvittorioforti.com">COMPRA EN LÍNEA</a>
+						<a href="http://www.vittorioforti.com.mx/apps/sucursales">SUCURSALES</a>
+						<a class="[ margin-left ]" href="http://www.tiendasvittorioforti.com">COMPRA EN LÍNEA</a>
 						<a class="[ inline-block ][ margin-left ]" href="#">
 							<img class="[ middle ][ height-30 ]" src="<?php echo THEMEPATH; ?>img/whatsapp-icon.png" alt="Whats app icon">
 							5510483030
