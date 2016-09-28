@@ -6111,15 +6111,15 @@ button.btn-floating {
     height: 50vh;
   }
 }
-/* line 27, sass/components/_modal.scss */
+/* line 26, sass/components/_modal.scss */
 .modal div.modal-content a {
   margin-top: 5%;
 }
-/* line 30, sass/components/_modal.scss */
+/* line 29, sass/components/_modal.scss */
 .modal h1, .modal h2, .modal h3, .modal h4 {
   margin-top: 0;
 }
-/* line 34, sass/components/_modal.scss */
+/* line 33, sass/components/_modal.scss */
 .modal .modal-content {
   padding: 24px;
   width: 100%;
@@ -6131,11 +6131,11 @@ button.btn-floating {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 45, sass/components/_modal.scss */
+/* line 44, sass/components/_modal.scss */
 .modal .modal-close {
   cursor: pointer;
 }
-/* line 49, sass/components/_modal.scss */
+/* line 48, sass/components/_modal.scss */
 .modal .modal-footer {
   border-radius: 0 0 2px 2px;
   background-color: #fafafa;
@@ -6143,13 +6143,13 @@ button.btn-floating {
   height: 56px;
   width: 100%;
 }
-/* line 56, sass/components/_modal.scss */
+/* line 55, sass/components/_modal.scss */
 .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
   float: right;
   margin: 6px 0;
 }
 
-/* line 62, sass/components/_modal.scss */
+/* line 61, sass/components/_modal.scss */
 .lean-overlay {
   position: fixed;
   z-index: 999;
@@ -6164,12 +6164,12 @@ button.btn-floating {
   will-change: opacity;
 }
 
-/* line 78, sass/components/_modal.scss */
+/* line 77, sass/components/_modal.scss */
 .modal.modal-fixed-footer {
   padding: 0;
   height: 70%;
 }
-/* line 82, sass/components/_modal.scss */
+/* line 81, sass/components/_modal.scss */
 .modal.modal-fixed-footer .modal-content {
   position: absolute;
   height: calc(100% - 56px);
@@ -6177,14 +6177,14 @@ button.btn-floating {
   width: 100%;
   overflow-y: auto;
 }
-/* line 90, sass/components/_modal.scss */
+/* line 89, sass/components/_modal.scss */
 .modal.modal-fixed-footer .modal-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   bottom: 0;
 }
 
-/* line 98, sass/components/_modal.scss */
+/* line 97, sass/components/_modal.scss */
 .modal.bottom-sheet {
   top: auto;
   bottom: -100%;
@@ -9748,6 +9748,13 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .divider-small {
   width: 50px;
   border-top: solid;
+}
+
+/* line 172, sass/components/_utilities.scss */
+.divider-v {
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #eeeeee;
 }
 
 /* line 5, sass/components/_images.scss */

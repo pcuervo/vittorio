@@ -12,7 +12,16 @@
 						<a class="[ margin-horizontal ][ text-uppercase ][ vertical-aling--50 ][ grey-text text-lighten-3 ]" href="#!">Vittorio Forti</a>
 						<a class="[ margin-horizontal ][ inline-flex ]" href=""><img class="[ height-35 ]" src="<?php echo THEMEPATH; ?>img/facebook-icon.png" alt="facebook icon"></a>
 					</div>
-
+				</div>
+				<div class="[ row ][ text-center-mobile  center-align ][ margin-top ]">
+					<div class="[ col s12 m12 ]">
+						<a class="[ text-uppercase ][ vertical-aling--50 ][ grey-text text-lighten-3 ]" href="https://www.vittorioforti.com.mx/pages/about-us">Nuestra historia</a>
+						<a class="[ text-uppercase ][ divider-v ][ vertical-aling--50 ][ grey-text text-lighten-3 ]" href="https://www.vittorioforti.com.mx/pages/filosofia">Filosofía</a>
+						<a class="[ text-uppercase ][ divider-v ][ vertical-aling--50 ][ grey-text text-lighten-3 ]" href="https://www.vittorioforti.com.mx/pages/ventas-corporativas">Ventas corporativas</a>
+						<a class="[ text-uppercase ][ divider-v ][ vertical-aling--50 ][ grey-text text-lighten-3 ]" href="https://www.vittorioforti.com.mx/pages/reclutamiento">Bolsa de trabajo</a>
+						<a class="[ text-uppercase ][ divider-v ][ vertical-aling--50 ][ grey-text text-lighten-3 ]" href="https://cdn.shopify.com/s/files/1/1192/1416/files/Politicas.pdf?2040003520897868236">Políticas</a>
+						<a class="[ text-uppercase ][ divider-v ][ vertical-aling--50 ][ grey-text text-lighten-3 ]" href="https://www.vittorioforti.com.mx/pages/facturacion">Facturación</a>
+					</div>
 				</div>
 			</div>
 		</footer>
