@@ -233,7 +233,7 @@ $result = add_role( 'citas_admin', __('Admin de Citas' ),
 		'delete_citas' => true,
 		'delete_others_citas' => true,
 		'read_private_citas' => true,
-		'edit_cita' => true,
+		'edit_cita' => false,
 		'delete_cita' => true,
 		'read_cita' => true,
 		"read" => true,
@@ -242,6 +242,7 @@ $result = add_role( 'citas_admin', __('Admin de Citas' ),
 );
 
 function add_theme_caps() {
+	
     // gets the administrator role
     $admins = get_role( 'administrator' );
 
@@ -251,8 +252,13 @@ function add_theme_caps() {
     $admins->add_cap( 'delete_citas' ); 
     $admins->add_cap( 'delete_others_citas' ); 
     $admins->add_cap( 'read_private_citas' ); 
-    $admins->add_cap( 'edit_cita' ); 
+    //$admins->add_cap( 'edit_cita' ); 
     $admins->add_cap( 'delete_cita' ); 
     $admins->add_cap( 'read_cita' ); 
+
+    //REMOVE CAPABLITIES
+  	//$admins->remove_cap(  'edit_citas' ); 
+  	//$admins->remove_cap(  'edit_others_citas' ); 
+  	$admins->remove_cap(  'edit_cita' ); 
 }
 add_action( 'admin_init', 'add_theme_caps');

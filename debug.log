@@ -22,3 +22,178 @@
 [21-Sep-2016 21:37:36 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:89
 [21-Sep-2016 21:37:36 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
 [21-Sep-2016 21:37:36 UTC] PHP   4. validar_horarios() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:17 UTC] PHP Notice:  Undefined variable: role in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 260
+[28-Sep-2016 15:28:17 UTC] PHP Stack trace:
+[28-Sep-2016 15:28:17 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:28:17 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:28:17 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:17 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:17 UTC] PHP Notice:  Undefined variable: role in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 261
+[28-Sep-2016 15:28:17 UTC] PHP Stack trace:
+[28-Sep-2016 15:28:17 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:28:17 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:28:17 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:17 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:17 UTC] PHP Notice:  Undefined variable: role in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 262
+[28-Sep-2016 15:28:17 UTC] PHP Stack trace:
+[28-Sep-2016 15:28:17 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:28:17 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:28:17 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:17 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:21 UTC] PHP Notice:  Undefined variable: role in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 260
+[28-Sep-2016 15:28:21 UTC] PHP Stack trace:
+[28-Sep-2016 15:28:21 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[28-Sep-2016 15:28:21 UTC] PHP   2. require_once() C:\wamp\www\vittorio\wp-admin\post.php:12
+[28-Sep-2016 15:28:21 UTC] PHP   3. do_action() C:\wamp\www\vittorio\wp-admin\admin.php:168
+[28-Sep-2016 15:28:21 UTC] PHP   4. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:21 UTC] PHP   5. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:21 UTC] PHP Notice:  Undefined variable: role in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 261
+[28-Sep-2016 15:28:21 UTC] PHP Stack trace:
+[28-Sep-2016 15:28:21 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[28-Sep-2016 15:28:21 UTC] PHP   2. require_once() C:\wamp\www\vittorio\wp-admin\post.php:12
+[28-Sep-2016 15:28:21 UTC] PHP   3. do_action() C:\wamp\www\vittorio\wp-admin\admin.php:168
+[28-Sep-2016 15:28:21 UTC] PHP   4. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:21 UTC] PHP   5. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:21 UTC] PHP Notice:  Undefined variable: role in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 262
+[28-Sep-2016 15:28:21 UTC] PHP Stack trace:
+[28-Sep-2016 15:28:21 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[28-Sep-2016 15:28:21 UTC] PHP   2. require_once() C:\wamp\www\vittorio\wp-admin\post.php:12
+[28-Sep-2016 15:28:21 UTC] PHP   3. do_action() C:\wamp\www\vittorio\wp-admin\admin.php:168
+[28-Sep-2016 15:28:21 UTC] PHP   4. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:21 UTC] PHP   5. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:22 UTC] PHP Notice:  Undefined variable: role in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 260
+[28-Sep-2016 15:28:22 UTC] PHP Stack trace:
+[28-Sep-2016 15:28:22 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:28:22 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:28:22 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:22 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:22 UTC] PHP Notice:  Undefined variable: role in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 261
+[28-Sep-2016 15:28:22 UTC] PHP Stack trace:
+[28-Sep-2016 15:28:22 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:28:22 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:28:22 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:22 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:22 UTC] PHP Notice:  Undefined variable: role in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 262
+[28-Sep-2016 15:28:22 UTC] PHP Stack trace:
+[28-Sep-2016 15:28:22 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:28:22 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:28:22 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:22 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:38 UTC] PHP Notice:  Undefined variable: role in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 260
+[28-Sep-2016 15:28:38 UTC] PHP Stack trace:
+[28-Sep-2016 15:28:38 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:28:38 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:28:38 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:38 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:38 UTC] PHP Notice:  Undefined variable: role in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 261
+[28-Sep-2016 15:28:38 UTC] PHP Stack trace:
+[28-Sep-2016 15:28:38 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:28:38 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:28:38 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:38 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:38 UTC] PHP Notice:  Undefined variable: role in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 262
+[28-Sep-2016 15:28:38 UTC] PHP Stack trace:
+[28-Sep-2016 15:28:38 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:28:38 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:28:38 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:28:38 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:15 UTC] PHP Warning:  Missing argument 2 for WP_Roles::remove_cap(), called in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 260 and defined in C:\wamp\www\vittorio\wp-includes\class-wp-roles.php on line 247
+[28-Sep-2016 15:29:16 UTC] PHP Stack trace:
+[28-Sep-2016 15:29:16 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:29:16 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:29:16 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:16 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:16 UTC] PHP   5. WP_Roles->remove_cap() C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php:260
+[28-Sep-2016 15:29:16 UTC] PHP Warning:  Missing argument 2 for WP_Roles::remove_cap(), called in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 261 and defined in C:\wamp\www\vittorio\wp-includes\class-wp-roles.php on line 247
+[28-Sep-2016 15:29:16 UTC] PHP Stack trace:
+[28-Sep-2016 15:29:16 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:29:16 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:29:16 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:16 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:16 UTC] PHP   5. WP_Roles->remove_cap() C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php:261
+[28-Sep-2016 15:29:16 UTC] PHP Warning:  Missing argument 2 for WP_Roles::remove_cap(), called in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 262 and defined in C:\wamp\www\vittorio\wp-includes\class-wp-roles.php on line 247
+[28-Sep-2016 15:29:16 UTC] PHP Stack trace:
+[28-Sep-2016 15:29:16 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:29:16 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:29:16 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:16 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:16 UTC] PHP   5. WP_Roles->remove_cap() C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php:262
+[28-Sep-2016 15:29:16 UTC] PHP Warning:  Missing argument 2 for WP_Roles::remove_cap(), called in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 260 and defined in C:\wamp\www\vittorio\wp-includes\class-wp-roles.php on line 247
+[28-Sep-2016 15:29:16 UTC] PHP Stack trace:
+[28-Sep-2016 15:29:16 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[28-Sep-2016 15:29:16 UTC] PHP   2. require_once() C:\wamp\www\vittorio\wp-admin\post.php:12
+[28-Sep-2016 15:29:16 UTC] PHP   3. do_action() C:\wamp\www\vittorio\wp-admin\admin.php:168
+[28-Sep-2016 15:29:16 UTC] PHP   4. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:16 UTC] PHP   5. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:16 UTC] PHP   6. WP_Roles->remove_cap() C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php:260
+[28-Sep-2016 15:29:16 UTC] PHP Warning:  Missing argument 2 for WP_Roles::remove_cap(), called in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 261 and defined in C:\wamp\www\vittorio\wp-includes\class-wp-roles.php on line 247
+[28-Sep-2016 15:29:16 UTC] PHP Stack trace:
+[28-Sep-2016 15:29:16 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[28-Sep-2016 15:29:16 UTC] PHP   2. require_once() C:\wamp\www\vittorio\wp-admin\post.php:12
+[28-Sep-2016 15:29:16 UTC] PHP   3. do_action() C:\wamp\www\vittorio\wp-admin\admin.php:168
+[28-Sep-2016 15:29:16 UTC] PHP   4. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:16 UTC] PHP   5. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:16 UTC] PHP   6. WP_Roles->remove_cap() C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php:261
+[28-Sep-2016 15:29:16 UTC] PHP Warning:  Missing argument 2 for WP_Roles::remove_cap(), called in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 262 and defined in C:\wamp\www\vittorio\wp-includes\class-wp-roles.php on line 247
+[28-Sep-2016 15:29:16 UTC] PHP Stack trace:
+[28-Sep-2016 15:29:16 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\post.php:0
+[28-Sep-2016 15:29:16 UTC] PHP   2. require_once() C:\wamp\www\vittorio\wp-admin\post.php:12
+[28-Sep-2016 15:29:16 UTC] PHP   3. do_action() C:\wamp\www\vittorio\wp-admin\admin.php:168
+[28-Sep-2016 15:29:16 UTC] PHP   4. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:16 UTC] PHP   5. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:16 UTC] PHP   6. WP_Roles->remove_cap() C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php:262
+[28-Sep-2016 15:29:17 UTC] PHP Warning:  Missing argument 2 for WP_Roles::remove_cap(), called in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 260 and defined in C:\wamp\www\vittorio\wp-includes\class-wp-roles.php on line 247
+[28-Sep-2016 15:29:17 UTC] PHP Stack trace:
+[28-Sep-2016 15:29:17 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:29:17 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:29:17 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:17 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:17 UTC] PHP   5. WP_Roles->remove_cap() C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php:260
+[28-Sep-2016 15:29:17 UTC] PHP Warning:  Missing argument 2 for WP_Roles::remove_cap(), called in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 261 and defined in C:\wamp\www\vittorio\wp-includes\class-wp-roles.php on line 247
+[28-Sep-2016 15:29:17 UTC] PHP Stack trace:
+[28-Sep-2016 15:29:17 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:29:17 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:29:17 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:17 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:17 UTC] PHP   5. WP_Roles->remove_cap() C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php:261
+[28-Sep-2016 15:29:17 UTC] PHP Warning:  Missing argument 2 for WP_Roles::remove_cap(), called in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 262 and defined in C:\wamp\www\vittorio\wp-includes\class-wp-roles.php on line 247
+[28-Sep-2016 15:29:17 UTC] PHP Stack trace:
+[28-Sep-2016 15:29:17 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:29:17 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:29:17 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:17 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:17 UTC] PHP   5. WP_Roles->remove_cap() C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php:262
+[28-Sep-2016 15:29:33 UTC] PHP Warning:  Missing argument 2 for WP_Roles::remove_cap(), called in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 260 and defined in C:\wamp\www\vittorio\wp-includes\class-wp-roles.php on line 247
+[28-Sep-2016 15:29:33 UTC] PHP Stack trace:
+[28-Sep-2016 15:29:33 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:29:33 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:29:33 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:34 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:34 UTC] PHP   5. WP_Roles->remove_cap() C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php:260
+[28-Sep-2016 15:29:34 UTC] PHP Warning:  Missing argument 2 for WP_Roles::remove_cap(), called in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 261 and defined in C:\wamp\www\vittorio\wp-includes\class-wp-roles.php on line 247
+[28-Sep-2016 15:29:34 UTC] PHP Stack trace:
+[28-Sep-2016 15:29:34 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:29:34 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:29:34 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:34 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:34 UTC] PHP   5. WP_Roles->remove_cap() C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php:261
+[28-Sep-2016 15:29:34 UTC] PHP Warning:  Missing argument 2 for WP_Roles::remove_cap(), called in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 262 and defined in C:\wamp\www\vittorio\wp-includes\class-wp-roles.php on line 247
+[28-Sep-2016 15:29:34 UTC] PHP Stack trace:
+[28-Sep-2016 15:29:34 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:29:34 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:29:34 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:34 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:29:34 UTC] PHP   5. WP_Roles->remove_cap() C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php:262
+[28-Sep-2016 15:35:54 UTC] PHP Notice:  Use of undefined constant edit_citas - assumed 'edit_citas' in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 250
+[28-Sep-2016 15:35:54 UTC] PHP Stack trace:
+[28-Sep-2016 15:35:54 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\index.php:0
+[28-Sep-2016 15:35:54 UTC] PHP   2. require_once() C:\wamp\www\vittorio\wp-admin\index.php:10
+[28-Sep-2016 15:35:54 UTC] PHP   3. do_action() C:\wamp\www\vittorio\wp-admin\admin.php:168
+[28-Sep-2016 15:35:54 UTC] PHP   4. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:35:54 UTC] PHP   5. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:35:55 UTC] PHP Notice:  Use of undefined constant edit_citas - assumed 'edit_citas' in C:\wamp\www\vittorio\wp-content\themes\vittorio\functions.php on line 250
+[28-Sep-2016 15:35:55 UTC] PHP Stack trace:
+[28-Sep-2016 15:35:55 UTC] PHP   1. {main}() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:0
+[28-Sep-2016 15:35:55 UTC] PHP   2. do_action() C:\wamp\www\vittorio\wp-admin\admin-ajax.php:44
+[28-Sep-2016 15:35:55 UTC] PHP   3. call_user_func_array() C:\wamp\www\vittorio\wp-includes\plugin.php:525
+[28-Sep-2016 15:35:55 UTC] PHP   4. add_theme_caps() C:\wamp\www\vittorio\wp-includes\plugin.php:525
