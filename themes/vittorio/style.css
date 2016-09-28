@@ -6089,7 +6089,7 @@ button.btn-floating {
   position: fixed;
   left: 0;
   right: 0;
-  background-image: url(img/background-modal-black.png);
+  background-image: url(img/fondo_modal.jpg);
   height: 80vh;
   width: 80%;
   margin: auto;
@@ -9748,6 +9748,13 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .divider-small {
   width: 50px;
   border-top: solid;
+}
+
+/* line 172, sass/components/_utilities.scss */
+.divider-v {
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #eeeeee;
 }
 
 /* line 5, sass/components/_images.scss */
