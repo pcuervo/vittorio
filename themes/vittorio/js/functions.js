@@ -39,16 +39,22 @@ $(document).ready(function() {
 });
 
 $("#fecha").change(function(e) {
+    var hoy = new Date();
+    
     //picker.close(true);
     //console.log($(this).val());
     var diasSemana = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
     var fec = new Date($(this).val());
     var diaS = diasSemana[fec.getDay()];
+    var hora = hoy.getHours();
     var fechaFormateada = ('0' + fec.getDate()).slice(-2) + '/'+ ('0' + (fec.getMonth()+1)).slice(-2) + '/'+fec.getFullYear();
+    var hoyFormateada = ('0' + hoy.getDate()).slice(-2) + '/'+ ('0' + (hoy.getMonth()+1)).slice(-2) + '/'+hoy.getFullYear();
     $(".opcioneshorario").hide();
+    //console.log(hoy);
     //console.log(fec);
     //console.log(fec.getDay());
     //console.log(diaS);
+    //console.log(hoyFormateada);
     //console.log(fechaFormateada);
     //console.log('TIENDAID:'+$("#tienda").val());
     $(".opcioneshorario").addClass('ocupado');
@@ -68,8 +74,15 @@ $("#fecha").change(function(e) {
                 for (var i = 0; i < hs.length-1; i++) {
                     //console.log(i+'->'+hs[i]);
                     $("."+hs[i]).removeClass('ocupado');
-                    $("."+hs[i]).show();
-                    $("."+hs[i]).show();
+                    if(hoyFormateada == fechaFormateada) {
+                        if(hs[i] > hora) {
+                            $("."+hs[i]).show();
+                        }
+                    }
+                    else {
+                        $("."+hs[i]).show();   
+                    }
+                    
                 }
                 if(ocus.length>1) {
                     for (var i = 0; i < ocus.length-1; i++) {
