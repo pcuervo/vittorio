@@ -12,8 +12,8 @@
 
 				<div class="[ col s12 m5 ][ no-float ][ inline-block ][ middle ]">
 					<div class="[ bg-dark ][ padding ][ margin-vertical ]">
-						<p class="[ text-uppercase white-text ][ no-margin-top ]">¡Hombre, muy bien! </p>
-						<p class="[ white-text ]">El éxito está a unos datos de distancia. Encuentra el traje perfecto para ti, con la ayuda de un Experto en Trajes.</p>
+						<p class="[ text-uppercase white-text ][ no-margin-top ]">EL ÉXITO ESTÁ A UNOS PASOS DE DISTANCIA</p>
+						<p class="[ white-text ]">Encuentra el traje perfecto para ti, con la ayuda de un Experto en Trajes.</p>
 
 						<form class="[ margin-top ]" method="post" name="front_end" action="citas">
 							<div class="[ input-field ]">
