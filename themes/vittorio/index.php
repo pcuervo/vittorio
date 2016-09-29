@@ -89,28 +89,28 @@
 							<div class="[ input-field ][ bg-white ]">
 								<select id="horario" name="horario" data-parsley-error-message="Por favor selecciona un horario" required>
 									<option value="" selected>Horario</option>
-									<option data-clasehorario="9" id="9" class="opthorario" value="9">De 9:00 - 10:00</option>
-									<option data-clasehorario="10" id="10" class="opthorario" value="10">De 10:00 - 11:00</option>
-									<option data-clasehorario="11" id="11" class="opthorario" value="11">De 11:00 - 12:00</option>
-									<option data-clasehorario="12" id="12" class="opthorario" value="12">De 12:00 - 13:00</option>
-									<option data-clasehorario="13" id="13" class="opthorario" value="13">De 13:00 - 14:00</option>
-									<option data-clasehorario="14" id="14" class="opthorario" value="14">De 14:00 - 15:00</option>
-									<option data-clasehorario="15" id="15" class="opthorario" value="15">De 15:00 - 16:00</option>
-									<option data-clasehorario="16" id="16" class="opthorario" value="16">De 16:00 - 17:00</option>
-									<option data-clasehorario="17" id="17" class="opthorario" value="17">De 17:00 - 18:00</option>
-									<option data-clasehorario="18" id="18" class="opthorario" value="18">De 18:00 - 19:00</option>
-									<option data-clasehorario="19" id="19" class="opthorario" value="19">De 19:00 - 20:00</option>
-									<option data-clasehorario="20" id="20" class="opthorario" value="20">De 20:00 - 21:00</option>
-									<option data-clasehorario="21" id="21" class="opthorario" value="21">De 21:00 - 22:00</option>
+									<option data-clasehorario="9" id="9" class="opthorario" value="9">De 9:00 - 10:00 hrs</option>
+									<option data-clasehorario="10" id="10" class="opthorario" value="10">De 10:00 - 11:00 hrs</option>
+									<option data-clasehorario="11" id="11" class="opthorario" value="11">De 11:00 - 12:00 hrs</option>
+									<option data-clasehorario="12" id="12" class="opthorario" value="12">De 12:00 - 13:00 hrs</option>
+									<option data-clasehorario="13" id="13" class="opthorario" value="13">De 13:00 - 14:00 hrs</option>
+									<option data-clasehorario="14" id="14" class="opthorario" value="14">De 14:00 - 15:00 hrs</option>
+									<option data-clasehorario="15" id="15" class="opthorario" value="15">De 15:00 - 16:00 hrs</option>
+									<option data-clasehorario="16" id="16" class="opthorario" value="16">De 16:00 - 17:00 hrs</option>
+									<option data-clasehorario="17" id="17" class="opthorario" value="17">De 17:00 - 18:00 hrs</option>
+									<option data-clasehorario="18" id="18" class="opthorario" value="18">De 18:00 - 19:00 hrs</option>
+									<option data-clasehorario="19" id="19" class="opthorario" value="19">De 19:00 - 20:00 hrs</option>
+									<option data-clasehorario="20" id="20" class="opthorario" value="20">De 20:00 - 21:00 hrs</option>
+									<option data-clasehorario="21" id="21" class="opthorario" value="21">De 21:00 - 22:00 hrs</option>
 								</select>
 
 							</div>
 							<div class="[ input-field ][ bg-white ]">
 								<select id="porque" name="porque" data-parsley-error-message="¿Por qué necesitas un traje?" required>
-									<option value="" selected>¿Por qué necesitas un traje?</option>
+									<option value="" selected>¿Para qué ocasión necesitas un traje?</option>
 									<option id="porque0"  value="Boda">Boda</option>
 									<option id="porque1"  value="Trabajo">Trabajo</option>
-									<option id="porque2"  value="Graduación">Gracuación</option>
+									<option id="porque2"  value="Graduación">Graduación</option>
 									<option id="porque3"  value="XV Años">XV Años</option>
 									<option id="porque4"  value="Bautizo">Bautizo</option>
 									<option id="porque5"  value="Comida / Cena">Comida / Cena</option>

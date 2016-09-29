@@ -152,7 +152,7 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['nombre']) && !empty($
 																				<p>Email: '. $correo . '</p>
 																				<p>Tienda: '. $tiendanombre . '</p>
 																				<p>Fecha: '. $fecha . '</p>
-																				<p>Horario: '. $horario . '</p>
+																				<p>Horario: '. $horario .':00 hrs</p>
 																				<p style="margin:0 0 16px">Para confirmarla haz click en el siguiente link:</p>
 																				<p style="margin:0 0 16px">'.$emailurl.'</p>
 																			</div>
@@ -231,7 +231,7 @@ remove_role( 'citas_admin' );
 
 $result = add_role( 'citas_admin', __('Admin de Citas' ),
 	array(
-		
+
 		'publish_citas' => true,
 		'edit_citas' => true,
 		'edit_others_citas' => true,
@@ -247,31 +247,31 @@ $result = add_role( 'citas_admin', __('Admin de Citas' ),
 );
 
 function add_theme_caps() {
-	
+
     // gets the administrator role
     $admins = get_role( 'administrator' );
 
-    $admins->add_cap( 'publish_citas' ); 
-    $admins->add_cap( 'edit_citas' ); 
-    $admins->add_cap( 'edit_others_citas' ); 
-    $admins->add_cap( 'delete_citas' ); 
-    $admins->add_cap( 'delete_others_citas' ); 
-    $admins->add_cap( 'read_private_citas' ); 
-    //$admins->add_cap( 'edit_cita' ); 
-    $admins->add_cap( 'delete_cita' ); 
-    $admins->add_cap( 'read_cita' ); 
+    $admins->add_cap( 'publish_citas' );
+    $admins->add_cap( 'edit_citas' );
+    $admins->add_cap( 'edit_others_citas' );
+    $admins->add_cap( 'delete_citas' );
+    $admins->add_cap( 'delete_others_citas' );
+    $admins->add_cap( 'read_private_citas' );
+    //$admins->add_cap( 'edit_cita' );
+    $admins->add_cap( 'delete_cita' );
+    $admins->add_cap( 'read_cita' );
 
     //REMOVE CAPABLITIES
-  	//$admins->remove_cap(  'create_citas' ); 
-  	//$admins->remove_cap(  'edit_others_citas' ); 
-  	//$admins->remove_cap(  'edit_cita' ); 
+  	//$admins->remove_cap(  'create_citas' );
+  	//$admins->remove_cap(  'edit_others_citas' );
+  	//$admins->remove_cap(  'edit_cita' );
 }
 add_action( 'admin_init', 'add_theme_caps');
 
 
 //add_action('show_user_profile', 'show_my_extra_fields' );
 add_action( 'edit_user_profile', 'show_my_extra_fields' );
-		
+
 function show_my_extra_fields($user) {
 
 	echo '<h3>Tienda</h3>';
@@ -298,27 +298,27 @@ function show_my_extra_fields($user) {
 
 	echo '</select>';
 
-	
+
 }
 
 //add_action('personal_options_update', 'update_extra_fields');
 add_action( 'edit_user_profile_update', 'update_extra_fields');
 function update_extra_fields($user_id) {
 	update_user_meta($user_id, 'tiendas', $_POST['tiendas']);
-	
+
 }
 
 function disable_new_citas() {
 	// Hide sidebar link
 	global $submenu;
 	//unset($submenu['edit.php?post_type=citas'][10]);
-	
+
 	// Hide link on listing page
 	if (isset($_GET['post_type']) && $_GET['post_type'] == 'citas') {
-		
+
 	    echo '<style type="text/css">
 	    #favorite-actions, .add-new-h2, .tablenav, .page-title-action, .wp-submenu { display:none; }
-	    
+
 	    </style>';
 
 	}
