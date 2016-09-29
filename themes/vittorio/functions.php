@@ -25,7 +25,10 @@ function load_maps_js(){
 		wp_enqueue_script( 'google-function-autocomplete', THEMEPATH. 'js/google-autocomplete.js', array('api-google'), '1.0', true );
 		wp_enqueue_script( 'manage-checks', THEMEPATH. 'js/manage-checks.js', array('jquery'), '1.0', true );
 	}
-
+	if(get_post_type() == 'citas')
+	{
+		wp_enqueue_script( 'hide-new-links', THEMEPATH. 'js/hide-new-links.js', array('jquery'), '1.0', true );
+	}
 }
 
 /*------------------------------------*\
@@ -228,6 +231,7 @@ remove_role( 'citas_admin' );
 
 $result = add_role( 'citas_admin', __('Admin de Citas' ),
 	array(
+		
 		'publish_citas' => true,
 		'edit_citas' => true,
 		'edit_others_citas' => true,
@@ -258,9 +262,9 @@ function add_theme_caps() {
     $admins->add_cap( 'read_cita' ); 
 
     //REMOVE CAPABLITIES
-  	//$admins->remove_cap(  'edit_citas' ); 
+  	//$admins->remove_cap(  'create_citas' ); 
   	//$admins->remove_cap(  'edit_others_citas' ); 
-  	$admins->remove_cap(  'edit_cita' ); 
+  	//$admins->remove_cap(  'edit_cita' ); 
 }
 add_action( 'admin_init', 'add_theme_caps');
 
@@ -303,3 +307,20 @@ function update_extra_fields($user_id) {
 	update_user_meta($user_id, 'tiendas', $_POST['tiendas']);
 	
 }
+
+function disable_new_citas() {
+	// Hide sidebar link
+	global $submenu;
+	//unset($submenu['edit.php?post_type=citas'][10]);
+	
+	// Hide link on listing page
+	if (isset($_GET['post_type']) && $_GET['post_type'] == 'citas') {
+		
+	    echo '<style type="text/css">
+	    #favorite-actions, .add-new-h2, .tablenav, .page-title-action, .wp-submenu { display:none; }
+	    
+	    </style>';
+
+	}
+}
+add_action('admin_menu', 'disable_new_citas');

@@ -7,6 +7,8 @@
 add_action('init', function(){
 
 	$capabilities_citas = array(
+		//'create_posts' 		=> true,
+		//'create_post' => 'create_citas',
 	    'publish_posts' => 'publish_citas',
 	    'edit_posts' => 'edit_citas',
 	    'edit_others_posts' => 'edit_others_citas',
