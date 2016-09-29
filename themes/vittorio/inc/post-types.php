@@ -24,8 +24,8 @@ add_action('init', function(){
 	$labels = array(
 		'name'          => 'Citas',
 		'singular_name' => 'Cita',
-		'add_new'       => false,
-		'add_new_item'  => false,
+		'add_new'       => 'Nueva cita',
+		'add_new_item'  => 'Nueva cita',
 		'edit_item'     => 'Editar cita',
 		'new_item'      => 'Nueva cita',
 		'all_items'     => 'Todos',

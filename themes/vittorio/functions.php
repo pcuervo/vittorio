@@ -25,7 +25,10 @@ function load_maps_js(){
 		wp_enqueue_script( 'google-function-autocomplete', THEMEPATH. 'js/google-autocomplete.js', array('api-google'), '1.0', true );
 		wp_enqueue_script( 'manage-checks', THEMEPATH. 'js/manage-checks.js', array('jquery'), '1.0', true );
 	}
-
+	if(get_post_type() == 'citas')
+	{
+		wp_enqueue_script( 'hide-new-links', THEMEPATH. 'js/hide-new-links.js', array('jquery'), '1.0', true );
+	}
 }
 
 /*------------------------------------*\
@@ -314,9 +317,10 @@ function disable_new_citas() {
 	if (isset($_GET['post_type']) && $_GET['post_type'] == 'citas') {
 		
 	    echo '<style type="text/css">
-	    #favorite-actions, .add-new-h2, .tablenav, .page-title-action, .wp-first-item, .wp-first-item + a, a[href*="post-new"] { display:none; }
-	    .wp-first-item+a { display:none; }
+	    #favorite-actions, .add-new-h2, .tablenav, .page-title-action, .wp-submenu { display:none; }
+	    
 	    </style>';
+
 	}
 }
 add_action('admin_menu', 'disable_new_citas');
