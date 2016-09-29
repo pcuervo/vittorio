@@ -7,6 +7,8 @@
 add_action('init', function(){
 
 	$capabilities_citas = array(
+		//'create_posts' 		=> true,
+		//'create_post' => 'create_citas',
 	    'publish_posts' => 'publish_citas',
 	    'edit_posts' => 'edit_citas',
 	    'edit_others_posts' => 'edit_others_citas',
@@ -22,8 +24,8 @@ add_action('init', function(){
 	$labels = array(
 		'name'          => 'Citas',
 		'singular_name' => 'Cita',
-		'add_new'       => 'Nueva cita',
-		'add_new_item'  => 'Nueva cita',
+		'add_new'       => false,
+		'add_new_item'  => false,
 		'edit_item'     => 'Editar cita',
 		'new_item'      => 'Nueva cita',
 		'all_items'     => 'Todos',

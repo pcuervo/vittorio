@@ -98,6 +98,8 @@ function my_edit_citas_columns( $columns ) {
 	$columns = array(
 		'cb' => '<input type="checkbox" />',
 		'title' => __( 'Cliente' ),
+		'_email_meta' => __( 'Email' ),
+		'_telefono_meta' => __( 'Telefono' ),
 		'_ciudad_meta' => __( 'Ciudad' ),
 		'_tienda_meta' => __( 'Tienda' ),
 		'_fecha_meta' => __( 'Fecha' ),
@@ -117,6 +119,24 @@ function my_manage_citas_columns( $column, $post_id ) {
 	switch( $column ) {
 
 		/* If displaying the '_ciudad_meta' column. */
+		case '_email_meta' :
+
+			/* Get the post meta. */
+			$_email_meta = get_post_meta( $post_id, '_email_meta', true );
+
+			/* If no _email_meta is found, output a default message. */
+			if ( !empty( $_email_meta ) ) echo $_email_meta;
+
+			break;
+		case '_telefono_meta' :
+
+			/* Get the post meta. */
+			$_telefono_meta = get_post_meta( $post_id, '_telefono_meta', true );
+
+			/* If no _telefono_meta is found, output a default message. */
+			if ( !empty( $_telefono_meta ) ) echo $_telefono_meta;
+
+			break;
 		case '_ciudad_meta' :
 
 			/* Get the post meta. */
@@ -130,7 +150,7 @@ function my_manage_citas_columns( $column, $post_id ) {
 			else
 				echo $_ciudad_meta;
 
-			break;
+			break;			
 		case '_tienda_meta' :
 
 			/* Get the post meta. */
