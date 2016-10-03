@@ -40,7 +40,7 @@ $(document).ready(function() {
 
 $("#fecha").change(function(e) {
     var hoy = new Date();
-    
+
     //picker.close(true);
     //console.log($(this).val());
     var diasSemana = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
@@ -50,17 +50,10 @@ $("#fecha").change(function(e) {
     var fechaFormateada = ('0' + fec.getDate()).slice(-2) + '/'+ ('0' + (fec.getMonth()+1)).slice(-2) + '/'+fec.getFullYear();
     var hoyFormateada = ('0' + hoy.getDate()).slice(-2) + '/'+ ('0' + (hoy.getMonth()+1)).slice(-2) + '/'+hoy.getFullYear();
     $(".opcioneshorario").hide();
-    //console.log(hoy);
-    //console.log(fec);
-    //console.log(fec.getDay());
-    //console.log(diaS);
-    //console.log(hoyFormateada);
-    //console.log(fechaFormateada);
-    //console.log('TIENDAID:'+$("#tienda").val());
     $(".opcioneshorario").addClass('ocupado');
     $.post($("#rutaAjax").val(), {action: 'validar_horarios', fecha: $(this).val(), dia: diaS, tiendaid: $("#tienda").val() },
       function(data) {
-        console.log("AQUI:"+data);
+        //console.log("AQUI:"+data);
         if(data != "") {
             $(".select-dropdown:eq(4)").val('Horario');
             //$(".opcioneshorario").show();
@@ -80,9 +73,9 @@ $("#fecha").change(function(e) {
                         }
                     }
                     else {
-                        $("."+hs[i]).show();   
+                        $("."+hs[i]).show();
                     }
-                    
+
                 }
                 if(ocus.length>1) {
                     for (var i = 0; i < ocus.length-1; i++) {
@@ -98,15 +91,16 @@ $("#fecha").change(function(e) {
                 $(".opcioneshorario").hide();
             }
         }
-
     })
     .always(function(data){
        //console.log('Always -> ['+data+']');
     })
     .fail(function(xhr, status, error) {
-        console.log('FAIL');
-        console.log(xhr);
-        console.log(status);
-        console.log(error);
+        //console.log('FAIL');
+        //console.log(xhr);
+        //console.log(status);
+        //console.log(error);
     });
+    $('label[for="fecha"]').addClass('active');
+    console.log('s');
 });

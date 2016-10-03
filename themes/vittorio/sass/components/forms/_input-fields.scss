@@ -140,7 +140,7 @@ textarea.materialize-textarea {
   label {
     color: $input-border-color;
     position: absolute;
-    top: 0.5rem;
+    top: 0.5rem; left: 0;
     font-size: 1rem;
     cursor: text;
     transition: .2s ease-out;

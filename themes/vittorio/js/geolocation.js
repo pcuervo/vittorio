@@ -14,10 +14,10 @@ var mapGeolocation = function () {
             setTimeout('setTienda('+position.coords.latitude+','+position.coords.longitude+')', 2000);
         },
         error: function (error) {
-            alert('Geolocación fallida: por favor selecciona tu ciudad y tienda mas cercana. ' + error.message);
+            alert('Geolocación fallida: por favor selecciona tu ciudad y tienda más cercana. ' + error.message);
         },
         not_supported: function () {
-            alert("Tu navegador no soporta geolocación, por favor selecciona tu ciudad y tienda mas cercana");
+            alert("Tu navegador no soporta geolocación, por favor selecciona tu ciudad y tienda más cercana");
         },
         always: function () {
             //alert("Geolocation Done!");
@@ -34,16 +34,16 @@ var setCiudad = function (latCliente, longCliente) {
     var aux = 100000000000000000000000;
     $(".optciudad").each(function() {
         aux = calcularDistancia($(this).data('lat'),$(this).data('long'),latCliente, longCliente);
-        if(aux < menorDist) { 
-            menorDist = aux; 
+        if(aux < menorDist) {
+            menorDist = aux;
             ciudadMasCercana = $(this).attr('id');
         }
     });
     $("#ciudad option").removeAttr('selected');
     $("#"+ciudadMasCercana).attr('selected', 'selected');
     $(".select-dropdown:eq(0)").val($("#"+ciudadMasCercana).html());
-    
-    
+
+
 }
 
 var setTienda = function (latCliente, longCliente) {
@@ -54,8 +54,8 @@ var setTienda = function (latCliente, longCliente) {
     var aux = 100000000000000000000000;
     $(".opttienda").each(function() {
         aux = calcularDistancia($(this).data('lat'),$(this).data('long'),latCliente, longCliente);
-        if(aux < menorDist) { 
-            menorDist = aux; 
+        if(aux < menorDist) {
+            menorDist = aux;
             tiendaMasCercana = $(this).attr('id');
         }
     });
@@ -71,7 +71,7 @@ var setTienda = function (latCliente, longCliente) {
     $("#nombreTienda").html($("#"+tiendaMasCercana).html());
     $("#dirTienda").html($("#"+tiendaMasCercana).data('direccion'));
     $("#telTienda").html($("#"+tiendaMasCercana).data('telefono'));
-    
+
 }
 
 var deg2rad = function (angle) {
@@ -85,13 +85,13 @@ var deg2rad = function (angle) {
 function calcularDistancia(lat1,lon1,lat2,lon2) {
   var R = 6371; // Radius of the earth in km
   var dLat = deg2rad(lat2-lat1);  // deg2rad below
-  var dLon = deg2rad(lon2-lon1); 
-  var a = 
+  var dLon = deg2rad(lon2-lon1);
+  var a =
     Math.sin(dLat/2) * Math.sin(dLat/2) +
-    Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
+    Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) *
     Math.sin(dLon/2) * Math.sin(dLon/2)
-    ; 
-  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+    ;
+  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
   var d = R * c; // Distance in km
   return Math.round(d, 2);
 }
@@ -102,7 +102,7 @@ $(document).ready(function() {
         $("#nombreTienda").html($("#tienda option:selected").html());
         $("#dirTienda").html($("#tienda option:selected").data('direccion'));
         $("#telTienda").html($("#tienda option:selected").data('telefono'));
-       
+
     });
     $("#ciudad").change(function() {
         //SHOW ONLY CITY STORES
@@ -115,7 +115,7 @@ $(document).ready(function() {
     });
     mapGeolocation();
 });
- 
+
 
 
 
